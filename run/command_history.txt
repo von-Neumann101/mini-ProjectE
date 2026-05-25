@@ -23,3 +23,4 @@
 /teamemc learn minecraft:acacia_chest_boat
 /teamemc learn minecraft:acacia_button
 /teamemc learn minecraft:oak_button
+/time set day

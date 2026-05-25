@@ -7,9 +7,11 @@ import com.example.teamemc.network.RequestWithdrawPacket;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.Locale;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -26,18 +28,23 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
     private static final Component CONVERT_BUTTON = Component.translatable("gui.teamemc.convert");
     private static final Component PREVIOUS_BUTTON = Component.translatable("gui.teamemc.previous");
     private static final Component NEXT_BUTTON = Component.translatable("gui.teamemc.next");
+    private static final Component SEARCH_HINT = Component.translatable("gui.teamemc.search");
 
     private static final int LEARNED_GRID_X = 184;
-    private static final int LEARNED_GRID_Y = 20;
+    private static final int LEARNED_SEARCH_Y = 18;
+    private static final int LEARNED_SEARCH_WIDTH = 108;
+    private static final int LEARNED_SEARCH_HEIGHT = 16;
+    private static final int LEARNED_GRID_Y = 40;
     private static final int LEARNED_GRID_COLUMNS = 5;
     private static final int LEARNED_GRID_ROWS = 3;
     private static final int LEARNED_PAGE_SIZE = LEARNED_GRID_COLUMNS * LEARNED_GRID_ROWS;
-    private static final int PAGE_LABEL_Y = 80;
+    private static final int PAGE_LABEL_Y = 98;
     private static final int PAGE_BUTTON_Y = 138;
     private static final int PAGE_BUTTON_WIDTH = 52;
     private static final int PAGE_BUTTON_HEIGHT = 20;
 
     private int learnedPage;
+    private EditBox searchBox;
     private Button previousPageButton;
     private Button nextPageButton;
 
@@ -57,6 +64,20 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
                 )
                 .bounds(this.leftPos + 108, this.topPos + 18, 58, 20)
                 .build());
+        this.searchBox = this.addRenderableWidget(new EditBox(
+                this.font,
+                this.leftPos + LEARNED_GRID_X,
+                this.topPos + LEARNED_SEARCH_Y,
+                LEARNED_SEARCH_WIDTH,
+                LEARNED_SEARCH_HEIGHT,
+                SEARCH_HINT
+        ));
+        this.searchBox.setMaxLength(64);
+        this.searchBox.setHint(SEARCH_HINT);
+        this.searchBox.setResponder(value -> {
+            this.learnedPage = 0;
+            this.updatePageButtons(this.getDisplayableLearnedItems().size());
+        });
         this.previousPageButton = this.addRenderableWidget(Button.builder(
                         PREVIOUS_BUTTON,
                         button -> {
@@ -93,6 +114,25 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
         super.render(guiGraphics, mouseX, mouseY, partialTick);
         this.renderTooltip(guiGraphics, mouseX, mouseY);
         this.renderLearnedItemTooltip(guiGraphics, mouseX, mouseY);
+    }
+
+    @Override
+    public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
+        if (this.searchBox != null && this.searchBox.isFocused() && keyCode != 256) {
+            this.searchBox.keyPressed(keyCode, scanCode, modifiers);
+            return true;
+        }
+
+        return super.keyPressed(keyCode, scanCode, modifiers);
+    }
+
+    @Override
+    public boolean charTyped(char codePoint, int modifiers) {
+        if (this.searchBox != null && this.searchBox.isFocused()) {
+            return this.searchBox.charTyped(codePoint, modifiers);
+        }
+
+        return super.charTyped(codePoint, modifiers);
     }
 
     @Override
@@ -224,12 +264,33 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
     }
 
     private List<ItemStack> getDisplayableLearnedItems() {
+        String searchQuery = this.getSearchQuery();
         return ClientEmcState.getLearnedItems().stream()
                 .distinct()
                 .sorted(Comparator.comparing(ResourceLocation::toString))
                 .map(TransmutationScreen::createDisplayStack)
                 .filter(stack -> !stack.isEmpty())
+                .filter(stack -> this.matchesSearch(stack, searchQuery))
                 .toList();
+    }
+
+    private String getSearchQuery() {
+        if (this.searchBox == null) {
+            return "";
+        }
+
+        return this.searchBox.getValue().trim().toLowerCase(Locale.ROOT);
+    }
+
+    private boolean matchesSearch(ItemStack stack, String searchQuery) {
+        if (searchQuery.isEmpty()) {
+            return true;
+        }
+
+        ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(stack.getItem());
+        String idText = itemId == null ? "" : itemId.toString().toLowerCase(Locale.ROOT);
+        String nameText = stack.getHoverName().getString().toLowerCase(Locale.ROOT);
+        return idText.contains(searchQuery) || nameText.contains(searchQuery);
     }
 
     private static ItemStack createDisplayStack(ResourceLocation itemId) {

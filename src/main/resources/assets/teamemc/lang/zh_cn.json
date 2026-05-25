@@ -10,6 +10,7 @@
   "gui.teamemc.page": "第 %s / %s 页",
   "gui.teamemc.previous": "上一页",
   "gui.teamemc.next": "下一页",
+  "gui.teamemc.search": "搜索...",
   "tooltip.teamemc.emc": "EMC：%s",
   "message.teamemc.convert.success": "已将 %s 转化为 %s EMC。",
   "message.teamemc.convert.no_item": "没有可转化的物品。",

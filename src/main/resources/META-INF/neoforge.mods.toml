@@ -13,7 +13,7 @@ Minimal Team EMC mod bootstrap.
 [[dependencies.teamemc]]
 modId = "neoforge"
 type = "required"
-versionRange = "[21.1.230,)"
+versionRange = "[21.1.227,)"
 ordering = "NONE"
 side = "BOTH"
 

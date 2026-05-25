@@ -10,6 +10,7 @@
   "gui.teamemc.page": "Page %s / %s",
   "gui.teamemc.previous": "Previous",
   "gui.teamemc.next": "Next",
+  "gui.teamemc.search": "Search...",
   "tooltip.teamemc.emc": "EMC: %s",
   "message.teamemc.convert.success": "Converted %s into %s EMC.",
   "message.teamemc.convert.no_item": "No item to convert.",
