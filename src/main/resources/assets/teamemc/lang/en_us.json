@@ -2,5 +2,12 @@
   "block.teamemc.transmutation_table": "Transmutation Table",
   "item.teamemc.portable_transmutation_table": "Portable Transmutation Table",
   "itemGroup.teamemc": "Team EMC",
-  "container.teamemc.transmutation_table": "Transmutation Table"
+  "container.teamemc.transmutation_table": "Transmutation Table",
+  "gui.teamemc.convert": "Convert",
+  "message.teamemc.convert.success": "Converted %s into %s EMC.",
+  "message.teamemc.convert.no_item": "No item to convert.",
+  "message.teamemc.convert.no_emc": "This item has no EMC.",
+  "message.teamemc.convert.overflow": "Failed to add EMC due to overflow.",
+  "message.teamemc.convert.failed": "Conversion failed.",
+  "message.teamemc.convert.invalid_durability": "Item durability is too low to convert."
 }

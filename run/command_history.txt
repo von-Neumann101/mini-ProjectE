@@ -11,3 +11,4 @@
 /teamemc emc minecraft:furnace
 /teamemc emc_stats
 /teamemc emc minecraft:furnace
+/teamemc balance

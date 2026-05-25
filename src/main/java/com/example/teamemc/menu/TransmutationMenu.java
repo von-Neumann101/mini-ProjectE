@@ -1,7 +1,15 @@
 package com.example.teamemc.menu;
 
+import com.example.teamemc.data.TeamEmcSavedData;
+import com.example.teamemc.emc.EmcValueManager;
 import com.example.teamemc.registry.ModMenus;
 
+import java.util.OptionalLong;
+
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -95,6 +103,55 @@ public class TransmutationMenu extends AbstractContainerMenu {
 
         sourceSlot.onTake(player, sourceStack);
         return originalStack;
+    }
+
+    public ItemStack getInputStack() {
+        return this.inputContainer.getItem(0);
+    }
+
+    public void clearInputSlot() {
+        this.inputContainer.setItem(0, ItemStack.EMPTY);
+        this.slots.get(INPUT_SLOT).setChanged();
+        this.broadcastChanges();
+    }
+
+    public void convertInput(ServerPlayer player) {
+        ItemStack inputStack = this.getInputStack();
+        if (inputStack.isEmpty()) {
+            player.displayClientMessage(Component.translatable("message.teamemc.convert.no_item"), false);
+            return;
+        }
+
+        ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(inputStack.getItem());
+        if (itemId == null || EmcValueManager.isBlockedModItem(itemId) || !EmcValueManager.hasEmc(inputStack)) {
+            player.displayClientMessage(Component.translatable("message.teamemc.convert.no_emc"), false);
+            return;
+        }
+
+        OptionalLong stackEmc = EmcValueManager.getStackEmc(inputStack);
+        if (stackEmc.isEmpty() || stackEmc.getAsLong() <= 0L) {
+            Component message = EmcValueManager.isDamageable(inputStack)
+                    ? Component.translatable("message.teamemc.convert.invalid_durability")
+                    : Component.translatable("message.teamemc.convert.failed");
+            player.displayClientMessage(message, false);
+            return;
+        }
+
+        long emcAmount = stackEmc.getAsLong();
+        TeamEmcSavedData data = TeamEmcSavedData.get(player.getServer());
+        if (!data.addEmc(player, emcAmount)) {
+            player.displayClientMessage(Component.translatable("message.teamemc.convert.overflow"), false);
+            return;
+        }
+
+        ItemStack convertedStack = inputStack.copy();
+        data.learn(player, inputStack.getItem());
+        this.clearInputSlot();
+        player.displayClientMessage(Component.translatable(
+                "message.teamemc.convert.success",
+                Component.literal(convertedStack.getCount() + "x ").append(convertedStack.getHoverName()),
+                emcAmount
+        ), false);
     }
 
     @Override

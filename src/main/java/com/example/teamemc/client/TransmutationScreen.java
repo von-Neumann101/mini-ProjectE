@@ -1,21 +1,36 @@
 package com.example.teamemc.client;
 
 import com.example.teamemc.menu.TransmutationMenu;
+import com.example.teamemc.network.RequestConvertPacket;
 
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
+import net.neoforged.neoforge.network.PacketDistributor;
 
 public class TransmutationScreen extends AbstractContainerScreen<TransmutationMenu> {
     private static final int SLOT_COLOR = 0xFF15191F;
     private static final int SLOT_BORDER_COLOR = 0xFF59616D;
+    private static final Component CONVERT_BUTTON = Component.translatable("gui.teamemc.convert");
 
     public TransmutationScreen(TransmutationMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);
         this.imageWidth = 176;
         this.imageHeight = 166;
         this.inventoryLabelY = 72;
+    }
+
+    @Override
+    protected void init() {
+        super.init();
+        this.addRenderableWidget(Button.builder(
+                        CONVERT_BUTTON,
+                        button -> PacketDistributor.sendToServer(RequestConvertPacket.INSTANCE)
+                )
+                .bounds(this.leftPos + 108, this.topPos + 18, 58, 20)
+                .build());
     }
 
     @Override

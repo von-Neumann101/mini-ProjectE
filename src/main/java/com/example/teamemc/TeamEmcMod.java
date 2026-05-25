@@ -7,6 +7,7 @@ import com.example.teamemc.registry.ModBlocks;
 import com.example.teamemc.registry.ModCreativeTabs;
 import com.example.teamemc.registry.ModItems;
 import com.example.teamemc.registry.ModMenus;
+import com.example.teamemc.registry.ModNetworking;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -22,6 +23,7 @@ public final class TeamEmcMod {
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
         ModMenus.register(modEventBus);
+        ModNetworking.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
 
         if (FMLEnvironment.dist == Dist.CLIENT) {

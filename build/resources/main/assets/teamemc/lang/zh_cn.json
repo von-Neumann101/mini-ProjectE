@@ -2,5 +2,12 @@
   "block.teamemc.transmutation_table": "转化桌",
   "item.teamemc.portable_transmutation_table": "便携式转化桌",
   "itemGroup.teamemc": "队伍 EMC",
-  "container.teamemc.transmutation_table": "转化桌"
+  "container.teamemc.transmutation_table": "转化桌",
+  "gui.teamemc.convert": "转化",
+  "message.teamemc.convert.success": "已将 %s 转化为 %s EMC。",
+  "message.teamemc.convert.no_item": "没有可转化的物品。",
+  "message.teamemc.convert.no_emc": "该物品没有 EMC。",
+  "message.teamemc.convert.overflow": "EMC 数值溢出，转化失败。",
+  "message.teamemc.convert.failed": "转化失败。",
+  "message.teamemc.convert.invalid_durability": "物品耐久过低，无法转化。"
 }
