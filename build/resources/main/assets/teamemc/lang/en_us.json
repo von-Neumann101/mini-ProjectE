@@ -10,10 +10,18 @@
   "gui.teamemc.page": "Page %s / %s",
   "gui.teamemc.previous": "Previous",
   "gui.teamemc.next": "Next",
+  "tooltip.teamemc.emc": "EMC: %s",
   "message.teamemc.convert.success": "Converted %s into %s EMC.",
   "message.teamemc.convert.no_item": "No item to convert.",
   "message.teamemc.convert.no_emc": "This item has no EMC.",
   "message.teamemc.convert.overflow": "Failed to add EMC due to overflow.",
   "message.teamemc.convert.failed": "Conversion failed.",
-  "message.teamemc.convert.invalid_durability": "Item durability is too low to convert."
+  "message.teamemc.convert.invalid_durability": "Item durability is too low to convert.",
+  "message.teamemc.withdraw.success": "Withdrew %s for %s EMC.",
+  "message.teamemc.withdraw.not_learned": "This item is not learned.",
+  "message.teamemc.withdraw.no_emc": "This item has no EMC.",
+  "message.teamemc.withdraw.not_enough_emc": "Not enough EMC.",
+  "message.teamemc.withdraw.no_space": "Not enough inventory space.",
+  "message.teamemc.withdraw.invalid": "Invalid withdraw request.",
+  "message.teamemc.withdraw.failed": "Withdraw failed."
 }

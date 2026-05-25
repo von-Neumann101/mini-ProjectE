@@ -3,6 +3,7 @@ package com.example.teamemc.client;
 import com.example.teamemc.registry.ModMenus;
 
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 
 public final class ClientSetup {
@@ -11,6 +12,7 @@ public final class ClientSetup {
 
     public static void register(IEventBus modEventBus) {
         modEventBus.addListener(ClientSetup::registerMenuScreens);
+        NeoForge.EVENT_BUS.addListener(ClientTooltipHandler::onItemTooltip);
     }
 
     private static void registerMenuScreens(RegisterMenuScreensEvent event) {

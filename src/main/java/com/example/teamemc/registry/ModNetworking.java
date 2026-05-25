@@ -3,6 +3,7 @@ package com.example.teamemc.registry;
 import com.example.teamemc.data.TeamEmcSavedData;
 import com.example.teamemc.emc.EmcValueManager;
 import com.example.teamemc.network.RequestConvertPacket;
+import com.example.teamemc.network.RequestWithdrawPacket;
 import com.example.teamemc.network.SyncEmcDataPacket;
 
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -28,6 +29,7 @@ public final class ModNetworking {
     private static void registerPayloadHandlers(RegisterPayloadHandlersEvent event) {
         PayloadRegistrar registrar = event.registrar(NETWORK_VERSION);
         registrar.playToServer(RequestConvertPacket.TYPE, RequestConvertPacket.STREAM_CODEC, RequestConvertPacket::handle);
+        registrar.playToServer(RequestWithdrawPacket.TYPE, RequestWithdrawPacket.STREAM_CODEC, RequestWithdrawPacket::handle);
         registrar.playToClient(SyncEmcDataPacket.TYPE, SyncEmcDataPacket.STREAM_CODEC, SyncEmcDataPacket::handle);
     }
 

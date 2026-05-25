@@ -1,10 +1,12 @@
 package com.example.teamemc.menu;
 
 import com.example.teamemc.data.TeamEmcSavedData;
+import com.example.teamemc.emc.EmcMath;
 import com.example.teamemc.emc.EmcValueManager;
 import com.example.teamemc.registry.ModMenus;
 import com.example.teamemc.registry.ModNetworking;
 
+import java.util.List;
 import java.util.OptionalLong;
 
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -16,7 +18,9 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 
 public class TransmutationMenu extends AbstractContainerMenu {
     public static final int INPUT_SLOT = 0;
@@ -154,6 +158,162 @@ public class TransmutationMenu extends AbstractContainerMenu {
                 Component.literal(convertedStack.getCount() + "x ").append(convertedStack.getHoverName()),
                 emcAmount
         ), false);
+    }
+
+    public boolean withdrawItem(ServerPlayer player, ResourceLocation itemId, int requestedCount) {
+        if (requestedCount <= 0 || itemId == null || !BuiltInRegistries.ITEM.containsKey(itemId) || EmcValueManager.isBlockedModItem(itemId)) {
+            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.invalid"), false);
+            return false;
+        }
+
+        Item item = BuiltInRegistries.ITEM.get(itemId);
+        if (item == Items.AIR) {
+            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.invalid"), false);
+            return false;
+        }
+
+        int maxStackSize = item.getDefaultMaxStackSize();
+        if (maxStackSize <= 0) {
+            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.invalid"), false);
+            return false;
+        }
+
+        int count = Math.min(requestedCount, maxStackSize);
+        if (count <= 0) {
+            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.invalid"), false);
+            return false;
+        }
+
+        TeamEmcSavedData data = TeamEmcSavedData.get(player.getServer());
+        if (!data.isLearned(player, item)) {
+            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.not_learned"), false);
+            return false;
+        }
+
+        EmcValueManager.ensureDerived(player.getServer());
+        OptionalLong singleItemEmc = EmcValueManager.getSingleItemEmc(new ItemStack(item, 1));
+        if (singleItemEmc.isEmpty() || singleItemEmc.getAsLong() <= 0L) {
+            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.no_emc"), false);
+            return false;
+        }
+
+        OptionalLong totalCost = EmcMath.multiplyExact(singleItemEmc.getAsLong(), count);
+        if (totalCost.isEmpty() || totalCost.getAsLong() <= 0L) {
+            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.failed"), false);
+            return false;
+        }
+
+        if (data.getBalance(player) < totalCost.getAsLong()) {
+            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.not_enough_emc"), false);
+            return false;
+        }
+
+        ItemStack withdrawnStack = new ItemStack(item, count);
+        if (!canFitInInventory(player.getInventory(), withdrawnStack)) {
+            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.no_space"), false);
+            return false;
+        }
+
+        if (!data.trySpendEmc(player, totalCost.getAsLong())) {
+            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.not_enough_emc"), false);
+            return false;
+        }
+
+        List<ItemStack> inventorySnapshot = copyInventoryItems(player.getInventory());
+        if (!insertIntoInventory(player.getInventory(), withdrawnStack.copy())) {
+            restoreInventoryItems(player.getInventory(), inventorySnapshot);
+            data.addEmc(player, totalCost.getAsLong());
+            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.failed"), false);
+            ModNetworking.sendEmcData(player);
+            return false;
+        }
+
+        player.getInventory().setChanged();
+        this.broadcastChanges();
+        ModNetworking.sendEmcData(player);
+        player.displayClientMessage(Component.translatable(
+                "message.teamemc.withdraw.success",
+                Component.literal(count + "x ").append(withdrawnStack.getHoverName()),
+                totalCost.getAsLong()
+        ), false);
+        return true;
+    }
+
+    private static List<ItemStack> copyInventoryItems(Inventory inventory) {
+        return inventory.items.stream()
+                .map(ItemStack::copy)
+                .toList();
+    }
+
+    private static void restoreInventoryItems(Inventory inventory, List<ItemStack> snapshot) {
+        for (int slot = 0; slot < inventory.items.size() && slot < snapshot.size(); slot++) {
+            inventory.items.set(slot, snapshot.get(slot).copy());
+        }
+        inventory.setChanged();
+    }
+
+    private static boolean canFitInInventory(Inventory inventory, ItemStack stack) {
+        int remaining = stack.getCount();
+
+        for (ItemStack inventoryStack : inventory.items) {
+            if (canMergeInto(inventory, inventoryStack, stack)) {
+                remaining -= inventory.getMaxStackSize(inventoryStack) - inventoryStack.getCount();
+                if (remaining <= 0) {
+                    return true;
+                }
+            }
+        }
+
+        for (ItemStack inventoryStack : inventory.items) {
+            if (inventoryStack.isEmpty()) {
+                remaining -= stack.getMaxStackSize();
+                if (remaining <= 0) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    private static boolean insertIntoInventory(Inventory inventory, ItemStack stack) {
+        int remaining = stack.getCount();
+
+        for (ItemStack inventoryStack : inventory.items) {
+            if (remaining <= 0) {
+                return true;
+            }
+
+            if (canMergeInto(inventory, inventoryStack, stack)) {
+                int moved = Math.min(remaining, inventory.getMaxStackSize(inventoryStack) - inventoryStack.getCount());
+                inventoryStack.grow(moved);
+                inventoryStack.setPopTime(5);
+                remaining -= moved;
+            }
+        }
+
+        for (int slot = 0; slot < inventory.items.size(); slot++) {
+            if (remaining <= 0) {
+                return true;
+            }
+
+            if (inventory.items.get(slot).isEmpty()) {
+                int moved = Math.min(remaining, stack.getMaxStackSize());
+                ItemStack insertedStack = stack.copyWithCount(moved);
+                insertedStack.setPopTime(5);
+                inventory.items.set(slot, insertedStack);
+                remaining -= moved;
+            }
+        }
+
+        return remaining <= 0;
+    }
+
+    private static boolean canMergeInto(Inventory inventory, ItemStack inventoryStack, ItemStack stack) {
+        return !inventoryStack.isEmpty()
+                && ItemStack.isSameItemSameComponents(inventoryStack, stack)
+                && inventoryStack.isStackable()
+                && inventoryStack.getCount() < inventory.getMaxStackSize(inventoryStack);
     }
 
     @Override

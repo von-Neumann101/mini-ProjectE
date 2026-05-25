@@ -10,10 +10,18 @@
   "gui.teamemc.page": "第 %s / %s 页",
   "gui.teamemc.previous": "上一页",
   "gui.teamemc.next": "下一页",
+  "tooltip.teamemc.emc": "EMC：%s",
   "message.teamemc.convert.success": "已将 %s 转化为 %s EMC。",
   "message.teamemc.convert.no_item": "没有可转化的物品。",
   "message.teamemc.convert.no_emc": "该物品没有 EMC。",
   "message.teamemc.convert.overflow": "EMC 数值溢出，转化失败。",
   "message.teamemc.convert.failed": "转化失败。",
-  "message.teamemc.convert.invalid_durability": "物品耐久过低，无法转化。"
+  "message.teamemc.convert.invalid_durability": "物品耐久过低，无法转化。",
+  "message.teamemc.withdraw.success": "已取出 %s，消耗 %s EMC。",
+  "message.teamemc.withdraw.not_learned": "该物品尚未解锁。",
+  "message.teamemc.withdraw.no_emc": "该物品没有 EMC。",
+  "message.teamemc.withdraw.not_enough_emc": "EMC 不足。",
+  "message.teamemc.withdraw.no_space": "背包空间不足。",
+  "message.teamemc.withdraw.invalid": "无效的取出请求。",
+  "message.teamemc.withdraw.failed": "取出失败。"
 }

@@ -3,6 +3,7 @@ package com.example.teamemc.client;
 import com.example.teamemc.emc.EmcValueManager;
 import com.example.teamemc.menu.TransmutationMenu;
 import com.example.teamemc.network.RequestConvertPacket;
+import com.example.teamemc.network.RequestWithdrawPacket;
 
 import java.util.Comparator;
 import java.util.List;
@@ -92,6 +93,19 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
         super.render(guiGraphics, mouseX, mouseY, partialTick);
         this.renderTooltip(guiGraphics, mouseX, mouseY);
         this.renderLearnedItemTooltip(guiGraphics, mouseX, mouseY);
+    }
+
+    @Override
+    public boolean mouseClicked(double mouseX, double mouseY, int button) {
+        if (button == 0 && this.menu.getCarried().isEmpty()) {
+            ResourceLocation hoveredItemId = this.getHoveredLearnedItemId((int) mouseX, (int) mouseY);
+            if (hoveredItemId != null) {
+                PacketDistributor.sendToServer(new RequestWithdrawPacket(hoveredItemId, hasShiftDown() ? 64 : 1));
+                return true;
+            }
+        }
+
+        return super.mouseClicked(mouseX, mouseY, button);
     }
 
     @Override
@@ -185,6 +199,11 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
     }
 
     private ItemStack getHoveredLearnedItem(int mouseX, int mouseY) {
+        ResourceLocation hoveredItemId = this.getHoveredLearnedItemId(mouseX, mouseY);
+        return hoveredItemId == null ? ItemStack.EMPTY : createDisplayStack(hoveredItemId);
+    }
+
+    private ResourceLocation getHoveredLearnedItemId(int mouseX, int mouseY) {
         List<ItemStack> learnedItems = this.getDisplayableLearnedItems();
         int firstItemIndex = this.learnedPage * LEARNED_PAGE_SIZE;
         int lastItemIndex = Math.min(firstItemIndex + LEARNED_PAGE_SIZE, learnedItems.size());
@@ -196,11 +215,12 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
             int x = this.leftPos + LEARNED_GRID_X + column * 18;
             int y = this.topPos + LEARNED_GRID_Y + row * 18;
             if (mouseX >= x && mouseX < x + 18 && mouseY >= y && mouseY < y + 18) {
-                return learnedItems.get(itemIndex);
+                ItemStack stack = learnedItems.get(itemIndex);
+                return BuiltInRegistries.ITEM.getKey(stack.getItem());
             }
         }
 
-        return ItemStack.EMPTY;
+        return null;
     }
 
     private List<ItemStack> getDisplayableLearnedItems() {
