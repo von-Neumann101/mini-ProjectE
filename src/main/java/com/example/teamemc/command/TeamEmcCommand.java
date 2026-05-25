@@ -2,6 +2,7 @@ package com.example.teamemc.command;
 
 import com.example.teamemc.data.TeamEmcSavedData;
 import com.example.teamemc.emc.EmcValueManager;
+import com.example.teamemc.registry.ModNetworking;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.LongArgumentType;
 import com.mojang.brigadier.context.CommandContext;
@@ -108,6 +109,7 @@ public final class TeamEmcCommand {
         TeamEmcSavedData data = TeamEmcSavedData.get(source.getServer());
 
         data.setBalance(player, amount);
+        ModNetworking.sendEmcData(player);
         source.sendSuccess(() -> Component.literal("Set Team EMC balance to " + amount + "."), true);
         return 1;
     }
@@ -123,6 +125,7 @@ public final class TeamEmcCommand {
             return 0;
         }
 
+        ModNetworking.sendEmcData(player);
         source.sendSuccess(() -> Component.literal("Added " + amount + " EMC. New balance: " + data.getBalance(player)), true);
         return 1;
     }
@@ -138,6 +141,7 @@ public final class TeamEmcCommand {
             return 0;
         }
 
+        ModNetworking.sendEmcData(player);
         source.sendSuccess(() -> Component.literal("Spent " + amount + " EMC. New balance: " + data.getBalance(player)), true);
         return 1;
     }
@@ -150,6 +154,7 @@ public final class TeamEmcCommand {
         TeamEmcSavedData data = TeamEmcSavedData.get(source.getServer());
 
         data.learn(player, item);
+        ModNetworking.sendEmcData(player);
         source.sendSuccess(() -> Component.literal("Learned item " + itemId + " for account " + data.getAccountKey(player) + "."), true);
         return 1;
     }

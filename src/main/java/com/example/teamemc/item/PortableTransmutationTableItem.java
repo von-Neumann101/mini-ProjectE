@@ -1,6 +1,7 @@
 package com.example.teamemc.item;
 
 import com.example.teamemc.menu.TransmutationMenu;
+import com.example.teamemc.registry.ModNetworking;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
@@ -27,7 +28,7 @@ public class PortableTransmutationTableItem extends Item {
             serverPlayer.openMenu(new SimpleMenuProvider(
                     (containerId, inventory, menuPlayer) -> new TransmutationMenu(containerId, inventory),
                     MENU_TITLE
-            ));
+            )).ifPresent(containerId -> ModNetworking.sendEmcData(serverPlayer));
         }
 
         return InteractionResultHolder.sidedSuccess(stack, level.isClientSide());

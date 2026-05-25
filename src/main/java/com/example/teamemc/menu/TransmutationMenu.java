@@ -3,6 +3,7 @@ package com.example.teamemc.menu;
 import com.example.teamemc.data.TeamEmcSavedData;
 import com.example.teamemc.emc.EmcValueManager;
 import com.example.teamemc.registry.ModMenus;
+import com.example.teamemc.registry.ModNetworking;
 
 import java.util.OptionalLong;
 
@@ -147,6 +148,7 @@ public class TransmutationMenu extends AbstractContainerMenu {
         ItemStack convertedStack = inputStack.copy();
         data.learn(player, inputStack.getItem());
         this.clearInputSlot();
+        ModNetworking.sendEmcData(player);
         player.displayClientMessage(Component.translatable(
                 "message.teamemc.convert.success",
                 Component.literal(convertedStack.getCount() + "x ").append(convertedStack.getHoverName()),

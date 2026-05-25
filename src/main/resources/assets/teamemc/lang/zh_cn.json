@@ -4,6 +4,8 @@
   "itemGroup.teamemc": "队伍 EMC",
   "container.teamemc.transmutation_table": "转化桌",
   "gui.teamemc.convert": "转化",
+  "gui.teamemc.balance": "队伍 EMC：%s",
+  "gui.teamemc.learned_count": "已解锁：%s",
   "message.teamemc.convert.success": "已将 %s 转化为 %s EMC。",
   "message.teamemc.convert.no_item": "没有可转化的物品。",
   "message.teamemc.convert.no_emc": "该物品没有 EMC。",

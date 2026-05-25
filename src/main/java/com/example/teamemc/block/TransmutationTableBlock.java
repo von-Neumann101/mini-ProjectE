@@ -1,6 +1,7 @@
 package com.example.teamemc.block;
 
 import com.example.teamemc.menu.TransmutationMenu;
+import com.example.teamemc.registry.ModNetworking;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -54,7 +55,7 @@ public class TransmutationTableBlock extends Block {
             serverPlayer.openMenu(new SimpleMenuProvider(
                     (containerId, inventory, menuPlayer) -> new TransmutationMenu(containerId, inventory),
                     MENU_TITLE
-            ));
+            )).ifPresent(containerId -> ModNetworking.sendEmcData(serverPlayer));
         }
     }
 }

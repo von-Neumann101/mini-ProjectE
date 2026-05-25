@@ -53,6 +53,22 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
     @Override
     protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
         guiGraphics.drawString(this.font, this.title, this.titleLabelX, this.titleLabelY, 0xE6E6E6, false);
+        guiGraphics.drawString(
+                this.font,
+                Component.translatable("gui.teamemc.balance", ClientEmcState.getBalance()),
+                8,
+                46,
+                0xE6E6E6,
+                false
+        );
+        guiGraphics.drawString(
+                this.font,
+                Component.translatable("gui.teamemc.learned_count", ClientEmcState.getLearnedCount()),
+                8,
+                58,
+                0xE6E6E6,
+                false
+        );
         guiGraphics.drawString(this.font, this.playerInventoryTitle, this.inventoryLabelX, this.inventoryLabelY, 0xB8C0CC, false);
     }
 
