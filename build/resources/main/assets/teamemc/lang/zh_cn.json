@@ -1,5 +1,6 @@
 {
   "block.teamemc.transmutation_table": "转化桌",
   "item.teamemc.portable_transmutation_table": "便携式转化桌",
-  "itemGroup.teamemc": "队伍 EMC"
+  "itemGroup.teamemc": "队伍 EMC",
+  "container.teamemc.transmutation_table": "转化桌"
 }
