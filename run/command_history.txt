@@ -1,0 +1,13 @@
+/teamemc emc minecraft:cobblestone
+/teamemc emc_held
+/teamemc emc minecraft:cobblestone
+/teamemc emc minecraft:furnace
+/teamemc emc minecraft:stone
+/teamemc emc_stats
+/teamemc emc_held
+/teamemc emc teamemc:transmutation_table
+/teamemc emc minecraft:cobblestone /teamemc emc minecraft:furnace /teamemc emc_stats /give @s minecraft:furnace 3 /teamemc emc_held
+/teamemc emc minecraft:cobblestone
+/teamemc emc minecraft:furnace
+/teamemc emc_stats
+/teamemc emc minecraft:furnace

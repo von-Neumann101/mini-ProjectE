@@ -1,0 +1,8 @@
+{
+  "minecraft:cobblestone": 1,
+  "minecraft:stone": 1,
+  "minecraft:dirt": 1,
+  "minecraft:oak_log": 32,
+  "minecraft:coal": 128,
+  "minecraft:iron_ingot": 256
+}
