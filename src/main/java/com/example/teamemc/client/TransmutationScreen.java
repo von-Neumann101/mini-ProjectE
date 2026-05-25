@@ -1,23 +1,48 @@
 package com.example.teamemc.client;
 
+import com.example.teamemc.emc.EmcValueManager;
 import com.example.teamemc.menu.TransmutationMenu;
 import com.example.teamemc.network.RequestConvertPacket;
+
+import java.util.Comparator;
+import java.util.List;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.network.PacketDistributor;
 
 public class TransmutationScreen extends AbstractContainerScreen<TransmutationMenu> {
     private static final int SLOT_COLOR = 0xFF15191F;
     private static final int SLOT_BORDER_COLOR = 0xFF59616D;
     private static final Component CONVERT_BUTTON = Component.translatable("gui.teamemc.convert");
+    private static final Component PREVIOUS_BUTTON = Component.translatable("gui.teamemc.previous");
+    private static final Component NEXT_BUTTON = Component.translatable("gui.teamemc.next");
+
+    private static final int LEARNED_GRID_X = 184;
+    private static final int LEARNED_GRID_Y = 20;
+    private static final int LEARNED_GRID_COLUMNS = 5;
+    private static final int LEARNED_GRID_ROWS = 3;
+    private static final int LEARNED_PAGE_SIZE = LEARNED_GRID_COLUMNS * LEARNED_GRID_ROWS;
+    private static final int PAGE_LABEL_Y = 80;
+    private static final int PAGE_BUTTON_Y = 138;
+    private static final int PAGE_BUTTON_WIDTH = 52;
+    private static final int PAGE_BUTTON_HEIGHT = 20;
+
+    private int learnedPage;
+    private Button previousPageButton;
+    private Button nextPageButton;
 
     public TransmutationScreen(TransmutationMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);
-        this.imageWidth = 176;
+        this.imageWidth = 304;
         this.imageHeight = 166;
         this.inventoryLabelY = 72;
     }
@@ -31,6 +56,42 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
                 )
                 .bounds(this.leftPos + 108, this.topPos + 18, 58, 20)
                 .build());
+        this.previousPageButton = this.addRenderableWidget(Button.builder(
+                        PREVIOUS_BUTTON,
+                        button -> {
+                            if (this.learnedPage > 0) {
+                                this.learnedPage--;
+                            }
+                            this.updatePageButtons(this.getDisplayableLearnedItems().size());
+                        }
+                )
+                .bounds(this.leftPos + LEARNED_GRID_X, this.topPos + PAGE_BUTTON_Y, PAGE_BUTTON_WIDTH, PAGE_BUTTON_HEIGHT)
+                .build());
+        this.nextPageButton = this.addRenderableWidget(Button.builder(
+                        NEXT_BUTTON,
+                        button -> {
+                            int pageCount = this.getPageCount(this.getDisplayableLearnedItems().size());
+                            if (this.learnedPage + 1 < pageCount) {
+                                this.learnedPage++;
+                            }
+                            this.updatePageButtons(this.getDisplayableLearnedItems().size());
+                        }
+                )
+                .bounds(
+                        this.leftPos + LEARNED_GRID_X + PAGE_BUTTON_WIDTH + 4,
+                        this.topPos + PAGE_BUTTON_Y,
+                        PAGE_BUTTON_WIDTH,
+                        PAGE_BUTTON_HEIGHT
+                )
+                .build());
+        this.updatePageButtons(this.getDisplayableLearnedItems().size());
+    }
+
+    @Override
+    public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
+        super.render(guiGraphics, mouseX, mouseY, partialTick);
+        this.renderTooltip(guiGraphics, mouseX, mouseY);
+        this.renderLearnedItemTooltip(guiGraphics, mouseX, mouseY);
     }
 
     @Override
@@ -48,11 +109,21 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
         for (int column = 0; column < 9; column++) {
             this.drawSlot(guiGraphics, 8 + column * 18, 142);
         }
+
+        this.renderLearnedItemGrid(guiGraphics);
     }
 
     @Override
     protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
         guiGraphics.drawString(this.font, this.title, this.titleLabelX, this.titleLabelY, 0xE6E6E6, false);
+        guiGraphics.drawString(
+                this.font,
+                Component.translatable("gui.teamemc.learned_items"),
+                LEARNED_GRID_X,
+                6,
+                0xE6E6E6,
+                false
+        );
         guiGraphics.drawString(
                 this.font,
                 Component.translatable("gui.teamemc.balance", ClientEmcState.getBalance()),
@@ -69,7 +140,110 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
                 0xE6E6E6,
                 false
         );
+        int pageCount = this.getPageCount(this.getDisplayableLearnedItems().size());
+        guiGraphics.drawCenteredString(
+                this.font,
+                Component.translatable("gui.teamemc.page", this.learnedPage + 1, pageCount),
+                LEARNED_GRID_X + LEARNED_GRID_COLUMNS * 9,
+                PAGE_LABEL_Y,
+                0xB8C0CC
+        );
         guiGraphics.drawString(this.font, this.playerInventoryTitle, this.inventoryLabelX, this.inventoryLabelY, 0xB8C0CC, false);
+    }
+
+    private void renderLearnedItemGrid(GuiGraphics guiGraphics) {
+        List<ItemStack> learnedItems = this.getDisplayableLearnedItems();
+        this.updatePageButtons(learnedItems.size());
+
+        for (int row = 0; row < LEARNED_GRID_ROWS; row++) {
+            for (int column = 0; column < LEARNED_GRID_COLUMNS; column++) {
+                this.drawSlot(guiGraphics, LEARNED_GRID_X + column * 18, LEARNED_GRID_Y + row * 18);
+            }
+        }
+
+        int firstItemIndex = this.learnedPage * LEARNED_PAGE_SIZE;
+        int lastItemIndex = Math.min(firstItemIndex + LEARNED_PAGE_SIZE, learnedItems.size());
+        for (int itemIndex = firstItemIndex; itemIndex < lastItemIndex; itemIndex++) {
+            int pageIndex = itemIndex - firstItemIndex;
+            int column = pageIndex % LEARNED_GRID_COLUMNS;
+            int row = pageIndex / LEARNED_GRID_COLUMNS;
+            int x = this.leftPos + LEARNED_GRID_X + column * 18 + 1;
+            int y = this.topPos + LEARNED_GRID_Y + row * 18 + 1;
+            guiGraphics.renderItem(learnedItems.get(itemIndex), x, y);
+        }
+    }
+
+    private void renderLearnedItemTooltip(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+        if (!this.menu.getCarried().isEmpty()) {
+            return;
+        }
+
+        ItemStack hoveredStack = this.getHoveredLearnedItem(mouseX, mouseY);
+        if (!hoveredStack.isEmpty()) {
+            guiGraphics.renderTooltip(this.font, hoveredStack, mouseX, mouseY);
+        }
+    }
+
+    private ItemStack getHoveredLearnedItem(int mouseX, int mouseY) {
+        List<ItemStack> learnedItems = this.getDisplayableLearnedItems();
+        int firstItemIndex = this.learnedPage * LEARNED_PAGE_SIZE;
+        int lastItemIndex = Math.min(firstItemIndex + LEARNED_PAGE_SIZE, learnedItems.size());
+
+        for (int itemIndex = firstItemIndex; itemIndex < lastItemIndex; itemIndex++) {
+            int pageIndex = itemIndex - firstItemIndex;
+            int column = pageIndex % LEARNED_GRID_COLUMNS;
+            int row = pageIndex / LEARNED_GRID_COLUMNS;
+            int x = this.leftPos + LEARNED_GRID_X + column * 18;
+            int y = this.topPos + LEARNED_GRID_Y + row * 18;
+            if (mouseX >= x && mouseX < x + 18 && mouseY >= y && mouseY < y + 18) {
+                return learnedItems.get(itemIndex);
+            }
+        }
+
+        return ItemStack.EMPTY;
+    }
+
+    private List<ItemStack> getDisplayableLearnedItems() {
+        return ClientEmcState.getLearnedItems().stream()
+                .distinct()
+                .sorted(Comparator.comparing(ResourceLocation::toString))
+                .map(TransmutationScreen::createDisplayStack)
+                .filter(stack -> !stack.isEmpty())
+                .toList();
+    }
+
+    private static ItemStack createDisplayStack(ResourceLocation itemId) {
+        if (!BuiltInRegistries.ITEM.containsKey(itemId) || EmcValueManager.isBlockedModItem(itemId)) {
+            return ItemStack.EMPTY;
+        }
+
+        Item item = BuiltInRegistries.ITEM.get(itemId);
+        if (item == Items.AIR) {
+            return ItemStack.EMPTY;
+        }
+
+        return new ItemStack(item, 1);
+    }
+
+    private void updatePageButtons(int learnedItemCount) {
+        int pageCount = this.getPageCount(learnedItemCount);
+        if (this.learnedPage >= pageCount) {
+            this.learnedPage = pageCount - 1;
+        }
+        if (this.learnedPage < 0) {
+            this.learnedPage = 0;
+        }
+
+        if (this.previousPageButton != null) {
+            this.previousPageButton.active = this.learnedPage > 0;
+        }
+        if (this.nextPageButton != null) {
+            this.nextPageButton.active = this.learnedPage + 1 < pageCount;
+        }
+    }
+
+    private int getPageCount(int itemCount) {
+        return Math.max(1, (itemCount + LEARNED_PAGE_SIZE - 1) / LEARNED_PAGE_SIZE);
     }
 
     private void drawSlot(GuiGraphics guiGraphics, int x, int y) {

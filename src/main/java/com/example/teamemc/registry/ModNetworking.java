@@ -1,12 +1,15 @@
 package com.example.teamemc.registry;
 
 import com.example.teamemc.data.TeamEmcSavedData;
+import com.example.teamemc.emc.EmcValueManager;
 import com.example.teamemc.network.RequestConvertPacket;
 import com.example.teamemc.network.SyncEmcDataPacket;
 
-import java.util.List;
-
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
@@ -30,9 +33,22 @@ public final class ModNetworking {
 
     public static void sendEmcData(ServerPlayer player) {
         TeamEmcSavedData data = TeamEmcSavedData.get(player.getServer());
+        EmcValueManager.ensureDerived(player.getServer());
         PacketDistributor.sendToPlayer(player, new SyncEmcDataPacket(
                 data.getBalance(player),
-                List.copyOf(data.getLearnedItems(player))
+                data.getLearnedItems(player).stream()
+                        .filter(ModNetworking::isDisplayableLearnedItem)
+                        .sorted()
+                        .toList()
         ));
+    }
+
+    private static boolean isDisplayableLearnedItem(ResourceLocation itemId) {
+        if (!BuiltInRegistries.ITEM.containsKey(itemId) || EmcValueManager.isBlockedModItem(itemId)) {
+            return false;
+        }
+
+        Item item = BuiltInRegistries.ITEM.get(itemId);
+        return item != Items.AIR && EmcValueManager.hasEmc(item);
     }
 }

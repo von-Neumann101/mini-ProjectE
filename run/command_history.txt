@@ -12,3 +12,14 @@
 /teamemc emc_stats
 /teamemc emc minecraft:furnace
 /teamemc balance
+/teamemc add 100
+/teamemc learn mincecraft:stone
+/teamemc learn minecraft:stone
+/teamemc learn minecraft:acacia_button
+/teamemc learn minecraft:acacia_boat
+/teamemc learn minecraft:acacia_door
+/teamemc learn minecraft:acacia_hanging_sign
+/teamemc learn minecraft:angler_pottery_sherd
+/teamemc learn minecraft:acacia_chest_boat
+/teamemc learn minecraft:acacia_button
+/teamemc learn minecraft:oak_button

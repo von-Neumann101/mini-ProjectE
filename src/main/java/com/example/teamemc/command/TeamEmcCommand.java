@@ -153,6 +153,12 @@ public final class TeamEmcCommand {
         ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(item);
         TeamEmcSavedData data = TeamEmcSavedData.get(source.getServer());
 
+        EmcValueManager.ensureDerived(source.getServer());
+        if (itemId == null || EmcValueManager.isBlockedModItem(itemId) || !EmcValueManager.hasEmc(item)) {
+            source.sendFailure(Component.literal("Item " + itemId + " has no EMC and cannot be learned."));
+            return 0;
+        }
+
         data.learn(player, item);
         ModNetworking.sendEmcData(player);
         source.sendSuccess(() -> Component.literal("Learned item " + itemId + " for account " + data.getAccountKey(player) + "."), true);
