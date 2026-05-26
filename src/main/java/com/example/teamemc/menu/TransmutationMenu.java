@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.OptionalLong;
 
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.SimpleContainer;
@@ -123,29 +122,29 @@ public class TransmutationMenu extends AbstractContainerMenu {
     public void convertInput(ServerPlayer player) {
         ItemStack inputStack = this.getInputStack();
         if (inputStack.isEmpty()) {
-            player.displayClientMessage(Component.translatable("message.teamemc.convert.no_item"), false);
+            ModNetworking.sendGuiStatus(player, "message.teamemc.convert.no_item", true);
             return;
         }
 
         ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(inputStack.getItem());
         if (itemId == null || EmcValueManager.isBlockedModItem(itemId) || !EmcValueManager.hasEmc(inputStack)) {
-            player.displayClientMessage(Component.translatable("message.teamemc.convert.no_emc"), false);
+            ModNetworking.sendGuiStatus(player, "message.teamemc.convert.no_emc", true);
             return;
         }
 
         OptionalLong stackEmc = EmcValueManager.getStackEmc(inputStack);
         if (stackEmc.isEmpty() || stackEmc.getAsLong() <= 0L) {
-            Component message = EmcValueManager.isDamageable(inputStack)
-                    ? Component.translatable("message.teamemc.convert.invalid_durability")
-                    : Component.translatable("message.teamemc.convert.failed");
-            player.displayClientMessage(message, false);
+            String translationKey = EmcValueManager.isDamageable(inputStack)
+                    ? "message.teamemc.convert.invalid_durability"
+                    : "message.teamemc.convert.failed";
+            ModNetworking.sendGuiStatus(player, translationKey, true);
             return;
         }
 
         long emcAmount = stackEmc.getAsLong();
         TeamEmcSavedData data = TeamEmcSavedData.get(player.getServer());
         if (!data.addEmc(player, emcAmount)) {
-            player.displayClientMessage(Component.translatable("message.teamemc.convert.overflow"), false);
+            ModNetworking.sendGuiStatus(player, "message.teamemc.convert.overflow", true);
             return;
         }
 
@@ -153,69 +152,71 @@ public class TransmutationMenu extends AbstractContainerMenu {
         data.learn(player, inputStack.getItem());
         this.clearInputSlot();
         ModNetworking.sendEmcData(player);
-        player.displayClientMessage(Component.translatable(
+        ModNetworking.sendGuiStatus(
+                player,
                 "message.teamemc.convert.success",
-                Component.literal(convertedStack.getCount() + "x ").append(convertedStack.getHoverName()),
-                emcAmount
-        ), false);
+                false,
+                formatStackName(convertedStack),
+                Long.toString(emcAmount)
+        );
     }
 
     public boolean withdrawItem(ServerPlayer player, ResourceLocation itemId, int requestedCount) {
         if (requestedCount <= 0 || itemId == null || !BuiltInRegistries.ITEM.containsKey(itemId) || EmcValueManager.isBlockedModItem(itemId)) {
-            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.invalid"), false);
+            ModNetworking.sendGuiStatus(player, "message.teamemc.withdraw.invalid", true);
             return false;
         }
 
         Item item = BuiltInRegistries.ITEM.get(itemId);
         if (item == Items.AIR) {
-            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.invalid"), false);
+            ModNetworking.sendGuiStatus(player, "message.teamemc.withdraw.invalid", true);
             return false;
         }
 
         int maxStackSize = item.getDefaultMaxStackSize();
         if (maxStackSize <= 0) {
-            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.invalid"), false);
+            ModNetworking.sendGuiStatus(player, "message.teamemc.withdraw.invalid", true);
             return false;
         }
 
         int count = Math.min(requestedCount, maxStackSize);
         if (count <= 0) {
-            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.invalid"), false);
+            ModNetworking.sendGuiStatus(player, "message.teamemc.withdraw.invalid", true);
             return false;
         }
 
         TeamEmcSavedData data = TeamEmcSavedData.get(player.getServer());
         if (!data.isLearned(player, item)) {
-            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.not_learned"), false);
+            ModNetworking.sendGuiStatus(player, "message.teamemc.withdraw.not_learned", true);
             return false;
         }
 
         EmcValueManager.ensureDerived(player.getServer());
         OptionalLong singleItemEmc = EmcValueManager.getSingleItemEmc(new ItemStack(item, 1));
         if (singleItemEmc.isEmpty() || singleItemEmc.getAsLong() <= 0L) {
-            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.no_emc"), false);
+            ModNetworking.sendGuiStatus(player, "message.teamemc.withdraw.no_emc", true);
             return false;
         }
 
         OptionalLong totalCost = EmcMath.multiplyExact(singleItemEmc.getAsLong(), count);
         if (totalCost.isEmpty() || totalCost.getAsLong() <= 0L) {
-            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.failed"), false);
+            ModNetworking.sendGuiStatus(player, "message.teamemc.withdraw.failed", true);
             return false;
         }
 
         if (data.getBalance(player) < totalCost.getAsLong()) {
-            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.not_enough_emc"), false);
+            ModNetworking.sendGuiStatus(player, "message.teamemc.withdraw.not_enough_emc", true);
             return false;
         }
 
         ItemStack withdrawnStack = new ItemStack(item, count);
         if (!canFitInInventory(player.getInventory(), withdrawnStack)) {
-            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.no_space"), false);
+            ModNetworking.sendGuiStatus(player, "message.teamemc.withdraw.no_space", true);
             return false;
         }
 
         if (!data.trySpendEmc(player, totalCost.getAsLong())) {
-            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.not_enough_emc"), false);
+            ModNetworking.sendGuiStatus(player, "message.teamemc.withdraw.not_enough_emc", true);
             return false;
         }
 
@@ -223,7 +224,7 @@ public class TransmutationMenu extends AbstractContainerMenu {
         if (!insertIntoInventory(player.getInventory(), withdrawnStack.copy())) {
             restoreInventoryItems(player.getInventory(), inventorySnapshot);
             data.addEmc(player, totalCost.getAsLong());
-            player.displayClientMessage(Component.translatable("message.teamemc.withdraw.failed"), false);
+            ModNetworking.sendGuiStatus(player, "message.teamemc.withdraw.failed", true);
             ModNetworking.sendEmcData(player);
             return false;
         }
@@ -231,12 +232,18 @@ public class TransmutationMenu extends AbstractContainerMenu {
         player.getInventory().setChanged();
         this.broadcastChanges();
         ModNetworking.sendEmcData(player);
-        player.displayClientMessage(Component.translatable(
+        ModNetworking.sendGuiStatus(
+                player,
                 "message.teamemc.withdraw.success",
-                Component.literal(count + "x ").append(withdrawnStack.getHoverName()),
-                totalCost.getAsLong()
-        ), false);
+                false,
+                formatStackName(withdrawnStack),
+                Long.toString(totalCost.getAsLong())
+        );
         return true;
+    }
+
+    private static String formatStackName(ItemStack stack) {
+        return stack.getCount() + "x " + stack.getHoverName().getString();
     }
 
     private static List<ItemStack> copyInventoryItems(Inventory inventory) {

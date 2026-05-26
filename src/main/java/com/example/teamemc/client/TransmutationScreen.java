@@ -42,6 +42,8 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
     private static final int PAGE_BUTTON_Y = 138;
     private static final int PAGE_BUTTON_WIDTH = 52;
     private static final int PAGE_BUTTON_HEIGHT = 20;
+    private static final int STATUS_X = 8;
+    private static final int STATUS_Y = 168;
 
     private int learnedPage;
     private EditBox searchBox;
@@ -51,8 +53,9 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
     public TransmutationScreen(TransmutationMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);
         this.imageWidth = 304;
-        this.imageHeight = 166;
+        this.imageHeight = 184;
         this.inventoryLabelY = 72;
+        ClientEmcState.clearStatus();
     }
 
     @Override
@@ -203,6 +206,10 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
                 0xB8C0CC
         );
         guiGraphics.drawString(this.font, this.playerInventoryTitle, this.inventoryLabelX, this.inventoryLabelY, 0xB8C0CC, false);
+        if (ClientEmcState.hasStatus()) {
+            int color = ClientEmcState.isStatusError() ? 0xFF7777 : 0x93E6A1;
+            guiGraphics.drawString(this.font, ClientEmcState.getStatus(), STATUS_X, STATUS_Y, color, false);
+        }
     }
 
     private void renderLearnedItemGrid(GuiGraphics guiGraphics) {

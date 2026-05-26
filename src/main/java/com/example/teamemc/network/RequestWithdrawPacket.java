@@ -2,9 +2,9 @@ package com.example.teamemc.network;
 
 import com.example.teamemc.TeamEmcMod;
 import com.example.teamemc.menu.TransmutationMenu;
+import com.example.teamemc.registry.ModNetworking;
 
 import net.minecraft.network.RegistryFriendlyByteBuf;
-import net.minecraft.network.chat.Component;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.resources.ResourceLocation;
@@ -38,7 +38,7 @@ public record RequestWithdrawPacket(ResourceLocation itemId, int count) implemen
             if (serverPlayer.containerMenu instanceof TransmutationMenu menu) {
                 menu.withdrawItem(serverPlayer, packet.itemId(), packet.count());
             } else {
-                serverPlayer.displayClientMessage(Component.translatable("message.teamemc.withdraw.invalid"), false);
+                ModNetworking.sendGuiStatus(serverPlayer, "message.teamemc.withdraw.invalid", true);
             }
         }
     }
