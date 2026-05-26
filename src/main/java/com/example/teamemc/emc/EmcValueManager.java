@@ -39,6 +39,7 @@ public final class EmcValueManager {
     private static final Gson GSON = new Gson();
     private static final String EMC_DIRECTORY = "emc";
     private static final ResourceLocation BASE_VALUES_ID = ResourceLocation.fromNamespaceAndPath(TeamEmcMod.MOD_ID, "base_values");
+    private static final boolean USE_RECIPE_DERIVATION = false;
     private static final int MAX_DERIVATION_ITERATIONS = 64;
 
     private static volatile Map<Item, Long> baseValues = Map.of();
@@ -68,6 +69,11 @@ public final class EmcValueManager {
     }
 
     public static void ensureDerived(MinecraftServer server) {
+        if (!USE_RECIPE_DERIVATION) {
+            markDerivationCompleteWithoutChanges();
+            return;
+        }
+
         if (!stats.derivationComplete()) {
             deriveValuesFromRecipes(server);
         }
@@ -151,12 +157,23 @@ public final class EmcValueManager {
         Map<Item, Long> manualValues = Map.copyOf(loadBaseValuesFromResources(preparedValues));
         manualBaseValues = manualValues;
         baseValues = manualValues;
-        stats = new EmcStats(manualValues.size(), 0, manualValues.size(), 0, 0, false);
-        LOGGER.info("Loaded {} manual EMC values. Recipe derivation will run after tags update.", manualValues.size());
+        stats = new EmcStats(manualValues.size(), 0, manualValues.size(), 0, 0, !USE_RECIPE_DERIVATION);
+        if (USE_RECIPE_DERIVATION) {
+            LOGGER.info("Loaded {} manual EMC values. Recipe derivation will run after tags update.", manualValues.size());
+        } else {
+            LOGGER.info("Loaded {} manual EMC values. Recipe derivation is disabled.", manualValues.size());
+        }
     }
 
     public static void deriveValuesFromRecipes(MinecraftServer server) {
         Map<Item, Long> manualValues = manualBaseValues;
+        if (!USE_RECIPE_DERIVATION) {
+            baseValues = Map.copyOf(manualValues);
+            stats = new EmcStats(manualValues.size(), 0, manualValues.size(), 0, 0, true);
+            LOGGER.info("Recipe derivation is disabled. Using {} base EMC values only.", manualValues.size());
+            return;
+        }
+
         DerivationResult result = deriveCraftingValues(manualValues, server.getRecipeManager(), server.registryAccess());
 
         baseValues = Map.copyOf(result.values());
@@ -221,6 +238,16 @@ public final class EmcValueManager {
         }
 
         return loadedValues;
+    }
+
+    private static void markDerivationCompleteWithoutChanges() {
+        if (stats.derivationComplete()) {
+            return;
+        }
+
+        Map<Item, Long> manualValues = manualBaseValues;
+        baseValues = Map.copyOf(manualValues);
+        stats = new EmcStats(manualValues.size(), 0, manualValues.size(), 0, 0, true);
     }
 
     private static DerivationResult deriveCraftingValues(
