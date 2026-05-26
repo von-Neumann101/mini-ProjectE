@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.Locale;
 
 import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -25,8 +24,6 @@ import net.neoforged.neoforge.network.PacketDistributor;
 public class TransmutationScreen extends AbstractContainerScreen<TransmutationMenu> {
     private static final int SLOT_COLOR = 0xFF15191F;
     private static final int SLOT_BORDER_COLOR = 0xFF59616D;
-    private static final Component PREVIOUS_BUTTON = Component.translatable("gui.teamemc.previous");
-    private static final Component NEXT_BUTTON = Component.translatable("gui.teamemc.next");
     private static final Component SEARCH_HINT = Component.translatable("gui.teamemc.search");
 
     private static final int LEARNED_GRID_X = 184;
@@ -37,18 +34,14 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
     private static final int LEARNED_GRID_COLUMNS = 12;
     private static final int LEARNED_GRID_ROWS = 6;
     private static final int LEARNED_CELL_SIZE = 18;
-    private static final int LEARNED_PAGE_SIZE = LEARNED_GRID_COLUMNS * LEARNED_GRID_ROWS;
-    private static final int PAGE_LABEL_Y = 152;
-    private static final int PAGE_BUTTON_Y = 166;
-    private static final int PAGE_BUTTON_WIDTH = 76;
-    private static final int PAGE_BUTTON_HEIGHT = 20;
+    private static final int LEARNED_VISIBLE_ITEM_COUNT = LEARNED_GRID_COLUMNS * LEARNED_GRID_ROWS;
+    private static final int SCROLLBAR_X = LEARNED_GRID_X + LEARNED_GRID_COLUMNS * LEARNED_CELL_SIZE + 5;
+    private static final int SCROLLBAR_WIDTH = 4;
     private static final int STATUS_X = 8;
     private static final int STATUS_Y = 200;
 
-    private int learnedPage;
+    private int scrollOffsetRows;
     private EditBox searchBox;
-    private Button previousPageButton;
-    private Button nextPageButton;
     private boolean sentCarriedConversionThisClick;
 
     public TransmutationScreen(TransmutationMenu menu, Inventory playerInventory, Component title) {
@@ -73,38 +66,10 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
         this.searchBox.setMaxLength(64);
         this.searchBox.setHint(SEARCH_HINT);
         this.searchBox.setResponder(value -> {
-            this.learnedPage = 0;
-            this.updatePageButtons(this.getDisplayableLearnedItems().size());
+            this.scrollOffsetRows = 0;
+            this.clampScrollOffset(this.getDisplayableLearnedItems().size());
         });
-        this.previousPageButton = this.addRenderableWidget(Button.builder(
-                        PREVIOUS_BUTTON,
-                        button -> {
-                            if (this.learnedPage > 0) {
-                                this.learnedPage--;
-                            }
-                            this.updatePageButtons(this.getDisplayableLearnedItems().size());
-                        }
-                )
-                .bounds(this.leftPos + LEARNED_GRID_X, this.topPos + PAGE_BUTTON_Y, PAGE_BUTTON_WIDTH, PAGE_BUTTON_HEIGHT)
-                .build());
-        this.nextPageButton = this.addRenderableWidget(Button.builder(
-                        NEXT_BUTTON,
-                        button -> {
-                            int pageCount = this.getPageCount(this.getDisplayableLearnedItems().size());
-                            if (this.learnedPage + 1 < pageCount) {
-                                this.learnedPage++;
-                            }
-                            this.updatePageButtons(this.getDisplayableLearnedItems().size());
-                        }
-                )
-                .bounds(
-                        this.leftPos + LEARNED_GRID_X + PAGE_BUTTON_WIDTH + 4,
-                        this.topPos + PAGE_BUTTON_Y,
-                        PAGE_BUTTON_WIDTH,
-                        PAGE_BUTTON_HEIGHT
-                )
-                .build());
-        this.updatePageButtons(this.getDisplayableLearnedItems().size());
+        this.clampScrollOffset(this.getDisplayableLearnedItems().size());
     }
 
     @Override
@@ -170,6 +135,24 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
     }
 
     @Override
+    public boolean mouseScrolled(double mouseX, double mouseY, double scrollX, double scrollY) {
+        if (!this.isInsideLearnedScrollArea(mouseX, mouseY)) {
+            return super.mouseScrolled(mouseX, mouseY, scrollX, scrollY);
+        }
+
+        if (scrollY < 0.0D) {
+            this.scrollOffsetRows++;
+        } else if (scrollY > 0.0D) {
+            this.scrollOffsetRows--;
+        } else {
+            return false;
+        }
+
+        this.clampScrollOffset(this.getDisplayableLearnedItems().size());
+        return true;
+    }
+
+    @Override
     protected void renderBg(GuiGraphics guiGraphics, float partialTick, int mouseX, int mouseY) {
         guiGraphics.fill(this.leftPos, this.topPos, this.leftPos + this.imageWidth, this.topPos + this.imageHeight, 0xFF20242A);
         guiGraphics.fill(this.leftPos + 1, this.topPos + 1, this.leftPos + this.imageWidth - 1, this.topPos + this.imageHeight - 1, 0xFF303640);
@@ -214,14 +197,6 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
                 0xE6E6E6,
                 false
         );
-        int pageCount = this.getPageCount(this.getDisplayableLearnedItems().size());
-        guiGraphics.drawCenteredString(
-                this.font,
-                Component.translatable("gui.teamemc.page", this.learnedPage + 1, pageCount),
-                LEARNED_GRID_X + LEARNED_GRID_COLUMNS * LEARNED_CELL_SIZE / 2,
-                PAGE_LABEL_Y,
-                0xB8C0CC
-        );
         guiGraphics.drawString(this.font, this.playerInventoryTitle, this.inventoryLabelX, this.inventoryLabelY, 0xB8C0CC, false);
         this.renderStatus(guiGraphics);
     }
@@ -241,7 +216,7 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
 
     private void renderLearnedItemGrid(GuiGraphics guiGraphics) {
         List<ItemStack> learnedItems = this.getDisplayableLearnedItems();
-        this.updatePageButtons(learnedItems.size());
+        this.clampScrollOffset(learnedItems.size());
 
         for (int row = 0; row < LEARNED_GRID_ROWS; row++) {
             for (int column = 0; column < LEARNED_GRID_COLUMNS; column++) {
@@ -249,8 +224,8 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
             }
         }
 
-        int firstItemIndex = this.learnedPage * LEARNED_PAGE_SIZE;
-        int lastItemIndex = Math.min(firstItemIndex + LEARNED_PAGE_SIZE, learnedItems.size());
+        int firstItemIndex = this.scrollOffsetRows * LEARNED_GRID_COLUMNS;
+        int lastItemIndex = Math.min(firstItemIndex + LEARNED_VISIBLE_ITEM_COUNT, learnedItems.size());
         for (int itemIndex = firstItemIndex; itemIndex < lastItemIndex; itemIndex++) {
             int pageIndex = itemIndex - firstItemIndex;
             int column = pageIndex % LEARNED_GRID_COLUMNS;
@@ -259,6 +234,26 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
             int y = this.topPos + LEARNED_GRID_Y + row * LEARNED_CELL_SIZE + 1;
             guiGraphics.renderItem(learnedItems.get(itemIndex), x, y);
         }
+
+        this.renderScrollbar(guiGraphics, learnedItems.size());
+    }
+
+    private void renderScrollbar(GuiGraphics guiGraphics, int itemCount) {
+        int totalRows = this.getTotalRows(itemCount);
+        int maxScrollRows = this.getMaxScrollRows(itemCount);
+        if (totalRows <= LEARNED_GRID_ROWS) {
+            return;
+        }
+
+        int trackX = this.leftPos + SCROLLBAR_X;
+        int trackY = this.topPos + LEARNED_GRID_Y;
+        int trackHeight = LEARNED_GRID_ROWS * LEARNED_CELL_SIZE;
+        int thumbHeight = Math.max(12, trackHeight * LEARNED_GRID_ROWS / totalRows);
+        int thumbTravel = trackHeight - thumbHeight;
+        int thumbY = trackY + (maxScrollRows == 0 ? 0 : this.scrollOffsetRows * thumbTravel / maxScrollRows);
+
+        guiGraphics.fill(trackX, trackY, trackX + SCROLLBAR_WIDTH, trackY + trackHeight, 0xFF15191F);
+        guiGraphics.fill(trackX, thumbY, trackX + SCROLLBAR_WIDTH, thumbY + thumbHeight, 0xFF8A93A1);
     }
 
     private void renderLearnedItemTooltip(GuiGraphics guiGraphics, int mouseX, int mouseY) {
@@ -279,8 +274,9 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
 
     private ResourceLocation getHoveredLearnedItemId(int mouseX, int mouseY) {
         List<ItemStack> learnedItems = this.getDisplayableLearnedItems();
-        int firstItemIndex = this.learnedPage * LEARNED_PAGE_SIZE;
-        int lastItemIndex = Math.min(firstItemIndex + LEARNED_PAGE_SIZE, learnedItems.size());
+        this.clampScrollOffset(learnedItems.size());
+        int firstItemIndex = this.scrollOffsetRows * LEARNED_GRID_COLUMNS;
+        int lastItemIndex = Math.min(firstItemIndex + LEARNED_VISIBLE_ITEM_COUNT, learnedItems.size());
 
         for (int itemIndex = firstItemIndex; itemIndex < lastItemIndex; itemIndex++) {
             int pageIndex = itemIndex - firstItemIndex;
@@ -305,14 +301,23 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
         return mouseX >= left && mouseX < right && mouseY >= top && mouseY < bottom;
     }
 
+    private boolean isInsideLearnedScrollArea(double mouseX, double mouseY) {
+        int left = this.leftPos + LEARNED_GRID_X;
+        int top = this.topPos + LEARNED_GRID_Y;
+        int right = this.leftPos + SCROLLBAR_X + SCROLLBAR_WIDTH;
+        int bottom = top + LEARNED_GRID_ROWS * LEARNED_CELL_SIZE;
+        return mouseX >= left && mouseX < right && mouseY >= top && mouseY < bottom;
+    }
+
     private List<ItemStack> getDisplayableLearnedItems() {
         String searchQuery = this.getSearchQuery();
         return ClientEmcState.getLearnedItems().stream()
                 .distinct()
+                .filter(TransmutationScreen::isDisplayableItemId)
+                .filter(itemId -> this.matchesSearch(itemId, searchQuery))
                 .sorted(Comparator.comparing(ResourceLocation::toString))
                 .map(TransmutationScreen::createDisplayStack)
                 .filter(stack -> !stack.isEmpty())
-                .filter(stack -> this.matchesSearch(stack, searchQuery))
                 .toList();
     }
 
@@ -324,49 +329,50 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
         return this.searchBox.getValue().trim().toLowerCase(Locale.ROOT);
     }
 
-    private boolean matchesSearch(ItemStack stack, String searchQuery) {
+    private boolean matchesSearch(ResourceLocation itemId, String searchQuery) {
         if (searchQuery.isEmpty()) {
             return true;
         }
 
-        ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(stack.getItem());
-        String idText = itemId == null ? "" : itemId.toString().toLowerCase(Locale.ROOT);
+        ItemStack stack = new ItemStack(BuiltInRegistries.ITEM.get(itemId), 1);
+        String idText = itemId.toString().toLowerCase(Locale.ROOT);
         String nameText = stack.getHoverName().getString().toLowerCase(Locale.ROOT);
         return idText.contains(searchQuery) || nameText.contains(searchQuery);
     }
 
-    private static ItemStack createDisplayStack(ResourceLocation itemId) {
+    private static boolean isDisplayableItemId(ResourceLocation itemId) {
         if (!BuiltInRegistries.ITEM.containsKey(itemId) || EmcValueManager.isBlockedModItem(itemId)) {
-            return ItemStack.EMPTY;
+            return false;
         }
 
         Item item = BuiltInRegistries.ITEM.get(itemId);
-        if (item == Items.AIR) {
+        return item != Items.AIR && EmcValueManager.hasEmc(item);
+    }
+
+    private static ItemStack createDisplayStack(ResourceLocation itemId) {
+        if (!isDisplayableItemId(itemId)) {
             return ItemStack.EMPTY;
         }
 
-        return new ItemStack(item, 1);
+        return new ItemStack(BuiltInRegistries.ITEM.get(itemId), 1);
     }
 
-    private void updatePageButtons(int learnedItemCount) {
-        int pageCount = this.getPageCount(learnedItemCount);
-        if (this.learnedPage >= pageCount) {
-            this.learnedPage = pageCount - 1;
+    private void clampScrollOffset(int learnedItemCount) {
+        int maxScrollRows = this.getMaxScrollRows(learnedItemCount);
+        if (this.scrollOffsetRows > maxScrollRows) {
+            this.scrollOffsetRows = maxScrollRows;
         }
-        if (this.learnedPage < 0) {
-            this.learnedPage = 0;
-        }
-
-        if (this.previousPageButton != null) {
-            this.previousPageButton.active = this.learnedPage > 0;
-        }
-        if (this.nextPageButton != null) {
-            this.nextPageButton.active = this.learnedPage + 1 < pageCount;
+        if (this.scrollOffsetRows < 0) {
+            this.scrollOffsetRows = 0;
         }
     }
 
-    private int getPageCount(int itemCount) {
-        return Math.max(1, (itemCount + LEARNED_PAGE_SIZE - 1) / LEARNED_PAGE_SIZE);
+    private int getMaxScrollRows(int itemCount) {
+        return Math.max(0, this.getTotalRows(itemCount) - LEARNED_GRID_ROWS);
+    }
+
+    private int getTotalRows(int itemCount) {
+        return (itemCount + LEARNED_GRID_COLUMNS - 1) / LEARNED_GRID_COLUMNS;
     }
 
     private void drawSlot(GuiGraphics guiGraphics, int x, int y) {
