@@ -10,19 +10,19 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 
-public record RequestConvertPacket() implements CustomPacketPayload {
-    public static final RequestConvertPacket INSTANCE = new RequestConvertPacket();
-    public static final Type<RequestConvertPacket> TYPE =
-            new Type<>(ResourceLocation.fromNamespaceAndPath(TeamEmcMod.MOD_ID, "request_convert"));
-    public static final StreamCodec<RegistryFriendlyByteBuf, RequestConvertPacket> STREAM_CODEC =
+public record RequestConvertCarriedPacket() implements CustomPacketPayload {
+    public static final RequestConvertCarriedPacket INSTANCE = new RequestConvertCarriedPacket();
+    public static final Type<RequestConvertCarriedPacket> TYPE =
+            new Type<>(ResourceLocation.fromNamespaceAndPath(TeamEmcMod.MOD_ID, "request_convert_carried"));
+    public static final StreamCodec<RegistryFriendlyByteBuf, RequestConvertCarriedPacket> STREAM_CODEC =
             new StreamCodec<>() {
                 @Override
-                public RequestConvertPacket decode(RegistryFriendlyByteBuf buffer) {
+                public RequestConvertCarriedPacket decode(RegistryFriendlyByteBuf buffer) {
                     return INSTANCE;
                 }
 
                 @Override
-                public void encode(RegistryFriendlyByteBuf buffer, RequestConvertPacket packet) {
+                public void encode(RegistryFriendlyByteBuf buffer, RequestConvertCarriedPacket packet) {
                 }
             };
 
@@ -31,10 +31,10 @@ public record RequestConvertPacket() implements CustomPacketPayload {
         return TYPE;
     }
 
-    public static void handle(RequestConvertPacket packet, IPayloadContext context) {
+    public static void handle(RequestConvertCarriedPacket packet, IPayloadContext context) {
         if (context.player() instanceof ServerPlayer serverPlayer
                 && serverPlayer.containerMenu instanceof TransmutationMenu menu) {
-            menu.convertInput(serverPlayer);
+            menu.convertStackFromCursor(serverPlayer);
         }
     }
 }

@@ -12,7 +12,6 @@ import java.util.OptionalLong;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -22,26 +21,19 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 
 public class TransmutationMenu extends AbstractContainerMenu {
-    public static final int INPUT_SLOT = 0;
-    private static final int INPUT_SLOT_COUNT = 1;
     private static final int PLAYER_INVENTORY_SLOT_COUNT = 27;
     private static final int HOTBAR_SLOT_COUNT = 9;
-    private static final int PLAYER_INVENTORY_START = INPUT_SLOT + INPUT_SLOT_COUNT;
+    private static final int PLAYER_INVENTORY_START = 0;
     private static final int HOTBAR_START = PLAYER_INVENTORY_START + PLAYER_INVENTORY_SLOT_COUNT;
     private static final int PLAYER_INVENTORY_END = HOTBAR_START + HOTBAR_SLOT_COUNT;
 
-    private static final int INPUT_SLOT_X = 80;
-    private static final int INPUT_SLOT_Y = 20;
     private static final int PLAYER_INVENTORY_X = 8;
     private static final int PLAYER_INVENTORY_Y = 84;
     private static final int HOTBAR_Y = 142;
 
-    private final SimpleContainer inputContainer = new SimpleContainer(INPUT_SLOT_COUNT);
-
     public TransmutationMenu(int containerId, Inventory playerInventory) {
         super(ModMenus.TRANSMUTATION_MENU.get(), containerId);
 
-        this.addSlot(new TransmutationInputSlot(this.inputContainer, 0, INPUT_SLOT_X, INPUT_SLOT_Y));
         this.addPlayerInventorySlots(playerInventory);
     }
 
@@ -81,76 +73,56 @@ public class TransmutationMenu extends AbstractContainerMenu {
         ItemStack sourceStack = sourceSlot.getItem();
         ItemStack originalStack = sourceStack.copy();
 
-        if (index == INPUT_SLOT) {
-            if (!this.moveItemStackTo(sourceStack, PLAYER_INVENTORY_START, PLAYER_INVENTORY_END, true)) {
-                return ItemStack.EMPTY;
-            }
-        } else {
-            if (!TransmutationInputSlot.canPlaceStack(sourceStack)) {
-                return ItemStack.EMPTY;
-            }
-
-            if (!this.moveItemStackTo(sourceStack, INPUT_SLOT, INPUT_SLOT + INPUT_SLOT_COUNT, false)) {
-                return ItemStack.EMPTY;
-            }
-        }
-
-        if (sourceStack.isEmpty()) {
-            sourceSlot.setByPlayer(ItemStack.EMPTY);
-        } else {
-            sourceSlot.setChanged();
-        }
-
-        if (sourceStack.getCount() == originalStack.getCount()) {
+        if (!(player instanceof ServerPlayer serverPlayer)
+                || index < PLAYER_INVENTORY_START
+                || index >= PLAYER_INVENTORY_END) {
             return ItemStack.EMPTY;
         }
 
-        sourceSlot.onTake(player, sourceStack);
-        return originalStack;
+        boolean converted = this.convertStack(serverPlayer, sourceStack, () -> {
+            sourceSlot.setByPlayer(ItemStack.EMPTY);
+            sourceSlot.setChanged();
+            sourceSlot.onTake(player, sourceStack);
+        });
+        return converted ? originalStack : ItemStack.EMPTY;
     }
 
-    public ItemStack getInputStack() {
-        return this.inputContainer.getItem(0);
+    public boolean convertStackFromCursor(ServerPlayer player) {
+        return this.convertStack(player, this.getCarried(), () -> this.setCarried(ItemStack.EMPTY));
     }
 
-    public void clearInputSlot() {
-        this.inputContainer.setItem(0, ItemStack.EMPTY);
-        this.slots.get(INPUT_SLOT).setChanged();
-        this.broadcastChanges();
-    }
-
-    public void convertInput(ServerPlayer player) {
-        ItemStack inputStack = this.getInputStack();
-        if (inputStack.isEmpty()) {
+    private boolean convertStack(ServerPlayer player, ItemStack stack, Runnable clearSource) {
+        if (stack.isEmpty()) {
             ModNetworking.sendGuiStatus(player, "message.teamemc.convert.no_item", true);
-            return;
+            return false;
         }
 
-        ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(inputStack.getItem());
-        if (itemId == null || EmcValueManager.isBlockedModItem(itemId) || !EmcValueManager.hasEmc(inputStack)) {
+        ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(stack.getItem());
+        if (itemId == null || EmcValueManager.isBlockedModItem(itemId) || !EmcValueManager.hasEmc(stack)) {
             ModNetworking.sendGuiStatus(player, "message.teamemc.convert.no_emc", true);
-            return;
+            return false;
         }
 
-        OptionalLong stackEmc = EmcValueManager.getStackEmc(inputStack);
+        OptionalLong stackEmc = EmcValueManager.getStackEmc(stack);
         if (stackEmc.isEmpty() || stackEmc.getAsLong() <= 0L) {
-            String translationKey = EmcValueManager.isDamageable(inputStack)
+            String translationKey = EmcValueManager.isDamageable(stack)
                     ? "message.teamemc.convert.invalid_durability"
                     : "message.teamemc.convert.failed";
             ModNetworking.sendGuiStatus(player, translationKey, true);
-            return;
+            return false;
         }
 
         long emcAmount = stackEmc.getAsLong();
         TeamEmcSavedData data = TeamEmcSavedData.get(player.getServer());
         if (!data.addEmc(player, emcAmount)) {
             ModNetworking.sendGuiStatus(player, "message.teamemc.convert.overflow", true);
-            return;
+            return false;
         }
 
-        ItemStack convertedStack = inputStack.copy();
-        data.learn(player, inputStack.getItem());
-        this.clearInputSlot();
+        ItemStack convertedStack = stack.copy();
+        data.learn(player, stack.getItem());
+        clearSource.run();
+        this.broadcastChanges();
         ModNetworking.sendEmcData(player);
         ModNetworking.sendGuiStatus(
                 player,
@@ -159,6 +131,7 @@ public class TransmutationMenu extends AbstractContainerMenu {
                 formatStackName(convertedStack),
                 Long.toString(emcAmount)
         );
+        return true;
     }
 
     public boolean withdrawItem(ServerPlayer player, ResourceLocation itemId, int requestedCount) {
@@ -326,10 +299,6 @@ public class TransmutationMenu extends AbstractContainerMenu {
     @Override
     public void removed(Player player) {
         super.removed(player);
-
-        if (!player.level().isClientSide()) {
-            this.clearContainer(player, this.inputContainer);
-        }
     }
 
     @Override
