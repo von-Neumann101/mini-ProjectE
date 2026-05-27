@@ -25,7 +25,11 @@ public final class ClientTooltipHandler {
             return;
         }
 
-        OptionalLong stackEmc = EmcValueManager.getStackEmc(stack);
+        if (!ClientEmcState.hasServerEmcSnapshot()) {
+            return;
+        }
+
+        OptionalLong stackEmc = ClientEmcState.getServerStackEmc(stack);
         if (stackEmc.isPresent() && stackEmc.getAsLong() > 0L) {
             event.getToolTip().add(Component.translatable("tooltip.teamemc.emc", stackEmc.getAsLong()));
         }

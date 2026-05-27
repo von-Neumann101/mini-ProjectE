@@ -99,7 +99,7 @@ public class TransmutationMenu extends AbstractContainerMenu {
 
         ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(stack.getItem());
         if (itemId == null || EmcValueManager.isBlockedModItem(itemId) || !EmcValueManager.hasEmc(stack)) {
-            ModNetworking.sendGuiStatus(player, "message.teamemc.convert.no_emc", true);
+            ModNetworking.sendGuiStatus(player, "message.teamemc.convert.server_no_emc", true);
             return false;
         }
 

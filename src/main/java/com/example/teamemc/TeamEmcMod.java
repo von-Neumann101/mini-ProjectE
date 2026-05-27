@@ -34,5 +34,6 @@ public final class TeamEmcMod {
         NeoForge.EVENT_BUS.addListener(EmcValueManager::registerReloadListener);
         NeoForge.EVENT_BUS.addListener(EmcValueManager::onTagsUpdated);
         NeoForge.EVENT_BUS.addListener(EmcValueManager::onServerStarted);
+        NeoForge.EVENT_BUS.addListener(ModNetworking::onPlayerLoggedIn);
     }
 }

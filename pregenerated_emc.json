@@ -1,0 +1,10100 @@
+[
+  {
+    "item": "create:polished_cut_diorite",
+    "emc": 16
+  },
+  {
+    "item": "projecte:black_alchemical_bag",
+    "emc": 9851
+  },
+  {
+    "item": "minecraft:recovery_compass",
+    "emc": 2624
+  },
+  {
+    "item": "create:weathered_iron_window",
+    "emc": 192
+  },
+  {
+    "item": "create:brass_ingot",
+    "emc": 126
+  },
+  {
+    "item": "aeronautics:purple_envelope",
+    "emc": 17
+  },
+  {
+    "item": "minecraft:pink_terracotta",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:polished_blackstone_button",
+    "emc": 4
+  },
+  {
+    "item": "create:small_diorite_brick_stairs",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_weakness"
+      }
+    },
+    "emc": 32
+  },
+  {
+    "item": "projecte:light_gray_alchemical_bag",
+    "emc": 9851
+  },
+  {
+    "item": "projecte:gem_boots",
+    "emc": 28709288
+  },
+  {
+    "item": "create:small_granite_brick_wall",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:infested_cracked_stone_bricks",
+    "emc": 1
+  },
+  {
+    "item": "createbigcannons:steel_ingot",
+    "emc": 270
+  },
+  {
+    "item": "create:cinder_flour",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:orange_glazed_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "minecraft:mangrove_wood",
+    "emc": 32
+  },
+  {
+    "item": "projecte:body_stone",
+    "emc": 934842
+  },
+  {
+    "item": "create:small_andesite_brick_wall",
+    "emc": 16
+  },
+  {
+    "item": "create:spruce_window_pane",
+    "emc": 4
+  },
+  {
+    "item": "create:cut_deepslate_stairs",
+    "emc": 2
+  },
+  {
+    "item": "simulated:steering_wheel",
+    "emc": 88
+  },
+  {
+    "item": "minecraft:music_disc_precipice",
+    "emc": 12224
+  },
+  {
+    "item": "projecte:rm_chestplate",
+    "emc": 4849664
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_swiftness"
+      }
+    },
+    "emc": 99
+  },
+  {
+    "item": "tacz:statue",
+    "emc": 4608
+  },
+  {
+    "item": "minecraft:red_nether_bricks",
+    "emc": 50
+  },
+  {
+    "item": "minecraft:observer",
+    "emc": 390
+  },
+  {
+    "item": "create:brown_table_cloth",
+    "emc": 39
+  },
+  {
+    "item": "minecraft:mangrove_button",
+    "emc": 8
+  },
+  {
+    "item": "spore:cdu",
+    "emc": 2099
+  },
+  {
+    "item": "minecraft:diamond_pickaxe",
+    "emc": 24584
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:poison"
+      }
+    },
+    "emc": 28
+  },
+  {
+    "item": "simulated:cyan_handle",
+    "emc": 62
+  },
+  {
+    "item": "projecte:rm_hoe",
+    "emc": 1368064
+  },
+  {
+    "item": "minecraft:mud_bricks",
+    "emc": 25
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:swiftness"
+      }
+    },
+    "emc": 78
+  },
+  {
+    "item": "spore:lab_slab1",
+    "emc": 23
+  },
+  {
+    "item": "minecraft:yellow_carpet",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:stripped_acacia_wood",
+    "emc": 32
+  },
+  {
+    "item": "create:polished_cut_granite_stairs",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:suspicious_stew",
+    "data": {
+      "minecraft:suspicious_stew_effects": [
+        {
+          "id": "minecraft:fire_resistance",
+          "duration": 80
+        }
+      ]
+    },
+    "emc": 86
+  },
+  {
+    "item": "minecraft:waxed_exposed_copper_grate",
+    "emc": 288
+  },
+  {
+    "item": "create:desk_bell",
+    "emc": 2110
+  },
+  {
+    "item": "minecraft:rabbit",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:jungle_fence_gate",
+    "emc": 8
+  },
+  {
+    "item": "create:steam_whistle",
+    "emc": 2176
+  },
+  {
+    "item": "tacz:ammo_box",
+    "data": {
+      "minecraft:custom_data": {
+        "Level": 1
+      }
+    },
+    "emc": 2104
+  },
+  {
+    "item": "minecraft:copper_ingot",
+    "emc": 128
+  },
+  {
+    "item": "minecraft:golden_carrot",
+    "emc": 1880
+  },
+  {
+    "item": "minecraft:waxed_weathered_cut_copper",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:polished_deepslate_stairs",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:ladder",
+    "emc": 9
+  },
+  {
+    "item": "minecraft:cut_copper",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:jungle_planks",
+    "emc": 8
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:338"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_slowness"
+      }
+    },
+    "emc": 264
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_swiftness"
+      }
+    },
+    "emc": 206
+  },
+  {
+    "item": "minecraft:granite_stairs",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:blue_dye",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:armor_stand",
+    "emc": 24
+  },
+  {
+    "item": "minecraft:popped_chorus_fruit",
+    "emc": 192
+  },
+  {
+    "item": "create:polished_cut_scoria_slab",
+    "emc": 24
+  },
+  {
+    "item": "minecraft:light_gray_concrete",
+    "emc": 3
+  },
+  {
+    "item": "simulated:yellow_handle",
+    "emc": 66
+  },
+  {
+    "item": "create:wrench",
+    "emc": 6161
+  },
+  {
+    "item": "create:display_link",
+    "emc": 990
+  },
+  {
+    "item": "create:small_dripstone_brick_slab",
+    "emc": 32
+  },
+  {
+    "item": "create:waxed_weathered_copper_tile_slab",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_harming"
+      }
+    },
+    "emc": 301
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:thick"
+      }
+    },
+    "emc": 129
+  },
+  {
+    "item": "minecraft:lever",
+    "emc": 5
+  },
+  {
+    "item": "minecraft:polished_granite_slab",
+    "emc": 8
+  },
+  {
+    "item": "create:cut_andesite_bricks",
+    "emc": 16
+  },
+  {
+    "item": "projecte:dark_matter_block",
+    "emc": 557056
+  },
+  {
+    "item": "minecraft:dark_oak_sign",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:black_concrete_powder",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:dark_prismarine",
+    "emc": 2056
+  },
+  {
+    "item": "minecraft:bamboo_pressure_plate",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:netherrack",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:repeater",
+    "emc": 203
+  },
+  {
+    "item": "create:stock_link",
+    "emc": 1400
+  },
+  {
+    "item": "minecraft:green_carpet",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:cherry_sign",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:bolt_armor_trim_smithing_template",
+    "emc": 10176
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_strength"
+      }
+    },
+    "emc": 371
+  },
+  {
+    "item": "minecraft:birch_pressure_plate",
+    "emc": 8
+  },
+  {
+    "item": "projecte:black_hole_band",
+    "emc": 280668
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:556x45"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "create:vertical_framed_glass",
+    "emc": 1
+  },
+  {
+    "item": "sentrymechanicalarm:sentry_scope",
+    "emc": 3030
+  },
+  {
+    "item": "create:gantry_carriage",
+    "emc": 79
+  },
+  {
+    "item": "simulated:torsion_spring",
+    "emc": 337
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:fire_resistance"
+      }
+    },
+    "emc": 254
+  },
+  {
+    "item": "minecraft:prismarine_brick_stairs",
+    "emc": 2304
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:oozing"
+      }
+    },
+    "emc": 169
+  },
+  {
+    "item": "minecraft:flowering_azalea_leaves",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:mundane"
+      }
+    },
+    "emc": 22
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_poison"
+      }
+    },
+    "emc": 243
+  },
+  {
+    "item": "minecraft:compass",
+    "emc": 1088
+  },
+  {
+    "item": "minecraft:oak_boat",
+    "emc": 40
+  },
+  {
+    "item": "createbigcannons:flak_autocannon_round",
+    "emc": 344
+  },
+  {
+    "item": "create:content_observer",
+    "emc": 1572
+  },
+  {
+    "item": "create:mysterious_cuckoo_clock",
+    "emc": 9094
+  },
+  {
+    "item": "minecraft:black_shulker_box",
+    "emc": 4168
+  },
+  {
+    "item": "create:pulse_extender",
+    "emc": 329
+  },
+  {
+    "item": "projecte:hyperkinetic_lens",
+    "emc": 329186
+  },
+  {
+    "item": "projecte:rm_pick",
+    "emc": 1974272
+  },
+  {
+    "item": "minecraft:sugar_cane",
+    "emc": 32
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:357mag"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "minecraft:leather_horse_armor",
+    "emc": 448
+  },
+  {
+    "item": "minecraft:purple_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:turtle_master"
+      }
+    },
+    "emc": 233
+  },
+  {
+    "item": "minecraft:tripwire_hook",
+    "emc": 134
+  },
+  {
+    "item": "minecraft:green_wool",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:fire_charge",
+    "emc": 245
+  },
+  {
+    "item": "minecraft:disc_fragment_5",
+    "emc": 192
+  },
+  {
+    "item": "minecraft:waxed_oxidized_cut_copper",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:warped_sign",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:chorus_fruit",
+    "emc": 192
+  },
+  {
+    "item": "minecraft:emerald_block",
+    "emc": 147456
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:22wmr"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_invisibility"
+      }
+    },
+    "emc": 778
+  },
+  {
+    "item": "minecraft:golden_leggings",
+    "emc": 14336
+  },
+  {
+    "item": "minecraft:purple_shulker_box",
+    "emc": 4168
+  },
+  {
+    "item": "create:package_frogport",
+    "emc": 630
+  },
+  {
+    "item": "minecraft:acacia_hanging_sign",
+    "emc": 84
+  },
+  {
+    "item": "simulated:light_blue_handle",
+    "emc": 66
+  },
+  {
+    "item": "minecraft:barrel",
+    "emc": 56
+  },
+  {
+    "item": "create:cyan_valve_handle",
+    "emc": 418
+  },
+  {
+    "item": "minecraft:nether_bricks",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:red_bed",
+    "emc": 168
+  },
+  {
+    "item": "minecraft:oak_stairs",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:prismarine",
+    "emc": 1024
+  },
+  {
+    "item": "projecte:harvest_goddess_band",
+    "emc": 280726
+  },
+  {
+    "item": "minecraft:prismarine_bricks",
+    "emc": 2304
+  },
+  {
+    "item": "minecraft:seagrass",
+    "emc": 1
+  },
+  {
+    "item": "create:cut_andesite_brick_slab",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:sticky_piston",
+    "emc": 380
+  },
+  {
+    "item": "minecraft:mossy_cobblestone_slab",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:jungle_sign",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:dark_oak_wood",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:bamboo_mosaic_stairs",
+    "emc": 12
+  },
+  {
+    "item": "minecraft:wooden_axe",
+    "emc": 32
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:50bmg"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "minecraft:red_tulip",
+    "emc": 16
+  },
+  {
+    "item": "create:metal_bracket",
+    "emc": 156
+  },
+  {
+    "item": "minecraft:raiser_armor_trim_smithing_template",
+    "emc": 10176
+  },
+  {
+    "item": "minecraft:honey_bottle",
+    "emc": 48
+  },
+  {
+    "item": "create:crushing_wheel",
+    "emc": 256
+  },
+  {
+    "item": "minecraft:prismarine_brick_slab",
+    "emc": 1152
+  },
+  {
+    "item": "minecraft:dead_tube_coral_fan",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:mace",
+    "emc": 43264
+  },
+  {
+    "item": "create:small_dripstone_bricks",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:piglin_banner_pattern",
+    "emc": 512
+  },
+  {
+    "item": "minecraft:warped_stem",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:polished_blackstone_brick_wall",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:nether_brick_slab",
+    "emc": 2
+  },
+  {
+    "item": "create:rotation_speed_controller",
+    "emc": 2516
+  },
+  {
+    "item": "minecraft:detector_rail",
+    "emc": 267
+  },
+  {
+    "item": "minecraft:blue_wool",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_strength"
+      }
+    },
+    "emc": 307
+  },
+  {
+    "item": "minecraft:spider_eye",
+    "emc": 128
+  },
+  {
+    "item": "minecraft:weathered_copper_trapdoor",
+    "emc": 384
+  },
+  {
+    "item": "create:small_scoria_bricks",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_strength"
+      }
+    },
+    "emc": 264
+  },
+  {
+    "item": "minecraft:bamboo_fence",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:purpur_pillar",
+    "emc": 192
+  },
+  {
+    "item": "minecraft:waxed_weathered_copper",
+    "emc": 1152
+  },
+  {
+    "item": "minecraft:eye_armor_trim_smithing_template",
+    "emc": 23017
+  },
+  {
+    "item": "minecraft:diamond_block",
+    "emc": 73728
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:thick"
+      }
+    },
+    "emc": 193
+  },
+  {
+    "item": "minecraft:silence_armor_trim_smithing_template",
+    "emc": 39465
+  },
+  {
+    "item": "minecraft:light_blue_carpet",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:light_blue_stained_glass",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:warped_roots",
+    "emc": 1
+  },
+  {
+    "item": "createbigcannons:shrapnel_shell",
+    "emc": 1716
+  },
+  {
+    "item": "spore:reinforced_door",
+    "emc": 722
+  },
+  {
+    "item": "minecraft:potato",
+    "emc": 64
+  },
+  {
+    "item": "projecte:repair_talisman",
+    "emc": 490
+  },
+  {
+    "item": "minecraft:honeycomb",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_slow_falling"
+      }
+    },
+    "emc": 94
+  },
+  {
+    "item": "minecraft:cooked_rabbit",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:creeper_head",
+    "emc": 256
+  },
+  {
+    "item": "minecraft:dark_oak_fence_gate",
+    "emc": 8
+  },
+  {
+    "item": "simulated:black_nameplate",
+    "emc": 24
+  },
+  {
+    "item": "createbigcannons:recoil_spring",
+    "emc": 256
+  },
+  {
+    "item": "minecraft:armadillo_scute",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:fire_coral_fan",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:deepslate_bricks",
+    "emc": 2
+  },
+  {
+    "item": "simulated:plunger_launcher",
+    "emc": 2896
+  },
+  {
+    "item": "aeronautics:gyroscopic_propeller_bearing",
+    "emc": 578
+  },
+  {
+    "item": "createbigcannons:delayed_impact_fuze",
+    "emc": 2160
+  },
+  {
+    "item": "create:blue_seat",
+    "emc": 52
+  },
+  {
+    "item": "createbigcannons:empty_machine_gun_round",
+    "emc": 5
+  },
+  {
+    "item": "createbigcannons:screw_breech_cast_mould",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:wild_armor_trim_smithing_template",
+    "emc": 42641
+  },
+  {
+    "item": "minecraft:polished_andesite_slab",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:dead_horn_coral_block",
+    "emc": 4
+  },
+  {
+    "item": "create:copper_tile_slab",
+    "emc": 32
+  },
+  {
+    "item": "createbigcannons:empty_powder_charge",
+    "emc": 72
+  },
+  {
+    "item": "minecraft:dark_oak_pressure_plate",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_poison"
+      }
+    },
+    "emc": 179
+  },
+  {
+    "item": "create:horizontal_framed_glass",
+    "emc": 1
+  },
+  {
+    "item": "projecte:transmutation_tablet",
+    "emc": 2228488
+  },
+  {
+    "item": "simulated:gyroscopic_mechanism",
+    "emc": 416
+  },
+  {
+    "item": "minecraft:red_nether_brick_stairs",
+    "emc": 50
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:regeneration"
+      }
+    },
+    "emc": 1438
+  },
+  {
+    "item": "aeronautics:orange_envelope",
+    "emc": 17
+  },
+  {
+    "item": "projecte:dm_helmet",
+    "emc": 696320
+  },
+  {
+    "item": "spore:scanner",
+    "emc": 3008
+  },
+  {
+    "item": "minecraft:magma_block",
+    "emc": 128
+  },
+  {
+    "item": "create:small_calcite_brick_wall",
+    "emc": 32
+  },
+  {
+    "item": "create:cut_scorchia_stairs",
+    "emc": 48
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:792x57"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "minecraft:campfire",
+    "emc": 140
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:slowness"
+      }
+    },
+    "emc": 136
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_poison"
+      }
+    },
+    "emc": 136
+  },
+  {
+    "item": "projecte:nova_catalyst",
+    "emc": 1506
+  },
+  {
+    "item": "minecraft:cherry_hanging_sign",
+    "emc": 84
+  },
+  {
+    "item": "minecraft:golden_shovel",
+    "emc": 2056
+  },
+  {
+    "item": "spore:rusted_reinforced_door",
+    "emc": 722
+  },
+  {
+    "item": "minecraft:horn_coral_fan",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:music_disc_stal",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:granite_slab",
+    "emc": 8
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:500mag"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "minecraft:bucket",
+    "emc": 768
+  },
+  {
+    "item": "create:andesite_table_cloth",
+    "emc": 15
+  },
+  {
+    "item": "spore:cabinet",
+    "emc": 88
+  },
+  {
+    "item": "create:spout",
+    "emc": 161
+  },
+  {
+    "item": "create:zinc_ingot",
+    "emc": 128
+  },
+  {
+    "item": "minecraft:mangrove_boat",
+    "emc": 40
+  },
+  {
+    "item": "minecraft:stripped_spruce_log",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:warped_wart_block",
+    "emc": 216
+  },
+  {
+    "item": "create:small_tuff_brick_stairs",
+    "emc": 4
+  },
+  {
+    "item": "create:cut_deepslate_wall",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:light_gray_bed",
+    "emc": 168
+  },
+  {
+    "item": "minecraft:weathered_chiseled_copper",
+    "emc": 288
+  },
+  {
+    "item": "projecte:gem_of_eternal_density",
+    "emc": 319616
+  },
+  {
+    "item": "minecraft:netherite_axe",
+    "emc": 89425
+  },
+  {
+    "item": "simulated:redstone_accumulator",
+    "emc": 1029
+  },
+  {
+    "item": "create:polished_cut_diorite_stairs",
+    "emc": 16
+  },
+  {
+    "item": "projecte:rm_leggings",
+    "emc": 4243456
+  },
+  {
+    "item": "create:waxed_weathered_copper_shingle_slab",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:gray_stained_glass",
+    "emc": 2
+  },
+  {
+    "item": "projecte:gem_chestplate",
+    "emc": 30950330
+  },
+  {
+    "item": "create:acacia_window",
+    "emc": 12
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:invisibility"
+      }
+    },
+    "emc": 108
+  },
+  {
+    "item": "minecraft:iron_horse_armor",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:soul_sand",
+    "emc": 49
+  },
+  {
+    "item": "createbigcannons:packed_gunpowder",
+    "emc": 576
+  },
+  {
+    "item": "simulated:physics_assembler",
+    "emc": 127
+  },
+  {
+    "item": "minecraft:dead_bubble_coral_block",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:green_stained_glass",
+    "emc": 1
+  },
+  {
+    "item": "projecte:dark_matter",
+    "emc": 139264
+  },
+  {
+    "item": "minecraft:oak_trapdoor",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:waxed_oxidized_copper_bulb",
+    "emc": 1264
+  },
+  {
+    "item": "aeronautics:propeller_bearing",
+    "emc": 418
+  },
+  {
+    "item": "minecraft:spruce_boat",
+    "emc": 40
+  },
+  {
+    "item": "minecraft:white_bed",
+    "emc": 168
+  },
+  {
+    "item": "minecraft:rabbit_stew",
+    "emc": 230
+  },
+  {
+    "item": "minecraft:azure_bluet",
+    "emc": 16
+  },
+  {
+    "item": "create:cut_diorite_brick_stairs",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:red_sand",
+    "emc": 1
+  },
+  {
+    "item": "create:lime_valve_handle",
+    "emc": 418
+  },
+  {
+    "item": "simulated:purple_nameplate",
+    "emc": 24
+  },
+  {
+    "item": "projecte:evertide_amulet",
+    "emc": 417792
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:water"
+      }
+    },
+    "emc": 65
+  },
+  {
+    "item": "minecraft:cut_copper_slab",
+    "emc": 144
+  },
+  {
+    "item": "create:polished_cut_andesite_stairs",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:weeping_vines",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:scaffolding",
+    "emc": 34
+  },
+  {
+    "item": "travelerscompass:travelerscompass",
+    "emc": 60232
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:slow_falling"
+      }
+    },
+    "emc": 137
+  },
+  {
+    "item": "spore:laboratory_bed",
+    "emc": 1960
+  },
+  {
+    "item": "minecraft:polished_tuff_slab",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strength"
+      }
+    },
+    "emc": 243
+  },
+  {
+    "item": "create:linear_chassis",
+    "emc": 52
+  },
+  {
+    "item": "create:andesite_tunnel",
+    "emc": 31
+  },
+  {
+    "item": "create:cut_granite_slab",
+    "emc": 8
+  },
+  {
+    "item": "createbigcannons:inertia_fuze",
+    "emc": 160
+  },
+  {
+    "item": "create:andesite_funnel",
+    "emc": 15
+  },
+  {
+    "item": "create:cut_scoria_slab",
+    "emc": 24
+  },
+  {
+    "item": "simulated:pink_nameplate",
+    "emc": 18
+  },
+  {
+    "item": "minecraft:breeze_rod",
+    "emc": 2304
+  },
+  {
+    "item": "create:brass_ladder",
+    "emc": 63
+  },
+  {
+    "item": "create:birch_window_pane",
+    "emc": 4
+  },
+  {
+    "item": "projecte:gray_alchemical_bag",
+    "emc": 9851
+  },
+  {
+    "item": "create:weathered_copper_tile_slab",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:tuff_stairs",
+    "emc": 4
+  },
+  {
+    "item": "create:spruce_window",
+    "emc": 12
+  },
+  {
+    "item": "minecraft:andesite_slab",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:oak_planks",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:stone_button",
+    "emc": 1
+  },
+  {
+    "item": "create:extendo_grip",
+    "emc": 3042
+  },
+  {
+    "item": "minecraft:green_concrete_powder",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:slime_block",
+    "emc": 288
+  },
+  {
+    "item": "create:cut_granite_wall",
+    "emc": 16
+  },
+  {
+    "item": "create:polished_cut_tuff_stairs",
+    "emc": 4
+  },
+  {
+    "item": "simulated:copper_handle",
+    "emc": 72
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:night_vision"
+      }
+    },
+    "emc": 699
+  },
+  {
+    "item": "create:pink_table_cloth",
+    "emc": 39
+  },
+  {
+    "item": "minecraft:yellow_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "minecraft:soul_lantern",
+    "emc": 233
+  },
+  {
+    "item": "minecraft:fire_coral",
+    "emc": 16
+  },
+  {
+    "item": "simulated:brown_nameplate",
+    "emc": 48
+  },
+  {
+    "item": "createbigcannons:very_large_cast_mould",
+    "emc": 32
+  },
+  {
+    "item": "create:repackager",
+    "emc": 2664
+  },
+  {
+    "item": "minecraft:brain_coral_block",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:nether_sprouts",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:chiseled_bookshelf",
+    "emc": 60
+  },
+  {
+    "item": "create:cut_granite_stairs",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:iron_bars",
+    "emc": 96
+  },
+  {
+    "item": "create:cut_diorite_slab",
+    "emc": 8
+  },
+  {
+    "item": "spore:halogen_light",
+    "emc": 241
+  },
+  {
+    "item": "minecraft:bamboo_stairs",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:awkward"
+      }
+    },
+    "emc": 9
+  },
+  {
+    "item": "create:waxed_exposed_copper_shingle_stairs",
+    "emc": 64
+  },
+  {
+    "item": "create:cut_tuff_brick_stairs",
+    "emc": 4
+  },
+  {
+    "item": "create:scoria",
+    "emc": 48
+  },
+  {
+    "item": "projecte:mercurial_eye",
+    "emc": 475584
+  },
+  {
+    "item": "minecraft:netherite_upgrade_smithing_template",
+    "emc": 7497
+  },
+  {
+    "item": "tacz:target_minecart",
+    "emc": 2632
+  },
+  {
+    "item": "minecraft:cyan_bed",
+    "emc": 168
+  },
+  {
+    "item": "minecraft:black_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "create:calcite_pillar",
+    "emc": 32
+  },
+  {
+    "item": "create:cut_granite_brick_slab",
+    "emc": 8
+  },
+  {
+    "item": "create:polished_cut_diorite_slab",
+    "emc": 8
+  },
+  {
+    "item": "createbigcannons:gas_mask",
+    "emc": 241
+  },
+  {
+    "item": "create:shaft",
+    "emc": 5
+  },
+  {
+    "item": "simulated:iron_handle",
+    "emc": 58
+  },
+  {
+    "item": "create:tuff_pillar",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:acacia_fence",
+    "emc": 8
+  },
+  {
+    "item": "create:exposed_copper_tile_stairs",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:cherry_slab",
+    "emc": 4
+  },
+  {
+    "item": "create:rope_pulley",
+    "emc": 366
+  },
+  {
+    "item": "minecraft:copper_trapdoor",
+    "emc": 384
+  },
+  {
+    "item": "minecraft:tuff_brick_wall",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:fire_resistance"
+      }
+    },
+    "emc": 190
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:slowness"
+      }
+    },
+    "emc": 72
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:leaping"
+      }
+    },
+    "emc": 115
+  },
+  {
+    "item": "minecraft:iron_chestplate",
+    "data": {
+      "minecraft:trim": {
+        "material": "minecraft:redstone",
+        "pattern": "minecraft:bolt"
+      }
+    },
+    "emc": 7821
+  },
+  {
+    "item": "minecraft:gunpowder",
+    "emc": 192
+  },
+  {
+    "item": "create:cardboard_leggings",
+    "emc": 2646
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:healing"
+      }
+    },
+    "emc": 619
+  },
+  {
+    "item": "projecte:dm_hoe",
+    "emc": 294912
+  },
+  {
+    "item": "create:millstone",
+    "emc": 76
+  },
+  {
+    "item": "minecraft:gold_ingot",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:jungle_pressure_plate",
+    "emc": 8
+  },
+  {
+    "item": "create:cart_assembler",
+    "emc": 188
+  },
+  {
+    "item": "minecraft:orange_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "minecraft:tall_grass",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:deepslate_tile_stairs",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:heartbreak_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "create:cut_calcite_brick_stairs",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:infested"
+      }
+    },
+    "emc": 73
+  },
+  {
+    "item": "minecraft:red_concrete",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:dark_oak_button",
+    "emc": 8
+  },
+  {
+    "item": "create:track_station",
+    "emc": 655
+  },
+  {
+    "item": "minecraft:nether_brick",
+    "emc": 1
+  },
+  {
+    "item": "create:copper_tile_stairs",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:spruce_wood",
+    "emc": 32
+  },
+  {
+    "item": "create:cut_tuff_slab",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:cut_copper_stairs",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:allium",
+    "emc": 16
+  },
+  {
+    "item": "createbigcannons:gunpowder_pinch",
+    "emc": 21
+  },
+  {
+    "item": "minecraft:jungle_boat",
+    "emc": 40
+  },
+  {
+    "item": "simulated:optical_sensor",
+    "emc": 1214
+  },
+  {
+    "item": "minecraft:name_tag",
+    "emc": 192
+  },
+  {
+    "item": "minecraft:acacia_wood",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:horn_coral",
+    "emc": 16
+  },
+  {
+    "item": "createbigcannons:bag_of_grapeshot",
+    "emc": 376
+  },
+  {
+    "item": "minecraft:black_concrete",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:birch_button",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:golden_apple",
+    "emc": 16512
+  },
+  {
+    "item": "minecraft:jungle_fence",
+    "emc": 8
+  },
+  {
+    "item": "create:package_filter",
+    "emc": 76
+  },
+  {
+    "item": "minecraft:chiseled_polished_blackstone",
+    "emc": 4
+  },
+  {
+    "item": "createbigcannons:wired_fuze",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:pink_petals",
+    "emc": 4
+  },
+  {
+    "item": "create:ornate_iron_window",
+    "emc": 42
+  },
+  {
+    "item": "minecraft:birch_leaves",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:music_disc_mellohi",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:awkward"
+      }
+    },
+    "emc": 73
+  },
+  {
+    "item": "minecraft:book",
+    "emc": 160
+  },
+  {
+    "item": "minecraft:iron_leggings",
+    "emc": 1792
+  },
+  {
+    "item": "minecraft:sandstone",
+    "emc": 4
+  },
+  {
+    "item": "spore:surgery_table",
+    "emc": 1560
+  },
+  {
+    "item": "create:steam_engine",
+    "emc": 3230
+  },
+  {
+    "item": "minecraft:red_concrete_powder",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:infested_mossy_stone_bricks",
+    "emc": 9
+  },
+  {
+    "item": "minecraft:brown_bed",
+    "emc": 168
+  },
+  {
+    "item": "minecraft:sandstone_wall",
+    "emc": 4
+  },
+  {
+    "item": "simulated:rope_connector",
+    "emc": 384
+  },
+  {
+    "item": "minecraft:pink_tulip",
+    "emc": 16
+  },
+  {
+    "item": "create:oxidized_copper_tile_stairs",
+    "emc": 64
+  },
+  {
+    "item": "create:brown_toolbox",
+    "emc": 4237
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:poison"
+      }
+    },
+    "emc": 51
+  },
+  {
+    "item": "createbigcannons:ap_autocannon_round",
+    "emc": 136
+  },
+  {
+    "item": "minecraft:yellow_dye",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:healing"
+      }
+    },
+    "emc": 683
+  },
+  {
+    "item": "minecraft:pink_carpet",
+    "emc": 32
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:57x28"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "minecraft:crimson_sign",
+    "emc": 8
+  },
+  {
+    "item": "create:cut_calcite_bricks",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:wither_rose",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:powered_rail",
+    "emc": 2059
+  },
+  {
+    "item": "simulated:redstone_magnet",
+    "emc": 320
+  },
+  {
+    "item": "minecraft:diamond_shovel",
+    "emc": 8200
+  },
+  {
+    "item": "minecraft:stone_sword",
+    "emc": 6
+  },
+  {
+    "item": "minecraft:suspicious_stew",
+    "data": {
+      "minecraft:suspicious_stew_effects": [
+        {
+          "id": "minecraft:saturation",
+          "duration": 7
+        }
+      ]
+    },
+    "emc": 86
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:healing"
+      }
+    },
+    "emc": 683
+  },
+  {
+    "item": "minecraft:redstone_block",
+    "emc": 576
+  },
+  {
+    "item": "minecraft:waxed_copper_door",
+    "emc": 256
+  },
+  {
+    "item": "create:adjustable_chain_gearshift",
+    "emc": 1128
+  },
+  {
+    "item": "create:polished_cut_scoria_stairs",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:netherite_block",
+    "emc": 516096
+  },
+  {
+    "item": "minecraft:smooth_quartz_stairs",
+    "emc": 1024
+  },
+  {
+    "item": "spore:iron_ladder",
+    "emc": 134
+  },
+  {
+    "item": "minecraft:oak_hanging_sign",
+    "emc": 84
+  },
+  {
+    "item": "minecraft:lime_shulker_box",
+    "emc": 4164
+  },
+  {
+    "item": "aeronautics:white_envelope",
+    "emc": 17
+  },
+  {
+    "item": "create:cardboard_helmet",
+    "emc": 1890
+  },
+  {
+    "item": "minecraft:magenta_glazed_terracotta",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:oak_fence",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:piston",
+    "emc": 348
+  },
+  {
+    "item": "minecraft:crimson_hanging_sign",
+    "emc": 84
+  },
+  {
+    "item": "create:oak_window",
+    "emc": 12
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_slowness"
+      }
+    },
+    "emc": 157
+  },
+  {
+    "item": "minecraft:red_mushroom",
+    "emc": 32
+  },
+  {
+    "item": "simulated:laser_pointer",
+    "emc": 162
+  },
+  {
+    "item": "spore:lab_block3",
+    "emc": 46
+  },
+  {
+    "item": "minecraft:short_grass",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:coal",
+    "emc": 128
+  },
+  {
+    "item": "minecraft:stripped_oak_wood",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:jungle_log",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:orange_bed",
+    "emc": 168
+  },
+  {
+    "item": "minecraft:clay_ball",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:birch_slab",
+    "emc": 4
+  },
+  {
+    "item": "spore:syringe",
+    "emc": 21
+  },
+  {
+    "item": "minecraft:bowl",
+    "emc": 6
+  },
+  {
+    "item": "projecte:alchemical_chest",
+    "emc": 8987
+  },
+  {
+    "item": "createbigcannons:solid_shot",
+    "emc": 1084
+  },
+  {
+    "item": "createbigcannons:bronze_autocannon_breech_extractor",
+    "emc": 160
+  },
+  {
+    "item": "create:brown_valve_handle",
+    "emc": 446
+  },
+  {
+    "item": "minecraft:light_blue_shulker_box",
+    "emc": 4168
+  },
+  {
+    "item": "create:analog_lever",
+    "emc": 66
+  },
+  {
+    "item": "aeronautics:cyan_envelope",
+    "emc": 17
+  },
+  {
+    "item": "create:red_seat",
+    "emc": 52
+  },
+  {
+    "item": "minecraft:purple_carpet",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:prismarine_slab",
+    "emc": 512
+  },
+  {
+    "item": "simulated:velocity_sensor",
+    "emc": 1172
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:762x25"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "simulated:gray_nameplate",
+    "emc": 24
+  },
+  {
+    "item": "minecraft:stone_hoe",
+    "emc": 10
+  },
+  {
+    "item": "create:super_glue",
+    "emc": 348
+  },
+  {
+    "item": "projecte:klein_star_ein",
+    "emc": 24576
+  },
+  {
+    "item": "createbigcannons:cannon_drill",
+    "emc": 515
+  },
+  {
+    "item": "minecraft:acacia_door",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:dandelion",
+    "emc": 16
+  },
+  {
+    "item": "create:brass_casing",
+    "emc": 158
+  },
+  {
+    "item": "create:copper_diving_boots",
+    "emc": 572
+  },
+  {
+    "item": "minecraft:blue_glazed_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "minecraft:music_disc_far",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:waxed_exposed_cut_copper_slab",
+    "emc": 144
+  },
+  {
+    "item": "create:weathered_copper_shingle_stairs",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:guster_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "spore:compound_plate",
+    "emc": 47
+  },
+  {
+    "item": "minecraft:pumpkin_pie",
+    "emc": 191
+  },
+  {
+    "item": "simulated:cyan_nameplate",
+    "emc": 20
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:308"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "minecraft:sweet_berries",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:jungle_sapling",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:birch_log",
+    "emc": 32
+  },
+  {
+    "item": "create:large_cogwheel",
+    "emc": 21
+  },
+  {
+    "item": "minecraft:light_blue_concrete_powder",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:zombie_head",
+    "emc": 256
+  },
+  {
+    "item": "create:cut_scorchia_wall",
+    "emc": 48
+  },
+  {
+    "item": "create:nixie_tube",
+    "emc": 512
+  },
+  {
+    "item": "minecraft:polished_tuff_stairs",
+    "emc": 4
+  },
+  {
+    "item": "create:copper_shingles",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:quartz_bricks",
+    "emc": 1024
+  },
+  {
+    "item": "minecraft:spruce_hanging_sign",
+    "emc": 84
+  },
+  {
+    "item": "minecraft:bell",
+    "emc": 14336
+  },
+  {
+    "item": "createbigcannons:very_small_cast_mould",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:sculk_catalyst",
+    "emc": 8040
+  },
+  {
+    "item": "minecraft:hopper_minecart",
+    "emc": 2624
+  },
+  {
+    "item": "create:polished_cut_scoria",
+    "emc": 48
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:12g"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "createbigcannons:bronze_ingot",
+    "emc": 160
+  },
+  {
+    "item": "create:waxed_copper_tiles",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_water_breathing"
+      }
+    },
+    "emc": 115
+  },
+  {
+    "item": "minecraft:waxed_copper_trapdoor",
+    "emc": 384
+  },
+  {
+    "item": "aeronautics:andesite_propeller",
+    "emc": 1063
+  },
+  {
+    "item": "create:brown_seat",
+    "emc": 52
+  },
+  {
+    "item": "minecraft:glowstone_dust",
+    "emc": 384
+  },
+  {
+    "item": "minecraft:dark_oak_slab",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:cracked_polished_blackstone_bricks",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:stripped_acacia_log",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:stripped_dark_oak_wood",
+    "emc": 32
+  },
+  {
+    "item": "create:polished_cut_scorchia_wall",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:netherite_boots",
+    "emc": 97609
+  },
+  {
+    "item": "minecraft:red_carpet",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:jungle_door",
+    "emc": 8
+  },
+  {
+    "item": "projecte:divining_rod_3",
+    "emc": 1740
+  },
+  {
+    "item": "minecraft:polished_granite",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:waxed_weathered_cut_copper_slab",
+    "emc": 144
+  },
+  {
+    "item": "spore:lab_slab2",
+    "emc": 23
+  },
+  {
+    "item": "create:polished_cut_dripstone_stairs",
+    "emc": 64
+  },
+  {
+    "item": "create:turntable",
+    "emc": 9
+  },
+  {
+    "item": "minecraft:cactus",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_regeneration"
+      }
+    },
+    "emc": 1459
+  },
+  {
+    "item": "aeronautics:green_envelope",
+    "emc": 17
+  },
+  {
+    "item": "minecraft:golden_axe",
+    "emc": 6152
+  },
+  {
+    "item": "create:polished_cut_granite",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:sponge",
+    "emc": 128
+  },
+  {
+    "item": "minecraft:stripped_dark_oak_log",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:spruce_slab",
+    "emc": 4
+  },
+  {
+    "item": "createbigcannons:wrought_iron_cannon_chamber",
+    "emc": 1216
+  },
+  {
+    "item": "create:copper_ladder",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:smooth_stone",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:chiseled_nether_bricks",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:cyan_banner",
+    "emc": 292
+  },
+  {
+    "item": "create:cut_scoria_stairs",
+    "emc": 48
+  },
+  {
+    "item": "createbigcannons:cast_iron_nugget",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:smooth_sandstone_stairs",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:bamboo_hanging_sign",
+    "emc": 340
+  },
+  {
+    "item": "projecte:rm_axe",
+    "emc": 1974272
+  },
+  {
+    "item": "create:small_deepslate_brick_slab",
+    "emc": 1
+  },
+  {
+    "item": "create:small_calcite_bricks",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_regeneration"
+      }
+    },
+    "emc": 209
+  },
+  {
+    "item": "minecraft:dead_brain_coral_block",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:dark_oak_fence",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:dead_bubble_coral",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:netherite_leggings",
+    "emc": 122185
+  },
+  {
+    "item": "create:mechanical_bearing",
+    "emc": 71
+  },
+  {
+    "item": "simulated:laser_sensor",
+    "emc": 158
+  },
+  {
+    "item": "minecraft:blue_banner",
+    "emc": 292
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:water"
+      }
+    },
+    "emc": 1
+  },
+  {
+    "item": "create:layered_scoria",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:waxed_cut_copper",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:blackstone_stairs",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:flow_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "create:white_sail",
+    "emc": 43
+  },
+  {
+    "item": "aeronautics:black_envelope",
+    "emc": 17
+  },
+  {
+    "item": "minecraft:twisting_vines",
+    "emc": 8
+  },
+  {
+    "item": "create:train_door",
+    "emc": 230
+  },
+  {
+    "item": "minecraft:polished_andesite",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:black_glazed_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "minecraft:dead_bush",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:apple",
+    "emc": 128
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_swiftness"
+      }
+    },
+    "emc": 206
+  },
+  {
+    "item": "create:waxed_exposed_copper_shingles",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:red_dye",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:smooth_red_sandstone",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:deepslate_brick_stairs",
+    "emc": 2
+  },
+  {
+    "item": "create:polished_cut_deepslate_wall",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:polished_andesite_stairs",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:target",
+    "emc": 472
+  },
+  {
+    "item": "minecraft:yellow_concrete_powder",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:music_disc_mall",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:heavy_core",
+    "emc": 40960
+  },
+  {
+    "item": "minecraft:brewer_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "createbigcannons:medium_cast_mould",
+    "emc": 32
+  },
+  {
+    "item": "create:mangrove_window_pane",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:jungle_leaves",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:glistering_melon_slice",
+    "emc": 1832
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:regeneration"
+      }
+    },
+    "emc": 1438
+  },
+  {
+    "item": "create:polished_rose_quartz",
+    "emc": 768
+  },
+  {
+    "item": "minecraft:lightning_rod",
+    "emc": 384
+  },
+  {
+    "item": "minecraft:heart_of_the_sea",
+    "emc": 32768
+  },
+  {
+    "item": "minecraft:orange_concrete",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:turtle_master"
+      }
+    },
+    "emc": 233
+  },
+  {
+    "item": "create:cuckoo_clock",
+    "emc": 8326
+  },
+  {
+    "item": "createbigcannons:big_cartridge_sheet",
+    "emc": 126
+  },
+  {
+    "item": "create:bamboo_window",
+    "emc": 12
+  },
+  {
+    "item": "minecraft:purple_glazed_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "minecraft:white_carpet",
+    "emc": 32
+  },
+  {
+    "item": "create:bamboo_window_pane",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:rail",
+    "emc": 96
+  },
+  {
+    "item": "minecraft:cherry_trapdoor",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:cornflower",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:cooked_cod",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:gray_candle",
+    "emc": 36
+  },
+  {
+    "item": "minecraft:blue_shulker_box",
+    "emc": 4168
+  },
+  {
+    "item": "minecraft:chainmail_helmet",
+    "emc": 1280
+  },
+  {
+    "item": "minecraft:sculk_sensor",
+    "emc": 2680
+  },
+  {
+    "item": "minecraft:snort_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "create:crafting_blueprint",
+    "emc": 112
+  },
+  {
+    "item": "minecraft:weathered_copper",
+    "emc": 1152
+  },
+  {
+    "item": "minecraft:redstone_torch",
+    "emc": 68
+  },
+  {
+    "item": "create:polished_cut_deepslate_stairs",
+    "emc": 2
+  },
+  {
+    "item": "create:flywheel",
+    "emc": 1013
+  },
+  {
+    "item": "minecraft:tinted_glass",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:exposed_copper_door",
+    "emc": 256
+  },
+  {
+    "item": "minecraft:gray_glazed_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "minecraft:cyan_concrete",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:stone_brick_wall",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:warped_hanging_sign",
+    "emc": 84
+  },
+  {
+    "item": "aeronautics:red_envelope",
+    "emc": 17
+  },
+  {
+    "item": "create:cut_scorchia_brick_slab",
+    "emc": 24
+  },
+  {
+    "item": "simulated:blue_nameplate",
+    "emc": 24
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:slowness"
+      }
+    },
+    "emc": 136
+  },
+  {
+    "item": "create:light_gray_valve_handle",
+    "emc": 422
+  },
+  {
+    "item": "create:attribute_filter",
+    "emc": 76
+  },
+  {
+    "item": "create:tree_fertilizer",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:light_blue_bed",
+    "emc": 168
+  },
+  {
+    "item": "minecraft:polished_blackstone",
+    "emc": 4
+  },
+  {
+    "item": "create:mechanical_plough",
+    "emc": 920
+  },
+  {
+    "item": "minecraft:cauldron",
+    "emc": 1792
+  },
+  {
+    "item": "createbigcannons:wrought_iron_drop_mortar_end",
+    "emc": 1312
+  },
+  {
+    "item": "minecraft:golden_boots",
+    "emc": 8192
+  },
+  {
+    "item": "create:schematic_table",
+    "emc": 14
+  },
+  {
+    "item": "minecraft:blackstone_wall",
+    "emc": 4
+  },
+  {
+    "item": "create:mechanical_arm",
+    "emc": 2924
+  },
+  {
+    "item": "simulated:navigation_table",
+    "emc": 2642
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_poison"
+      }
+    },
+    "emc": 31
+  },
+  {
+    "item": "minecraft:dead_tube_coral",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:fire_resistance"
+      }
+    },
+    "emc": 45
+  },
+  {
+    "item": "projecte:aeternalis_fuel",
+    "emc": 8192
+  },
+  {
+    "item": "create:haunted_bell",
+    "emc": 1260
+  },
+  {
+    "item": "createbigcannons:bronze_block",
+    "emc": 1440
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:mundane"
+      }
+    },
+    "emc": 65
+  },
+  {
+    "item": "createbigcannons:large_cast_mould",
+    "emc": 32
+  },
+  {
+    "item": "simulated:throttle_lever",
+    "emc": 162
+  },
+  {
+    "item": "create:cut_andesite_wall",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:lily_of_the_valley",
+    "emc": 16
+  },
+  {
+    "item": "create:small_granite_brick_slab",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:kelp",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:dispenser",
+    "emc": 119
+  },
+  {
+    "item": "minecraft:stripped_cherry_wood",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:green_terracotta",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:suspicious_stew",
+    "data": {
+      "minecraft:suspicious_stew_effects": [
+        {
+          "id": "minecraft:night_vision",
+          "duration": 100
+        }
+      ]
+    },
+    "emc": 86
+  },
+  {
+    "item": "minecraft:waxed_oxidized_copper_grate",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:brown_concrete_powder",
+    "emc": 6
+  },
+  {
+    "item": "create:waxed_oxidized_copper_shingle_stairs",
+    "emc": 64
+  },
+  {
+    "item": "create:cut_scoria_bricks",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:light_blue_dye",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:mushroom_stew",
+    "emc": 70
+  },
+  {
+    "item": "simulated:orange_nameplate",
+    "emc": 24
+  },
+  {
+    "item": "minecraft:skull_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "create:layered_deepslate",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:slow_falling"
+      }
+    },
+    "emc": 73
+  },
+  {
+    "item": "createbigcannons:nethersteel_block",
+    "emc": 14985
+  },
+  {
+    "item": "minecraft:cobbled_deepslate_stairs",
+    "emc": 2
+  },
+  {
+    "item": "create:layered_calcite",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:sea_pickle",
+    "emc": 16
+  },
+  {
+    "item": "create:light_blue_postbox",
+    "emc": 94
+  },
+  {
+    "item": "create:small_andesite_brick_stairs",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:quartz_pillar",
+    "emc": 1024
+  },
+  {
+    "item": "minecraft:brain_coral",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:composter",
+    "emc": 28
+  },
+  {
+    "item": "create:display_board",
+    "emc": 542
+  },
+  {
+    "item": "createbigcannons:timed_fuze",
+    "emc": 2144
+  },
+  {
+    "item": "minecraft:birch_fence_gate",
+    "emc": 8
+  },
+  {
+    "item": "create:polished_cut_deepslate",
+    "emc": 2
+  },
+  {
+    "item": "create:small_andesite_bricks",
+    "emc": 16
+  },
+  {
+    "item": "create:copper_valve_handle",
+    "emc": 414
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_slowness"
+      }
+    },
+    "emc": 47
+  },
+  {
+    "item": "minecraft:suspicious_stew",
+    "data": {
+      "minecraft:suspicious_stew_effects": [
+        {
+          "id": "minecraft:wither"
+        }
+      ]
+    },
+    "emc": 86
+  },
+  {
+    "item": "minecraft:pufferfish_bucket",
+    "emc": 832
+  },
+  {
+    "item": "minecraft:lime_wool",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:waxed_copper_grate",
+    "emc": 288
+  },
+  {
+    "item": "createbigcannons:wrought_iron_cannon_end",
+    "emc": 1216
+  },
+  {
+    "item": "create:cut_andesite",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:stripped_cherry_log",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:light_blue_concrete",
+    "emc": 3
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:46x30"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "minecraft:spruce_leaves",
+    "emc": 1
+  },
+  {
+    "item": "projecte:nova_cataclysm",
+    "emc": 4849
+  },
+  {
+    "item": "minecraft:cherry_door",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:dark_prismarine_stairs",
+    "emc": 2056
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:762x54"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "minecraft:dead_bubble_coral_fan",
+    "emc": 1
+  },
+  {
+    "item": "create:exposed_copper_shingle_slab",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:waxed_weathered_copper_grate",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:diorite_wall",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:iron_chestplate",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:verdant_froglight",
+    "emc": 181
+  },
+  {
+    "item": "minecraft:green_concrete",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:scrape_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "create:polished_cut_tuff_wall",
+    "emc": 4
+  },
+  {
+    "item": "create:cut_scorchia_slab",
+    "emc": 24
+  },
+  {
+    "item": "create:cyan_seat",
+    "emc": 52
+  },
+  {
+    "item": "create:fluid_pipe",
+    "emc": 96
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_poison"
+      }
+    },
+    "emc": 44
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:545x39"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "create:blue_valve_handle",
+    "emc": 422
+  },
+  {
+    "item": "minecraft:wayfinder_armor_trim_smithing_template",
+    "emc": 10176
+  },
+  {
+    "item": "create:oxidized_copper_tile_slab",
+    "emc": 32
+  },
+  {
+    "item": "create:copper_sheet",
+    "emc": 128
+  },
+  {
+    "item": "createbigcannons:cannon_carriage",
+    "emc": 1093
+  },
+  {
+    "item": "create:copper_shingle_slab",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:red_sandstone_slab",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_healing"
+      }
+    },
+    "emc": 811
+  },
+  {
+    "item": "minecraft:magenta_bed",
+    "emc": 168
+  },
+  {
+    "item": "minecraft:smooth_red_sandstone_stairs",
+    "emc": 4
+  },
+  {
+    "item": "create:bound_cardboard_block",
+    "emc": 1524
+  },
+  {
+    "item": "minecraft:oxidized_cut_copper_stairs",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:regeneration"
+      }
+    },
+    "emc": 1374
+  },
+  {
+    "item": "projecte:gem_helmet",
+    "emc": 29133920
+  },
+  {
+    "item": "minecraft:cooked_salmon",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:dragon_egg",
+    "emc": 262144
+  },
+  {
+    "item": "projecte:white_alchemical_bag",
+    "emc": 9851
+  },
+  {
+    "item": "minecraft:orange_wool",
+    "emc": 48
+  },
+  {
+    "item": "create:copper_bars",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:harming"
+      }
+    },
+    "emc": 35
+  },
+  {
+    "item": "minecraft:oxidized_cut_copper_slab",
+    "emc": 144
+  },
+  {
+    "item": "projecte:mobius_fuel_block",
+    "emc": 18432
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_slow_falling"
+      }
+    },
+    "emc": 158
+  },
+  {
+    "item": "minecraft:end_stone_bricks",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:copper_bulb",
+    "emc": 1264
+  },
+  {
+    "item": "minecraft:iron_door",
+    "emc": 512
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:infested"
+      }
+    },
+    "emc": 73
+  },
+  {
+    "item": "spore:lab_block1",
+    "emc": 46
+  },
+  {
+    "item": "create:layered_diorite",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:leaping"
+      }
+    },
+    "emc": 51
+  },
+  {
+    "item": "create:brass_hand",
+    "emc": 534
+  },
+  {
+    "item": "create:polished_cut_calcite_wall",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:music_disc_creator_music_box",
+    "emc": 8192
+  },
+  {
+    "item": "create:waxed_oxidized_copper_shingle_slab",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:tide_armor_trim_smithing_template",
+    "emc": 22116
+  },
+  {
+    "item": "create:stressometer",
+    "emc": 1150
+  },
+  {
+    "item": "simulated:rope_winch",
+    "emc": 389
+  },
+  {
+    "item": "spore:vent_door",
+    "emc": 1164
+  },
+  {
+    "item": "minecraft:goat_horn",
+    "data": {
+      "minecraft:instrument": "minecraft:yearn_goat_horn"
+    },
+    "emc": 192
+  },
+  {
+    "item": "minecraft:plenty_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "create:ornate_iron_window_pane",
+    "emc": 15
+  },
+  {
+    "item": "minecraft:magenta_wool",
+    "emc": 48
+  },
+  {
+    "item": "create:cut_tuff_stairs",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:ender_chest",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:mossy_stone_brick_wall",
+    "emc": 9
+  },
+  {
+    "item": "simulated:spring",
+    "emc": 270
+  },
+  {
+    "item": "minecraft:crimson_fungus",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:sandstone_stairs",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:orange_concrete_powder",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:brown_candle",
+    "emc": 60
+  },
+  {
+    "item": "minecraft:music_disc_pigstep",
+    "emc": 8192
+  },
+  {
+    "item": "minecraft:mangrove_roots",
+    "emc": 4
+  },
+  {
+    "item": "create:black_valve_handle",
+    "emc": 422
+  },
+  {
+    "item": "minecraft:flow_armor_trim_smithing_template",
+    "emc": 30528
+  },
+  {
+    "item": "create:zinc_nugget",
+    "emc": 14
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_strength"
+      }
+    },
+    "emc": 371
+  },
+  {
+    "item": "create:waxed_exposed_copper_tile_stairs",
+    "emc": 64
+  },
+  {
+    "item": "create:small_scoria_brick_wall",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:stripped_warped_hyphae",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:iron_pickaxe",
+    "emc": 776
+  },
+  {
+    "item": "minecraft:lantern",
+    "emc": 233
+  },
+  {
+    "item": "minecraft:jungle_button",
+    "emc": 8
+  },
+  {
+    "item": "create:sturdy_sheet",
+    "emc": 64
+  },
+  {
+    "item": "simulated:black_handle",
+    "emc": 66
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:swiftness"
+      }
+    },
+    "emc": 78
+  },
+  {
+    "item": "minecraft:netherite_shovel",
+    "emc": 73041
+  },
+  {
+    "item": "create:cut_diorite_stairs",
+    "emc": 16
+  },
+  {
+    "item": "create:copper_casing",
+    "emc": 160
+  },
+  {
+    "item": "minecraft:chest_minecart",
+    "emc": 1344
+  },
+  {
+    "item": "projecte:divining_rod_2",
+    "emc": 76
+  },
+  {
+    "item": "create:hand_crank",
+    "emc": 54
+  },
+  {
+    "item": "minecraft:green_shulker_box",
+    "emc": 4160
+  },
+  {
+    "item": "create:polished_cut_andesite_slab",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:mourner_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "minecraft:spruce_planks",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:wind_charged"
+      }
+    },
+    "emc": 841
+  },
+  {
+    "item": "simulated:red_handle",
+    "emc": 66
+  },
+  {
+    "item": "minecraft:yellow_banner",
+    "emc": 292
+  },
+  {
+    "item": "minecraft:suspicious_stew",
+    "data": {
+      "minecraft:suspicious_stew_effects": [
+        {
+          "id": "minecraft:jump_boost",
+          "duration": 120
+        }
+      ]
+    },
+    "emc": 86
+  },
+  {
+    "item": "create:redstone_link",
+    "emc": 447
+  },
+  {
+    "item": "minecraft:hopper",
+    "emc": 1344
+  },
+  {
+    "item": "createbigcannons:delayed_inertia_fuze",
+    "emc": 2304
+  },
+  {
+    "item": "minecraft:pink_banner",
+    "emc": 292
+  },
+  {
+    "item": "create:small_deepslate_brick_stairs",
+    "emc": 2
+  },
+  {
+    "item": "create:layered_granite",
+    "emc": 16
+  },
+  {
+    "item": "create:purple_postbox",
+    "emc": 94
+  },
+  {
+    "item": "minecraft:birch_chest_boat",
+    "emc": 104
+  },
+  {
+    "item": "create:light_gray_table_cloth",
+    "emc": 39
+  },
+  {
+    "item": "createbigcannons:block_armor_inspection_tool",
+    "emc": 2710
+  },
+  {
+    "item": "createbigcannons:big_cartridge",
+    "data": {
+      "createbigcannons:power": 0
+    },
+    "emc": 126
+  },
+  {
+    "item": "create:small_diorite_brick_wall",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:iron_helmet",
+    "emc": 1280
+  },
+  {
+    "item": "projecte:soul_stone",
+    "emc": 937056
+  },
+  {
+    "item": "minecraft:prismarine_shard",
+    "emc": 256
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:762x39"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "minecraft:glass_bottle",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:water_breathing"
+      }
+    },
+    "emc": 94
+  },
+  {
+    "item": "create:crimson_window",
+    "emc": 12
+  },
+  {
+    "item": "projecte:red_matter",
+    "emc": 466944
+  },
+  {
+    "item": "create:cardboard_block",
+    "emc": 1512
+  },
+  {
+    "item": "minecraft:chain",
+    "emc": 156
+  },
+  {
+    "item": "minecraft:diamond_boots",
+    "emc": 32768
+  },
+  {
+    "item": "minecraft:bamboo_trapdoor",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:water"
+      }
+    },
+    "emc": 65
+  },
+  {
+    "item": "minecraft:redstone",
+    "emc": 64
+  },
+  {
+    "item": "create:black_seat",
+    "emc": 52
+  },
+  {
+    "item": "simulated:rope_coupling",
+    "emc": 92
+  },
+  {
+    "item": "aeronautics:steam_vent",
+    "emc": 3200
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strength"
+      }
+    },
+    "emc": 44
+  },
+  {
+    "item": "minecraft:leather",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:diamond_horse_armor",
+    "emc": 65536
+  },
+  {
+    "item": "create:fluid_valve",
+    "emc": 352
+  },
+  {
+    "item": "create:brass_block",
+    "emc": 1134
+  },
+  {
+    "item": "create:polished_cut_deepslate_slab",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:red_sandstone",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:stone_stairs",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:redstone_lamp",
+    "emc": 1792
+  },
+  {
+    "item": "minecraft:chiseled_tuff",
+    "emc": 4
+  },
+  {
+    "item": "create:lime_table_cloth",
+    "emc": 39
+  },
+  {
+    "item": "simulated:green_handle",
+    "emc": 58
+  },
+  {
+    "item": "minecraft:ghast_tear",
+    "emc": 4096
+  },
+  {
+    "item": "create:encased_fan",
+    "emc": 1121
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_turtle_master"
+      }
+    },
+    "emc": 361
+  },
+  {
+    "item": "createbigcannons:steel_scrap",
+    "emc": 30
+  },
+  {
+    "item": "minecraft:rabbit_foot",
+    "emc": 128
+  },
+  {
+    "item": "minecraft:nether_star",
+    "emc": 139264
+  },
+  {
+    "item": "minecraft:spruce_fence_gate",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:nether_wart",
+    "emc": 24
+  },
+  {
+    "item": "minecraft:exposed_copper_grate",
+    "emc": 288
+  },
+  {
+    "item": "create:cut_calcite_brick_wall",
+    "emc": 32
+  },
+  {
+    "item": "create:belt_connector",
+    "emc": 6
+  },
+  {
+    "item": "minecraft:glow_lichen",
+    "emc": 8
+  },
+  {
+    "item": "createbigcannons:steel_block",
+    "emc": 2430
+  },
+  {
+    "item": "minecraft:fern",
+    "emc": 1
+  },
+  {
+    "item": "create:light_blue_table_cloth",
+    "emc": 39
+  },
+  {
+    "item": "minecraft:chorus_flower",
+    "emc": 96
+  },
+  {
+    "item": "minecraft:yellow_shulker_box",
+    "emc": 4168
+  },
+  {
+    "item": "create:andesite_scaffolding",
+    "emc": 15
+  },
+  {
+    "item": "offroad:rockcutting_wheel",
+    "emc": 640
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_night_vision"
+      }
+    },
+    "emc": 104
+  },
+  {
+    "item": "create:orange_valve_handle",
+    "emc": 422
+  },
+  {
+    "item": "minecraft:cod_bucket",
+    "emc": 832
+  },
+  {
+    "item": "create:controller_rail",
+    "emc": 2219
+  },
+  {
+    "item": "create:cardboard_sword",
+    "emc": 760
+  },
+  {
+    "item": "create:placard",
+    "emc": 222
+  },
+  {
+    "item": "minecraft:quartz_block",
+    "emc": 1024
+  },
+  {
+    "item": "create:framed_glass_trapdoor",
+    "emc": 9
+  },
+  {
+    "item": "minecraft:iron_block",
+    "emc": 2304
+  },
+  {
+    "item": "minecraft:fletching_table",
+    "emc": 40
+  },
+  {
+    "item": "minecraft:cyan_dye",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:oxidized_copper_door",
+    "emc": 256
+  },
+  {
+    "item": "create:cut_andesite_slab",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:horn_coral_block",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:mundane"
+      }
+    },
+    "emc": 1
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:night_vision"
+      }
+    },
+    "emc": 101
+  },
+  {
+    "item": "create:waxed_exposed_copper_tiles",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:quartz_stairs",
+    "emc": 1024
+  },
+  {
+    "item": "create:cut_calcite_stairs",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:written_book",
+    "emc": 224
+  },
+  {
+    "item": "minecraft:crimson_pressure_plate",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:slime_ball",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:mossy_stone_brick_stairs",
+    "emc": 9
+  },
+  {
+    "item": "create:cut_diorite_brick_slab",
+    "emc": 8
+  },
+  {
+    "item": "create:orange_seat",
+    "emc": 52
+  },
+  {
+    "item": "minecraft:dark_oak_log",
+    "emc": 32
+  },
+  {
+    "item": "create:waxed_exposed_copper_shingle_slab",
+    "emc": 32
+  },
+  {
+    "item": "projecte:collector_mk1",
+    "emc": 82953
+  },
+  {
+    "item": "minecraft:snowball",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:blue_stained_glass",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:exposed_copper_bulb",
+    "emc": 1264
+  },
+  {
+    "item": "minecraft:blue_orchid",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:snow",
+    "emc": 1
+  },
+  {
+    "item": "create:waxed_copper_shingle_slab",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:polished_diorite_slab",
+    "emc": 8
+  },
+  {
+    "item": "create:train_trapdoor",
+    "emc": 230
+  },
+  {
+    "item": "minecraft:netherite_chestplate",
+    "emc": 130377
+  },
+  {
+    "item": "minecraft:red_nether_brick_slab",
+    "emc": 25
+  },
+  {
+    "item": "minecraft:blue_concrete",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:crimson_button",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:pitcher_plant",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:ender_eye",
+    "emc": 1536
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:leaping"
+      }
+    },
+    "emc": 115
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:water_breathing"
+      }
+    },
+    "emc": 30
+  },
+  {
+    "item": "createbigcannons:worm_head",
+    "emc": 293
+  },
+  {
+    "item": "minecraft:purple_bed",
+    "emc": 168
+  },
+  {
+    "item": "simulated:pink_handle",
+    "emc": 60
+  },
+  {
+    "item": "minecraft:crimson_trapdoor",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:diorite_stairs",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:diamond_chestplate",
+    "emc": 65536
+  },
+  {
+    "item": "createbigcannons:nitropowder",
+    "emc": 360
+  },
+  {
+    "item": "simulated:blue_handle",
+    "emc": 66
+  },
+  {
+    "item": "createbigcannons:drop_mortar_shell",
+    "emc": 2629
+  },
+  {
+    "item": "create:cogwheel",
+    "emc": 13
+  },
+  {
+    "item": "create:cut_granite_bricks",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:music_disc_cat",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:wind_charged"
+      }
+    },
+    "emc": 841
+  },
+  {
+    "item": "projecte:green_alchemical_bag",
+    "emc": 9851
+  },
+  {
+    "item": "create:packager",
+    "emc": 2664
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_leaping"
+      }
+    },
+    "emc": 44
+  },
+  {
+    "item": "minecraft:chiseled_sandstone",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:emerald",
+    "emc": 16384
+  },
+  {
+    "item": "projecte:aeternalis_fuel_block",
+    "emc": 73728
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:45_70"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "createbigcannons:autocannon_ammo_container",
+    "emc": 1406
+  },
+  {
+    "item": "minecraft:crimson_door",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_invisibility"
+      }
+    },
+    "emc": 714
+  },
+  {
+    "item": "create:small_deepslate_brick_wall",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_regeneration"
+      }
+    },
+    "emc": 196
+  },
+  {
+    "item": "minecraft:black_dye",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:stripped_jungle_log",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:coal_block",
+    "emc": 1152
+  },
+  {
+    "item": "minecraft:netherite_pickaxe",
+    "emc": 89425
+  },
+  {
+    "item": "create:brass_scaffolding",
+    "emc": 63
+  },
+  {
+    "item": "create:waxed_copper_tile_slab",
+    "emc": 32
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:58x42"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "createbigcannons:spring_wire",
+    "emc": 256
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:slow_falling"
+      }
+    },
+    "emc": 137
+  },
+  {
+    "item": "minecraft:oxidized_chiseled_copper",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:spruce_fence",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:waxed_weathered_copper_bulb",
+    "emc": 1264
+  },
+  {
+    "item": "create:copper_scaffolding",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:red_shulker_box",
+    "emc": 4168
+  },
+  {
+    "item": "minecraft:iron_axe",
+    "emc": 776
+  },
+  {
+    "item": "spore:ice_canister",
+    "emc": 233
+  },
+  {
+    "item": "minecraft:white_candle",
+    "emc": 36
+  },
+  {
+    "item": "createbigcannons:fluid_shell",
+    "emc": 1476
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:turtle_master"
+      }
+    },
+    "emc": 169
+  },
+  {
+    "item": "minecraft:netherite_scrap",
+    "emc": 12288
+  },
+  {
+    "item": "minecraft:tnt",
+    "emc": 964
+  },
+  {
+    "item": "minecraft:melon_slice",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:grindstone",
+    "emc": 24
+  },
+  {
+    "item": "create:chute",
+    "emc": 192
+  },
+  {
+    "item": "minecraft:sea_lantern",
+    "emc": 3584
+  },
+  {
+    "item": "create:bar_of_chocolate",
+    "emc": 83
+  },
+  {
+    "item": "minecraft:jungle_stairs",
+    "emc": 8
+  },
+  {
+    "item": "createbigcannons:log_cannon_end",
+    "emc": 296
+  },
+  {
+    "item": "createbigcannons:autocannon_barrel_cast_mould",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:miner_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "minecraft:warped_fungus_on_a_stick",
+    "emc": 68
+  },
+  {
+    "item": "create:magenta_valve_handle",
+    "emc": 419
+  },
+  {
+    "item": "minecraft:lava_bucket",
+    "emc": 788
+  },
+  {
+    "item": "create:cardboard_boots",
+    "emc": 1512
+  },
+  {
+    "item": "minecraft:blade_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "minecraft:big_dripleaf",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:magenta_stained_glass",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_healing"
+      }
+    },
+    "emc": 811
+  },
+  {
+    "item": "projecte:void_ring",
+    "emc": 1534172
+  },
+  {
+    "item": "create:elevator_pulley",
+    "emc": 423
+  },
+  {
+    "item": "create:linked_controller",
+    "emc": 495
+  },
+  {
+    "item": "sentrymechanicalarm:apple_pie",
+    "emc": 502
+  },
+  {
+    "item": "create:oxidized_copper_shingle_stairs",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:music_disc_wait",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_healing"
+      }
+    },
+    "emc": 747
+  },
+  {
+    "item": "aeronautics:mounted_potato_cannon",
+    "emc": 598
+  },
+  {
+    "item": "create:small_tuff_brick_wall",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:warped_fungus",
+    "emc": 32
+  },
+  {
+    "item": "projecte:medium_covalence_dust",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:dark_oak_hanging_sign",
+    "emc": 84
+  },
+  {
+    "item": "minecraft:cartography_table",
+    "emc": 96
+  },
+  {
+    "item": "simulated:light_gray_handle",
+    "emc": 66
+  },
+  {
+    "item": "minecraft:mojang_banner_pattern",
+    "emc": 147616
+  },
+  {
+    "item": "aeronautics:aviators_goggles",
+    "emc": 2126
+  },
+  {
+    "item": "create:track",
+    "emc": 28
+  },
+  {
+    "item": "minecraft:quartz_slab",
+    "emc": 512
+  },
+  {
+    "item": "minecraft:waxed_oxidized_cut_copper_slab",
+    "emc": 144
+  },
+  {
+    "item": "simulated:directional_linked_receiver",
+    "emc": 1246
+  },
+  {
+    "item": "create:rose_quartz",
+    "emc": 768
+  },
+  {
+    "item": "minecraft:white_wool",
+    "emc": 48
+  },
+  {
+    "item": "aeronautics:magenta_envelope",
+    "emc": 17
+  },
+  {
+    "item": "minecraft:lime_bed",
+    "emc": 168
+  },
+  {
+    "item": "offroad:tire",
+    "emc": 9
+  },
+  {
+    "item": "minecraft:howl_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "minecraft:soul_torch",
+    "emc": 9
+  },
+  {
+    "item": "minecraft:dark_oak_stairs",
+    "emc": 8
+  },
+  {
+    "item": "simulated:auger_cog",
+    "emc": 226
+  },
+  {
+    "item": "minecraft:warped_planks",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_leaping"
+      }
+    },
+    "emc": 31
+  },
+  {
+    "item": "minecraft:mossy_cobblestone",
+    "emc": 9
+  },
+  {
+    "item": "minecraft:wind_charge",
+    "emc": 576
+  },
+  {
+    "item": "minecraft:coarse_dirt",
+    "emc": 2
+  },
+  {
+    "item": "create:minecart_coupling",
+    "emc": 316
+  },
+  {
+    "item": "minecraft:acacia_button",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:mangrove_stairs",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:blaze_powder",
+    "emc": 512
+  },
+  {
+    "item": "simulated:light_blue_nameplate",
+    "emc": 24
+  },
+  {
+    "item": "minecraft:gray_carpet",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:cooked_porkchop",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:clay",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_invisibility"
+      }
+    },
+    "emc": 778
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:swiftness"
+      }
+    },
+    "emc": 14
+  },
+  {
+    "item": "minecraft:andesite_stairs",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:pink_bed",
+    "emc": 168
+  },
+  {
+    "item": "create:item_drain",
+    "emc": 256
+  },
+  {
+    "item": "minecraft:beehive",
+    "emc": 96
+  },
+  {
+    "item": "createbigcannons:autocannon_recoil_spring_cast_mould",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:cherry_fence",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:blue_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "aeronautics:wooden_propeller",
+    "emc": 1063
+  },
+  {
+    "item": "minecraft:yellow_candle",
+    "emc": 36
+  },
+  {
+    "item": "create:cut_scoria_brick_slab",
+    "emc": 24
+  },
+  {
+    "item": "minecraft:rabbit_hide",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:oak_sapling",
+    "emc": 32
+  },
+  {
+    "item": "create:cut_dripstone_stairs",
+    "emc": 64
+  },
+  {
+    "item": "create:scorchia",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:activator_rail",
+    "emc": 268
+  },
+  {
+    "item": "minecraft:mangrove_slab",
+    "emc": 4
+  },
+  {
+    "item": "simulated:altitude_sensor",
+    "emc": 350
+  },
+  {
+    "item": "simulated:docking_connector",
+    "emc": 1513
+  },
+  {
+    "item": "minecraft:carrot_on_a_stick",
+    "emc": 100
+  },
+  {
+    "item": "minecraft:dark_oak_door",
+    "emc": 8
+  },
+  {
+    "item": "create:rose_quartz_lamp",
+    "emc": 960
+  },
+  {
+    "item": "create:small_scorchia_brick_wall",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:water_breathing"
+      }
+    },
+    "emc": 94
+  },
+  {
+    "item": "createbigcannons:worm",
+    "emc": 301
+  },
+  {
+    "item": "create:andesite_ladder",
+    "emc": 15
+  },
+  {
+    "item": "minecraft:calcite",
+    "emc": 32
+  },
+  {
+    "item": "create:polished_cut_scorchia",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:magenta_concrete",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:shield",
+    "emc": 304
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_fire_resistance"
+      }
+    },
+    "emc": 48
+  },
+  {
+    "item": "offroad:borehead_bearing",
+    "emc": 246
+  },
+  {
+    "item": "minecraft:waxed_weathered_copper_door",
+    "emc": 256
+  },
+  {
+    "item": "minecraft:leather_boots",
+    "emc": 256
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:weaving"
+      }
+    },
+    "emc": 23
+  },
+  {
+    "item": "minecraft:music_disc_otherside",
+    "emc": 6144
+  },
+  {
+    "item": "minecraft:brush",
+    "emc": 180
+  },
+  {
+    "item": "minecraft:warped_slab",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:feather",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:light_weighted_pressure_plate",
+    "emc": 4096
+  },
+  {
+    "item": "minecraft:muddy_mangrove_roots",
+    "emc": 5
+  },
+  {
+    "item": "minecraft:black_wool",
+    "emc": 48
+  },
+  {
+    "item": "create:polished_cut_granite_wall",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:music_disc_11",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:stripped_birch_log",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:chainmail_boots",
+    "emc": 1024
+  },
+  {
+    "item": "minecraft:damaged_anvil",
+    "emc": 2222
+  },
+  {
+    "item": "createbigcannons:steel_autocannon_breech_extractor",
+    "emc": 270
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:weakness"
+      }
+    },
+    "emc": 29
+  },
+  {
+    "item": "minecraft:mossy_cobblestone_stairs",
+    "emc": 9
+  },
+  {
+    "item": "minecraft:oak_door",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:waxed_exposed_cut_copper",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:golden_pickaxe",
+    "emc": 6152
+  },
+  {
+    "item": "createbigcannons:cast_iron_sliding_breechblock",
+    "emc": 890
+  },
+  {
+    "item": "minecraft:brown_wool",
+    "emc": 48
+  },
+  {
+    "item": "create:cut_dripstone_slab",
+    "emc": 32
+  },
+  {
+    "item": "projecte:dm_axe",
+    "emc": 434176
+  },
+  {
+    "item": "createbigcannons:pair_of_cannon_wheels",
+    "emc": 528
+  },
+  {
+    "item": "projecte:relay_mk2",
+    "emc": 213889
+  },
+  {
+    "item": "minecraft:smooth_quartz",
+    "emc": 1024
+  },
+  {
+    "item": "create:cherry_window_pane",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:yellow_stained_glass",
+    "emc": 2
+  },
+  {
+    "item": "create:cut_dripstone_bricks",
+    "emc": 64
+  },
+  {
+    "item": "create:brass_door",
+    "emc": 166
+  },
+  {
+    "item": "minecraft:bamboo_sign",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:polished_blackstone_bricks",
+    "emc": 4
+  },
+  {
+    "item": "create:purple_table_cloth",
+    "emc": 39
+  },
+  {
+    "item": "minecraft:nether_brick_wall",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:bone_block",
+    "emc": 432
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:thick"
+      }
+    },
+    "emc": 193
+  },
+  {
+    "item": "minecraft:white_glazed_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:50ae"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "minecraft:jungle_chest_boat",
+    "emc": 104
+  },
+  {
+    "item": "minecraft:gray_concrete",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:snow_block",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:packed_mud",
+    "emc": 25
+  },
+  {
+    "item": "minecraft:waxed_weathered_cut_copper_stairs",
+    "emc": 288
+  },
+  {
+    "item": "create:mechanical_drill",
+    "emc": 408
+  },
+  {
+    "item": "create:small_diorite_brick_slab",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:porkchop",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:cobweb",
+    "emc": 12
+  },
+  {
+    "item": "minecraft:honeycomb_block",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:cyan_glazed_terracotta",
+    "emc": 64
+  },
+  {
+    "item": "create:crimson_window_pane",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:acacia_boat",
+    "emc": 40
+  },
+  {
+    "item": "minecraft:diamond_axe",
+    "emc": 24584
+  },
+  {
+    "item": "minecraft:gray_wool",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:yellow_bed",
+    "emc": 168
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_slow_falling"
+      }
+    },
+    "emc": 158
+  },
+  {
+    "item": "projecte:rm_helmet",
+    "emc": 3031040
+  },
+  {
+    "item": "minecraft:polished_deepslate",
+    "emc": 2
+  },
+  {
+    "item": "simulated:directional_gearshift",
+    "emc": 148
+  },
+  {
+    "item": "minecraft:sculk_vein",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:lectern",
+    "emc": 544
+  },
+  {
+    "item": "create:cut_deepslate",
+    "emc": 2
+  },
+  {
+    "item": "create:cut_scorchia_brick_stairs",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:piglin_head",
+    "emc": 256
+  },
+  {
+    "item": "minecraft:prismarine_stairs",
+    "emc": 1024
+  },
+  {
+    "item": "minecraft:oak_button",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:oak_pressure_plate",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:sunflower",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:poppy",
+    "emc": 16
+  },
+  {
+    "item": "create:warped_window_pane",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:turtle_egg",
+    "emc": 192
+  },
+  {
+    "item": "create:cut_deepslate_brick_stairs",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:pink_stained_glass",
+    "emc": 1
+  },
+  {
+    "item": "projecte:light_blue_alchemical_bag",
+    "emc": 9851
+  },
+  {
+    "item": "minecraft:vex_armor_trim_smithing_template",
+    "emc": 51917
+  },
+  {
+    "item": "minecraft:acacia_slab",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:white_dye",
+    "emc": 8
+  },
+  {
+    "item": "spore:compound",
+    "emc": 47
+  },
+  {
+    "item": "minecraft:beetroot_soup",
+    "emc": 390
+  },
+  {
+    "item": "minecraft:mangrove_door",
+    "emc": 8
+  },
+  {
+    "item": "create:cut_andesite_brick_wall",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:stone",
+    "emc": 1
+  },
+  {
+    "item": "projecte:dm_pedestal",
+    "emc": 4653056
+  },
+  {
+    "item": "spore:incubator",
+    "emc": 3574
+  },
+  {
+    "item": "minecraft:cherry_pressure_plate",
+    "emc": 8
+  },
+  {
+    "item": "create:weathered_copper_tiles",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:copper_block",
+    "emc": 1152
+  },
+  {
+    "item": "create:oxidized_copper_shingle_slab",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:warped_fence_gate",
+    "emc": 8
+  },
+  {
+    "item": "create:secondary_linear_chassis",
+    "emc": 52
+  },
+  {
+    "item": "minecraft:golden_sword",
+    "emc": 4100
+  },
+  {
+    "item": "create:polished_cut_granite_slab",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:andesite_wall",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_turtle_master"
+      }
+    },
+    "emc": 361
+  },
+  {
+    "item": "minecraft:poisonous_potato",
+    "emc": 64
+  },
+  {
+    "item": "create:birch_window",
+    "emc": 12
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_turtle_master"
+      }
+    },
+    "emc": 45
+  },
+  {
+    "item": "minecraft:orange_dye",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:exposed_cut_copper_slab",
+    "emc": 144
+  },
+  {
+    "item": "minecraft:spruce_log",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:charcoal",
+    "emc": 32
+  },
+  {
+    "item": "create:clockwork_bearing",
+    "emc": 1186
+  },
+  {
+    "item": "create:purple_seat",
+    "emc": 52
+  },
+  {
+    "item": "minecraft:mangrove_hanging_sign",
+    "emc": 84
+  },
+  {
+    "item": "create:weighted_ejector",
+    "emc": 2153
+  },
+  {
+    "item": "minecraft:mangrove_trapdoor",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:weathered_cut_copper",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:waxed_weathered_copper_trapdoor",
+    "emc": 384
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:wind_charged"
+      }
+    },
+    "emc": 777
+  },
+  {
+    "item": "minecraft:oak_chest_boat",
+    "emc": 104
+  },
+  {
+    "item": "minecraft:glass",
+    "emc": 1
+  },
+  {
+    "item": "create:pulse_timer",
+    "emc": 229
+  },
+  {
+    "item": "projecte:orange_alchemical_bag",
+    "emc": 9851
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:regeneration"
+      }
+    },
+    "emc": 193
+  },
+  {
+    "item": "createbigcannons:cast_iron_autocannon_breech_extractor",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:bamboo_block",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_water_breathing"
+      }
+    },
+    "emc": 51
+  },
+  {
+    "item": "minecraft:red_glazed_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "minecraft:iron_shovel",
+    "emc": 264
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_harming"
+      }
+    },
+    "emc": 51
+  },
+  {
+    "item": "minecraft:sandstone_slab",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:weathered_copper_door",
+    "emc": 256
+  },
+  {
+    "item": "simulated:linked_typewriter",
+    "emc": 7295
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_swiftness"
+      }
+    },
+    "emc": 39
+  },
+  {
+    "item": "create:magenta_postbox",
+    "emc": 91
+  },
+  {
+    "item": "create:brass_table_cloth",
+    "emc": 63
+  },
+  {
+    "item": "minecraft:chiseled_copper",
+    "emc": 288
+  },
+  {
+    "item": "create:polished_cut_dripstone",
+    "emc": 64
+  },
+  {
+    "item": "create:diorite_pillar",
+    "emc": 16
+  },
+  {
+    "item": "createbigcannons:ap_shell",
+    "emc": 3068
+  },
+  {
+    "item": "minecraft:netherite_hoe",
+    "emc": 81233
+  },
+  {
+    "item": "minecraft:brown_glazed_terracotta",
+    "emc": 68
+  },
+  {
+    "item": "projecte:alchemical_coal_block",
+    "emc": 4608
+  },
+  {
+    "item": "create:deployer",
+    "emc": 1620
+  },
+  {
+    "item": "minecraft:golden_horse_armor",
+    "emc": 16384
+  },
+  {
+    "item": "minecraft:polished_blackstone_slab",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:gray_bed",
+    "emc": 168
+  },
+  {
+    "item": "projecte:archangel_smite",
+    "emc": 280884
+  },
+  {
+    "item": "minecraft:birch_sapling",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:stone_bricks",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:oak_wood",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:pumpkin",
+    "emc": 144
+  },
+  {
+    "item": "createbigcannons:log_cannon_chamber",
+    "emc": 320
+  },
+  {
+    "item": "minecraft:rotten_flesh",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:smooth_red_sandstone_slab",
+    "emc": 2
+  },
+  {
+    "item": "create:mechanical_piston",
+    "emc": 71
+  },
+  {
+    "item": "minecraft:cherry_stairs",
+    "emc": 8
+  },
+  {
+    "item": "create:sand_paper",
+    "emc": 33
+  },
+  {
+    "item": "create:white_table_cloth",
+    "emc": 39
+  },
+  {
+    "item": "create:magenta_seat",
+    "emc": 52
+  },
+  {
+    "item": "minecraft:quartz",
+    "emc": 256
+  },
+  {
+    "item": "minecraft:lime_dye",
+    "emc": 4
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:45acp"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "minecraft:smooth_quartz_slab",
+    "emc": 512
+  },
+  {
+    "item": "minecraft:dirt",
+    "emc": 1
+  },
+  {
+    "item": "simulated:contraption_diagram",
+    "emc": 159
+  },
+  {
+    "item": "minecraft:suspicious_sand",
+    "emc": 1
+  },
+  {
+    "item": "create:white_postbox",
+    "emc": 94
+  },
+  {
+    "item": "create:polished_cut_calcite_stairs",
+    "emc": 32
+  },
+  {
+    "item": "create:small_scoria_brick_stairs",
+    "emc": 48
+  },
+  {
+    "item": "create:rose_quartz_tiles",
+    "emc": 384
+  },
+  {
+    "item": "minecraft:cooked_mutton",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:mundane"
+      }
+    },
+    "emc": 65
+  },
+  {
+    "item": "projecte:dm_leggings",
+    "emc": 974848
+  },
+  {
+    "item": "create:scorchia_pillar",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_night_vision"
+      }
+    },
+    "emc": 656
+  },
+  {
+    "item": "create:cut_calcite_brick_slab",
+    "emc": 16
+  },
+  {
+    "item": "projecte:klein_star_sphere",
+    "emc": 6291456
+  },
+  {
+    "item": "minecraft:crafting_table",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:ice",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:daylight_detector",
+    "emc": 783
+  },
+  {
+    "item": "minecraft:warped_hyphae",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:echo_shard",
+    "emc": 192
+  },
+  {
+    "item": "minecraft:cracked_deepslate_bricks",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strength"
+      }
+    },
+    "emc": 179
+  },
+  {
+    "item": "minecraft:andesite",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:warped_stairs",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:wheat_seeds",
+    "emc": 16
+  },
+  {
+    "item": "create:acacia_window_pane",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:light_gray_dye",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:gray_shulker_box",
+    "emc": 4168
+  },
+  {
+    "item": "create:red_valve_handle",
+    "emc": 422
+  },
+  {
+    "item": "simulated:green_nameplate",
+    "emc": 16
+  },
+  {
+    "item": "spore:lab_block",
+    "emc": 46
+  },
+  {
+    "item": "aeronautics:blue_envelope",
+    "emc": 17
+  },
+  {
+    "item": "simulated:redstone_inductor",
+    "emc": 389
+  },
+  {
+    "item": "minecraft:flint",
+    "emc": 4
+  },
+  {
+    "item": "create:white_valve_handle",
+    "emc": 422
+  },
+  {
+    "item": "minecraft:shelter_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "create:polished_cut_calcite",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:spectral_arrow",
+    "emc": 775
+  },
+  {
+    "item": "create:wheat_flour",
+    "emc": 24
+  },
+  {
+    "item": "create:cut_scoria_brick_wall",
+    "emc": 48
+  },
+  {
+    "item": "create:cut_calcite_wall",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:loom",
+    "emc": 40
+  },
+  {
+    "item": "create:light_blue_seat",
+    "emc": 52
+  },
+  {
+    "item": "minecraft:light_blue_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "create:small_deepslate_bricks",
+    "emc": 2
+  },
+  {
+    "item": "create:industrial_iron_block",
+    "emc": 128
+  },
+  {
+    "item": "create:industrial_iron_window",
+    "emc": 192
+  },
+  {
+    "item": "minecraft:cyan_candle",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:archer_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "create:iron_sheet",
+    "emc": 256
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:poison"
+      }
+    },
+    "emc": 115
+  },
+  {
+    "item": "simulated:gray_handle",
+    "emc": 66
+  },
+  {
+    "item": "minecraft:purple_stained_glass",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:pink_dye",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_slowness"
+      }
+    },
+    "emc": 93
+  },
+  {
+    "item": "create:speedometer",
+    "emc": 1150
+  },
+  {
+    "item": "create:andesite_alloy_block",
+    "emc": 270
+  },
+  {
+    "item": "minecraft:bamboo",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:waxed_copper_bulb",
+    "emc": 1264
+  },
+  {
+    "item": "minecraft:clock",
+    "emc": 8256
+  },
+  {
+    "item": "minecraft:mossy_cobblestone_wall",
+    "emc": 9
+  },
+  {
+    "item": "minecraft:acacia_fence_gate",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:warped_pressure_plate",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_swiftness"
+      }
+    },
+    "emc": 26
+  },
+  {
+    "item": "minecraft:purpur_stairs",
+    "emc": 192
+  },
+  {
+    "item": "minecraft:hanging_roots",
+    "emc": 4
+  },
+  {
+    "item": "simulated:yellow_nameplate",
+    "emc": 24
+  },
+  {
+    "item": "minecraft:crimson_stem",
+    "emc": 32
+  },
+  {
+    "item": "create:portable_storage_interface",
+    "emc": 254
+  },
+  {
+    "item": "create:redstone_requester",
+    "emc": 1720
+  },
+  {
+    "item": "spore:amethyst_dust",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:anvil",
+    "emc": 7936
+  },
+  {
+    "item": "createbigcannons:ap_shot",
+    "emc": 1060
+  },
+  {
+    "item": "create:windmill_bearing",
+    "emc": 10
+  },
+  {
+    "item": "minecraft:green_candle",
+    "emc": 28
+  },
+  {
+    "item": "create:blue_table_cloth",
+    "emc": 39
+  },
+  {
+    "item": "create:railway_casing",
+    "emc": 222
+  },
+  {
+    "item": "minecraft:chiseled_quartz_block",
+    "emc": 1024
+  },
+  {
+    "item": "minecraft:birch_planks",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:oozing"
+      }
+    },
+    "emc": 35
+  },
+  {
+    "item": "minecraft:cherry_fence_gate",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:ink_sac",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:vine",
+    "emc": 8
+  },
+  {
+    "item": "create:copycat_panel",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:cake",
+    "emc": 102
+  },
+  {
+    "item": "minecraft:brain_coral_fan",
+    "emc": 16
+  },
+  {
+    "item": "createbigcannons:cannon_end_cast_mould",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:cherry_button",
+    "emc": 8
+  },
+  {
+    "item": "create:black_postbox",
+    "emc": 94
+  },
+  {
+    "item": "minecraft:beef",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:stripped_spruce_wood",
+    "emc": 32
+  },
+  {
+    "item": "create:polished_cut_diorite_wall",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:red_stained_glass",
+    "emc": 2
+  },
+  {
+    "item": "create:cut_tuff_wall",
+    "emc": 4
+  },
+  {
+    "item": "create:waxed_weathered_copper_tile_stairs",
+    "emc": 64
+  },
+  {
+    "item": "create:orange_postbox",
+    "emc": 94
+  },
+  {
+    "item": "create:polished_cut_tuff_slab",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:cyan_wool",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:lily_pad",
+    "emc": 16
+  },
+  {
+    "item": "tacz:ammo_box",
+    "data": {
+      "minecraft:custom_data": {
+        "Level": 0
+      }
+    },
+    "emc": 312
+  },
+  {
+    "item": "minecraft:light_gray_carpet",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:brown_dye",
+    "emc": 32
+  },
+  {
+    "item": "projecte:klein_star_drei",
+    "emc": 393216
+  },
+  {
+    "item": "minecraft:enchanting_table",
+    "emc": 16800
+  },
+  {
+    "item": "minecraft:explorer_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "minecraft:brown_stained_glass_pane",
+    "emc": 1
+  },
+  {
+    "item": "projecte:dm_shovel",
+    "emc": 155648
+  },
+  {
+    "item": "minecraft:burn_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "minecraft:stone_brick_stairs",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:spruce_stairs",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_regeneration"
+      }
+    },
+    "emc": 1566
+  },
+  {
+    "item": "minecraft:phantom_membrane",
+    "emc": 192
+  },
+  {
+    "item": "minecraft:sculk",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:cherry_wood",
+    "emc": 32
+  },
+  {
+    "item": "spore:gas_mask",
+    "emc": 752
+  },
+  {
+    "item": "create:cut_scoria",
+    "emc": 48
+  },
+  {
+    "item": "create:polished_cut_dripstone_wall",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:tuff_slab",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:brick_slab",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:suspicious_stew",
+    "data": {
+      "minecraft:suspicious_stew_effects": [
+        {
+          "id": "minecraft:regeneration"
+        }
+      ]
+    },
+    "emc": 86
+  },
+  {
+    "item": "minecraft:tuff_brick_stairs",
+    "emc": 4
+  },
+  {
+    "item": "createbigcannons:shot_balls",
+    "emc": 240
+  },
+  {
+    "item": "minecraft:white_shulker_box",
+    "emc": 4168
+  },
+  {
+    "item": "minecraft:arms_up_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "minecraft:blast_furnace",
+    "emc": 1291
+  },
+  {
+    "item": "minecraft:skull_banner_pattern",
+    "emc": 46388
+  },
+  {
+    "item": "minecraft:blaze_rod",
+    "emc": 1536
+  },
+  {
+    "item": "create:mechanical_mixer",
+    "emc": 1415
+  },
+  {
+    "item": "projecte:mobius_fuel",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:skeleton_skull",
+    "emc": 256
+  },
+  {
+    "item": "create:copycat_step",
+    "emc": 32
+  },
+  {
+    "item": "create:copper_table_cloth",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:pitcher_pod",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:infested"
+      }
+    },
+    "emc": 23
+  },
+  {
+    "item": "minecraft:waxed_exposed_copper_trapdoor",
+    "emc": 384
+  },
+  {
+    "item": "minecraft:suspicious_stew",
+    "data": {
+      "minecraft:suspicious_stew_effects": [
+        {
+          "id": "minecraft:weakness",
+          "duration": 180
+        }
+      ]
+    },
+    "emc": 86
+  },
+  {
+    "item": "simulated:engine_assembly",
+    "emc": 256
+  },
+  {
+    "item": "minecraft:nautilus_shell",
+    "emc": 1024
+  },
+  {
+    "item": "create:gantry_shaft",
+    "emc": 15
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_strength"
+      }
+    },
+    "emc": 200
+  },
+  {
+    "item": "minecraft:stick",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:waxed_exposed_copper_door",
+    "emc": 256
+  },
+  {
+    "item": "minecraft:orange_stained_glass",
+    "emc": 2
+  },
+  {
+    "item": "create:yellow_valve_handle",
+    "emc": 422
+  },
+  {
+    "item": "create:cut_granite_brick_wall",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:blue_bed",
+    "emc": 168
+  },
+  {
+    "item": "minecraft:diamond_helmet",
+    "emc": 40960
+  },
+  {
+    "item": "minecraft:chipped_anvil",
+    "emc": 5079
+  },
+  {
+    "item": "minecraft:furnace_minecart",
+    "emc": 1288
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_invisibility"
+      }
+    },
+    "emc": 111
+  },
+  {
+    "item": "createbigcannons:powder_charge",
+    "emc": 648
+  },
+  {
+    "item": "tacz:target",
+    "emc": 1352
+  },
+  {
+    "item": "minecraft:black_candle",
+    "emc": 36
+  },
+  {
+    "item": "minecraft:chiseled_stone_bricks",
+    "emc": 1
+  },
+  {
+    "item": "createbigcannons:empty_autocannon_cartridge",
+    "emc": 21
+  },
+  {
+    "item": "minecraft:deepslate_brick_slab",
+    "emc": 1
+  },
+  {
+    "item": "create:copper_tiles",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:birch_fence",
+    "emc": 8
+  },
+  {
+    "item": "create:waxed_weathered_copper_shingle_stairs",
+    "emc": 64
+  },
+  {
+    "item": "create:portable_fluid_interface",
+    "emc": 352
+  },
+  {
+    "item": "projecte:rm_sword",
+    "emc": 1220608
+  },
+  {
+    "item": "minecraft:dragon_breath",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:oxidized_copper",
+    "emc": 1152
+  },
+  {
+    "item": "create:brass_sheet",
+    "emc": 126
+  },
+  {
+    "item": "minecraft:ender_pearl",
+    "emc": 1024
+  },
+  {
+    "item": "create:item_vault",
+    "emc": 568
+  },
+  {
+    "item": "minecraft:red_wool",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:iron_sword",
+    "emc": 516
+  },
+  {
+    "item": "projecte:relay_mk1",
+    "emc": 74177
+  },
+  {
+    "item": "minecraft:mud_brick_slab",
+    "emc": 12
+  },
+  {
+    "item": "minecraft:red_banner",
+    "emc": 292
+  },
+  {
+    "item": "minecraft:dark_oak_planks",
+    "emc": 8
+  },
+  {
+    "item": "create:schematicannon",
+    "emc": 4793
+  },
+  {
+    "item": "projecte:rm_shovel",
+    "emc": 761856
+  },
+  {
+    "item": "minecraft:spruce_chest_boat",
+    "emc": 104
+  },
+  {
+    "item": "create:pink_postbox",
+    "emc": 88
+  },
+  {
+    "item": "minecraft:crimson_nylium",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:jungle_slab",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_weakness"
+      }
+    },
+    "emc": 144
+  },
+  {
+    "item": "createbigcannons:nethersteel_nugget",
+    "emc": 185
+  },
+  {
+    "item": "create:cut_scorchia_brick_wall",
+    "emc": 48
+  },
+  {
+    "item": "createbigcannons:mortar_stone",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:glowstone",
+    "emc": 1536
+  },
+  {
+    "item": "create:cyan_postbox",
+    "emc": 90
+  },
+  {
+    "item": "minecraft:painting",
+    "emc": 80
+  },
+  {
+    "item": "minecraft:dried_kelp",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:bubble_coral_fan",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:stripped_oak_log",
+    "emc": 32
+  },
+  {
+    "item": "create:cut_dripstone_wall",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:enchanted_golden_apple",
+    "emc": 147584
+  },
+  {
+    "item": "minecraft:stripped_crimson_stem",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:string",
+    "emc": 12
+  },
+  {
+    "item": "create:empty_blaze_burner",
+    "emc": 1025
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_turtle_master"
+      }
+    },
+    "emc": 297
+  },
+  {
+    "item": "minecraft:shears",
+    "emc": 512
+  },
+  {
+    "item": "minecraft:diamond_sword",
+    "emc": 16388
+  },
+  {
+    "item": "create:gray_seat",
+    "emc": 52
+  },
+  {
+    "item": "minecraft:magenta_shulker_box",
+    "emc": 4165
+  },
+  {
+    "item": "minecraft:deepslate_brick_wall",
+    "emc": 2
+  },
+  {
+    "item": "create:fluid_tank",
+    "emc": 312
+  },
+  {
+    "item": "minecraft:dried_kelp_block",
+    "emc": 9
+  },
+  {
+    "item": "projecte:dm_boots",
+    "emc": 557056
+  },
+  {
+    "item": "createbigcannons:filled_autocannon_cartridge",
+    "emc": 213
+  },
+  {
+    "item": "minecraft:magenta_candle",
+    "emc": 33
+  },
+  {
+    "item": "projecte:destruction_catalyst",
+    "emc": 14476
+  },
+  {
+    "item": "projecte:catalytic_lens",
+    "emc": 1318510
+  },
+  {
+    "item": "minecraft:crimson_hyphae",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:lime_concrete",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:mutton",
+    "emc": 64
+  },
+  {
+    "item": "create:powdered_obsidian",
+    "emc": 64
+  },
+  {
+    "item": "create:golden_sheet",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:writable_book",
+    "emc": 224
+  },
+  {
+    "item": "createbigcannons:small_cast_mould",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_slowness"
+      }
+    },
+    "emc": 157
+  },
+  {
+    "item": "projecte:high_covalence_dust",
+    "emc": 208
+  },
+  {
+    "item": "offroad:small_tire",
+    "emc": 6
+  },
+  {
+    "item": "minecraft:salmon",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:carrot",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:brick_wall",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:waxed_oxidized_copper_trapdoor",
+    "emc": 384
+  },
+  {
+    "item": "minecraft:baked_potato",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_water_breathing"
+      }
+    },
+    "emc": 115
+  },
+  {
+    "item": "minecraft:magenta_banner",
+    "emc": 292
+  },
+  {
+    "item": "minecraft:wooden_shovel",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:fermented_spider_eye",
+    "emc": 175
+  },
+  {
+    "item": "minecraft:deepslate_tile_slab",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:bubble_coral_block",
+    "emc": 64
+  },
+  {
+    "item": "create:goggles",
+    "emc": 2062
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:harming"
+      }
+    },
+    "emc": 109
+  },
+  {
+    "item": "projecte:low_covalence_dust",
+    "emc": 1
+  },
+  {
+    "item": "create:sticker",
+    "emc": 158
+  },
+  {
+    "item": "projecte:alchemical_coal",
+    "emc": 512
+  },
+  {
+    "item": "minecraft:sniffer_egg",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:white_tulip",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:coast_armor_trim_smithing_template",
+    "emc": 12271
+  },
+  {
+    "item": "minecraft:golden_chestplate",
+    "emc": 16384
+  },
+  {
+    "item": "minecraft:stone_pressure_plate",
+    "emc": 2
+  },
+  {
+    "item": "create:polished_cut_scorchia_slab",
+    "emc": 24
+  },
+  {
+    "item": "minecraft:guster_banner_pattern",
+    "emc": 12224
+  },
+  {
+    "item": "minecraft:cyan_shulker_box",
+    "emc": 4164
+  },
+  {
+    "item": "minecraft:crimson_fence",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:cherry_log",
+    "emc": 32
+  },
+  {
+    "item": "create:brass_bars",
+    "emc": 31
+  },
+  {
+    "item": "create:track_signal",
+    "emc": 311
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:leaping"
+      }
+    },
+    "emc": 28
+  },
+  {
+    "item": "minecraft:polished_blackstone_stairs",
+    "emc": 4
+  },
+  {
+    "item": "create:waxed_oxidized_copper_tile_stairs",
+    "emc": 64
+  },
+  {
+    "item": "createbigcannons:smoke_shell",
+    "emc": 2224
+  },
+  {
+    "item": "create:small_dripstone_brick_wall",
+    "emc": 64
+  },
+  {
+    "item": "create:chain_conveyor",
+    "emc": 134
+  },
+  {
+    "item": "minecraft:spore_blossom",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:tube_coral_block",
+    "emc": 64
+  },
+  {
+    "item": "create:waxed_weathered_copper_tiles",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:iron_hoe",
+    "emc": 520
+  },
+  {
+    "item": "minecraft:polished_diorite",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:bamboo_door",
+    "emc": 8
+  },
+  {
+    "item": "projecte:volcanite_amulet",
+    "emc": 417912
+  },
+  {
+    "item": "create:sticky_mechanical_piston",
+    "emc": 103
+  },
+  {
+    "item": "minecraft:cyan_concrete_powder",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:exposed_copper",
+    "emc": 1152
+  },
+  {
+    "item": "minecraft:acacia_log",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:orange_banner",
+    "emc": 292
+  },
+  {
+    "item": "minecraft:stripped_jungle_wood",
+    "emc": 32
+  },
+  {
+    "item": "aeronautics:adjustable_burner",
+    "emc": 2300
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:invisibility"
+      }
+    },
+    "emc": 757
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_regeneration"
+      }
+    },
+    "emc": 1502
+  },
+  {
+    "item": "minecraft:purple_banner",
+    "emc": 292
+  },
+  {
+    "item": "minecraft:polished_deepslate_slab",
+    "emc": 1
+  },
+  {
+    "item": "create:metal_girder",
+    "emc": 107
+  },
+  {
+    "item": "minecraft:cobblestone",
+    "emc": 1
+  },
+  {
+    "item": "create:cut_deepslate_bricks",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:tuff_wall",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:warped_nylium",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:filled_map",
+    "emc": 1472
+  },
+  {
+    "item": "simulated:purple_handle",
+    "emc": 66
+  },
+  {
+    "item": "projecte:red_alchemical_bag",
+    "emc": 9851
+  },
+  {
+    "item": "minecraft:black_carpet",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:mangrove_fence_gate",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:cherry_chest_boat",
+    "emc": 104
+  },
+  {
+    "item": "createbigcannons:cannon_loader",
+    "emc": 259
+  },
+  {
+    "item": "create:yellow_postbox",
+    "emc": 94
+  },
+  {
+    "item": "minecraft:bamboo_planks",
+    "emc": 8
+  },
+  {
+    "item": "create:wooden_bracket",
+    "emc": 14
+  },
+  {
+    "item": "minecraft:infested_stone",
+    "emc": 1
+  },
+  {
+    "item": "create:zinc_block",
+    "emc": 1152
+  },
+  {
+    "item": "create:exposed_copper_tiles",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:spruce_trapdoor",
+    "emc": 8
+  },
+  {
+    "item": "create:piston_extension_pole",
+    "emc": 5
+  },
+  {
+    "item": "minecraft:mycelium",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:smithing_table",
+    "emc": 544
+  },
+  {
+    "item": "create:cut_diorite_brick_wall",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:stripped_mangrove_log",
+    "emc": 32
+  },
+  {
+    "item": "create:sequenced_gearshift",
+    "emc": 1195
+  },
+  {
+    "item": "simulated:magenta_nameplate",
+    "emc": 21
+  },
+  {
+    "item": "minecraft:bamboo_fence_gate",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:light_blue_banner",
+    "emc": 292
+  },
+  {
+    "item": "createbigcannons:steel_screw_lock",
+    "emc": 815
+  },
+  {
+    "item": "create:scoria_pillar",
+    "emc": 48
+  },
+  {
+    "item": "create:green_table_cloth",
+    "emc": 39
+  },
+  {
+    "item": "simulated:analog_transmission",
+    "emc": 1200
+  },
+  {
+    "item": "create:green_seat",
+    "emc": 52
+  },
+  {
+    "item": "minecraft:flower_pot",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:purple_concrete_powder",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:lime_stained_glass",
+    "emc": 1
+  },
+  {
+    "item": "projecte:transmutation_table",
+    "emc": 260
+  },
+  {
+    "item": "minecraft:magma_cream",
+    "emc": 544
+  },
+  {
+    "item": "minecraft:dripstone_block",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:bone",
+    "emc": 144
+  },
+  {
+    "item": "minecraft:azalea_leaves",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:waxed_cut_copper_slab",
+    "emc": 144
+  },
+  {
+    "item": "create:red_postbox",
+    "emc": 94
+  },
+  {
+    "item": "projecte:watch_of_flowing_time",
+    "emc": 568512
+  },
+  {
+    "item": "create:oak_window_pane",
+    "emc": 4
+  },
+  {
+    "item": "create:filter",
+    "emc": 104
+  },
+  {
+    "item": "create:weathered_iron_block",
+    "emc": 128
+  },
+  {
+    "item": "minecraft:rose_bush",
+    "emc": 32
+  },
+  {
+    "item": "simulated:swivel_bearing",
+    "emc": 145
+  },
+  {
+    "item": "create:small_granite_brick_stairs",
+    "emc": 16
+  },
+  {
+    "item": "create:yellow_seat",
+    "emc": 52
+  },
+  {
+    "item": "minecraft:sugar",
+    "emc": 15
+  },
+  {
+    "item": "createbigcannons:congealed_nitro",
+    "emc": 720
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:water"
+      }
+    },
+    "emc": 22
+  },
+  {
+    "item": "minecraft:polished_blackstone_pressure_plate",
+    "emc": 8
+  },
+  {
+    "item": "create:netherite_backtank",
+    "emc": 66442
+  },
+  {
+    "item": "minecraft:conduit",
+    "emc": 40960
+  },
+  {
+    "item": "minecraft:exposed_copper_trapdoor",
+    "emc": 384
+  },
+  {
+    "item": "minecraft:oak_log",
+    "emc": 32
+  },
+  {
+    "item": "create:mechanical_crafter",
+    "emc": 404
+  },
+  {
+    "item": "minecraft:dead_horn_coral_fan",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:healing"
+      }
+    },
+    "emc": 99
+  },
+  {
+    "item": "create:waxed_weathered_copper_shingles",
+    "emc": 64
+  },
+  {
+    "item": "create:gray_valve_handle",
+    "emc": 422
+  },
+  {
+    "item": "minecraft:lilac",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:dead_horn_coral",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:tuff_brick_slab",
+    "emc": 2
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:9mm"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "projecte:magenta_alchemical_bag",
+    "emc": 9851
+  },
+  {
+    "item": "createbigcannons:ram_head",
+    "emc": 13
+  },
+  {
+    "item": "minecraft:torchflower",
+    "emc": 16
+  },
+  {
+    "item": "createbigcannons:quickfiring_mechanism",
+    "emc": 39
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:awkward"
+      }
+    },
+    "emc": 23
+  },
+  {
+    "item": "create:cut_tuff_bricks",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:salmon_bucket",
+    "emc": 832
+  },
+  {
+    "item": "createbigcannons:steel_sliding_breechblock",
+    "emc": 836
+  },
+  {
+    "item": "minecraft:cyan_terracotta",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:end_stone_brick_wall",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:powder_snow_bucket",
+    "emc": 784
+  },
+  {
+    "item": "minecraft:heavy_weighted_pressure_plate",
+    "emc": 512
+  },
+  {
+    "item": "minecraft:cut_sandstone_slab",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:music_disc_ward",
+    "emc": 2048
+  },
+  {
+    "item": "create:radial_chassis",
+    "emc": 52
+  },
+  {
+    "item": "minecraft:purpur_block",
+    "emc": 192
+  },
+  {
+    "item": "projecte:dm_furnace",
+    "emc": 4456456
+  },
+  {
+    "item": "minecraft:waxed_chiseled_copper",
+    "emc": 288
+  },
+  {
+    "item": "projecte:gem_leggings",
+    "emc": 30258460
+  },
+  {
+    "item": "minecraft:stripped_mangrove_wood",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:iron_ingot",
+    "emc": 256
+  },
+  {
+    "item": "create:exposed_copper_shingle_stairs",
+    "emc": 64
+  },
+  {
+    "item": "create:copper_nugget",
+    "emc": 14
+  },
+  {
+    "item": "minecraft:trident",
+    "emc": 16398
+  },
+  {
+    "item": "create:wand_of_symmetry",
+    "emc": 3575
+  },
+  {
+    "item": "minecraft:pink_shulker_box",
+    "emc": 4162
+  },
+  {
+    "item": "create:waxed_copper_shingles",
+    "emc": 64
+  },
+  {
+    "item": "create:clipboard",
+    "emc": 70
+  },
+  {
+    "item": "minecraft:saddle",
+    "emc": 192
+  },
+  {
+    "item": "minecraft:calibrated_sculk_sensor",
+    "emc": 2776
+  },
+  {
+    "item": "simulated:white_symmetric_sail",
+    "emc": 43
+  },
+  {
+    "item": "createbigcannons:cast_iron_block",
+    "emc": 2592
+  },
+  {
+    "item": "minecraft:tube_coral_fan",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:stripped_birch_wood",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:red_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "projecte:klein_star_vier",
+    "emc": 1572864
+  },
+  {
+    "item": "minecraft:leather_chestplate",
+    "emc": 512
+  },
+  {
+    "item": "minecraft:cherry_sapling",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:netherite_ingot",
+    "emc": 57344
+  },
+  {
+    "item": "minecraft:waxed_weathered_chiseled_copper",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:deepslate",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:jungle_wood",
+    "emc": 32
+  },
+  {
+    "item": "aeronautics:pink_envelope",
+    "emc": 17
+  },
+  {
+    "item": "create:mechanical_harvester",
+    "emc": 694
+  },
+  {
+    "item": "minecraft:waxed_exposed_cut_copper_stairs",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:amethyst_shard",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:birch_trapdoor",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:pearlescent_froglight",
+    "emc": 181
+  },
+  {
+    "item": "projecte:iron_band",
+    "emc": 2068
+  },
+  {
+    "item": "aeronautics:yellow_envelope",
+    "emc": 17
+  },
+  {
+    "item": "create:pulp",
+    "emc": 378
+  },
+  {
+    "item": "minecraft:golden_hoe",
+    "emc": 4104
+  },
+  {
+    "item": "projecte:mind_stone",
+    "emc": 935712
+  },
+  {
+    "item": "minecraft:chiseled_deepslate",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:red_sandstone_wall",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:cobblestone_stairs",
+    "emc": 1
+  },
+  {
+    "item": "create:crafter_slot_cover",
+    "emc": 42
+  },
+  {
+    "item": "create:stockpile_switch",
+    "emc": 1645
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_strength"
+      }
+    },
+    "emc": 47
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_water_breathing"
+      }
+    },
+    "emc": 28
+  },
+  {
+    "item": "create:vertical_gearbox",
+    "emc": 114
+  },
+  {
+    "item": "simulated:red_nameplate",
+    "emc": 24
+  },
+  {
+    "item": "minecraft:oxeye_daisy",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:blue_candle",
+    "emc": 36
+  },
+  {
+    "item": "minecraft:fishing_rod",
+    "emc": 36
+  },
+  {
+    "item": "create:precision_mechanism",
+    "emc": 2358
+  },
+  {
+    "item": "minecraft:polished_tuff_wall",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:brown_concrete",
+    "emc": 6
+  },
+  {
+    "item": "create:brass_funnel",
+    "emc": 575
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_night_vision"
+      }
+    },
+    "emc": 720
+  },
+  {
+    "item": "tacz:gun_smith_table",
+    "emc": 3424
+  },
+  {
+    "item": "minecraft:ochre_froglight",
+    "emc": 181
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_harming"
+      }
+    },
+    "emc": 237
+  },
+  {
+    "item": "createbigcannons:basin_foundry_lid",
+    "emc": 120
+  },
+  {
+    "item": "minecraft:end_crystal",
+    "emc": 5639
+  },
+  {
+    "item": "createbigcannons:sliding_breech_cast_mould",
+    "emc": 32
+  },
+  {
+    "item": "create:copper_door",
+    "emc": 168
+  },
+  {
+    "item": "minecraft:note_block",
+    "emc": 128
+  },
+  {
+    "item": "minecraft:golden_helmet",
+    "emc": 10240
+  },
+  {
+    "item": "minecraft:lime_carpet",
+    "emc": 32
+  },
+  {
+    "item": "create:cut_calcite",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:shulker_shell",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_swiftness"
+      }
+    },
+    "emc": 142
+  },
+  {
+    "item": "minecraft:magenta_concrete_powder",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:stonecutter",
+    "emc": 259
+  },
+  {
+    "item": "createbigcannons:proximity_fuze",
+    "emc": 184
+  },
+  {
+    "item": "minecraft:oxidized_copper_trapdoor",
+    "emc": 384
+  },
+  {
+    "item": "createbigcannons:nethersteel_ingot",
+    "emc": 1665
+  },
+  {
+    "item": "create:magenta_table_cloth",
+    "emc": 39
+  },
+  {
+    "item": "minecraft:danger_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "minecraft:weathered_copper_grate",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:smoker",
+    "emc": 136
+  },
+  {
+    "item": "minecraft:dropper",
+    "emc": 71
+  },
+  {
+    "item": "minecraft:crimson_planks",
+    "emc": 8
+  },
+  {
+    "item": "create:polished_cut_dripstone_slab",
+    "emc": 32
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:30_06"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "create:mechanical_saw",
+    "emc": 1086
+  },
+  {
+    "item": "minecraft:soul_campfire",
+    "emc": 109
+  },
+  {
+    "item": "minecraft:chest",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:oozing"
+      }
+    },
+    "emc": 105
+  },
+  {
+    "item": "minecraft:obsidian",
+    "emc": 64
+  },
+  {
+    "item": "create:mechanical_roller",
+    "emc": 1342
+  },
+  {
+    "item": "projecte:klein_star_omega",
+    "emc": 25165824
+  },
+  {
+    "item": "minecraft:acacia_sapling",
+    "emc": 32
+  },
+  {
+    "item": "create:waxed_oxidized_copper_tiles",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:stone_axe",
+    "emc": 11
+  },
+  {
+    "item": "minecraft:flowering_azalea",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:wheat",
+    "emc": 24
+  },
+  {
+    "item": "minecraft:leather_leggings",
+    "emc": 448
+  },
+  {
+    "item": "minecraft:dune_armor_trim_smithing_template",
+    "emc": 53898
+  },
+  {
+    "item": "create:small_calcite_brick_stairs",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:light_blue_candle",
+    "emc": 36
+  },
+  {
+    "item": "minecraft:cobbled_deepslate_slab",
+    "emc": 1
+  },
+  {
+    "item": "simulated:gimbal_sensor",
+    "emc": 1662
+  },
+  {
+    "item": "createbigcannons:cannon_mount",
+    "emc": 978
+  },
+  {
+    "item": "create:small_scorchia_bricks",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:orange_shulker_box",
+    "emc": 4168
+  },
+  {
+    "item": "minecraft:mangrove_chest_boat",
+    "emc": 104
+  },
+  {
+    "item": "minecraft:bubble_coral",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:purpur_slab",
+    "emc": 96
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:harming"
+      }
+    },
+    "emc": 173
+  },
+  {
+    "item": "minecraft:birch_sign",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:music_disc_13",
+    "emc": 2048
+  },
+  {
+    "item": "create:red_table_cloth",
+    "emc": 39
+  },
+  {
+    "item": "create:cardboard",
+    "emc": 378
+  },
+  {
+    "item": "create:tiled_glass",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_regeneration"
+      }
+    },
+    "emc": 1566
+  },
+  {
+    "item": "create:cherry_window",
+    "emc": 12
+  },
+  {
+    "item": "create:pink_valve_handle",
+    "emc": 416
+  },
+  {
+    "item": "create:green_postbox",
+    "emc": 86
+  },
+  {
+    "item": "create:mechanical_pump",
+    "emc": 109
+  },
+  {
+    "item": "create:dark_oak_window_pane",
+    "emc": 4
+  },
+  {
+    "item": "createbigcannons:cannon_builder",
+    "emc": 379
+  },
+  {
+    "item": "create:purple_valve_handle",
+    "emc": 422
+  },
+  {
+    "item": "create:cut_scoria_brick_stairs",
+    "emc": 48
+  },
+  {
+    "item": "create:small_tuff_brick_slab",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:warped_button",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strength"
+      }
+    },
+    "emc": 243
+  },
+  {
+    "item": "minecraft:packed_ice",
+    "emc": 1
+  },
+  {
+    "item": "create:polished_cut_andesite_wall",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:slow_falling"
+      }
+    },
+    "emc": 31
+  },
+  {
+    "item": "create:rose_quartz_block",
+    "emc": 384
+  },
+  {
+    "item": "minecraft:magenta_dye",
+    "emc": 5
+  },
+  {
+    "item": "projecte:collector_mk2",
+    "emc": 232969
+  },
+  {
+    "item": "minecraft:egg",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:light_gray_wool",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:milk_bucket",
+    "emc": 784
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_slowness"
+      }
+    },
+    "emc": 33
+  },
+  {
+    "item": "minecraft:crimson_slab",
+    "emc": 4
+  },
+  {
+    "item": "create:polished_cut_scoria_wall",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:dirt_path",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:bone_meal",
+    "emc": 48
+  },
+  {
+    "item": "aeronautics:gray_envelope",
+    "emc": 17
+  },
+  {
+    "item": "minecraft:infested_chiseled_stone_bricks",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:shroomlight",
+    "emc": 416
+  },
+  {
+    "item": "minecraft:goat_horn",
+    "data": {
+      "minecraft:instrument": "minecraft:seek_goat_horn"
+    },
+    "emc": 96
+  },
+  {
+    "item": "create:depot",
+    "emc": 92
+  },
+  {
+    "item": "create:pink_seat",
+    "emc": 52
+  },
+  {
+    "item": "minecraft:oxidized_copper_grate",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:blue_carpet",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:lapis_lazuli",
+    "emc": 864
+  },
+  {
+    "item": "minecraft:dark_oak_trapdoor",
+    "emc": 8
+  },
+  {
+    "item": "create:small_diorite_bricks",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:gravel",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:cookie",
+    "emc": 14
+  },
+  {
+    "item": "minecraft:birch_door",
+    "emc": 8
+  },
+  {
+    "item": "simulated:white_nameplate",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:cyan_stained_glass",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:spruce_sign",
+    "emc": 8
+  },
+  {
+    "item": "spore:frozen_reinforced_door",
+    "emc": 722
+  },
+  {
+    "item": "spore:lab_slab",
+    "emc": 23
+  },
+  {
+    "item": "minecraft:oxidized_cut_copper",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:terracotta",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:crying_obsidian",
+    "emc": 768
+  },
+  {
+    "item": "create:item_hatch",
+    "emc": 1054
+  },
+  {
+    "item": "create:schedule",
+    "emc": 24
+  },
+  {
+    "item": "minecraft:small_dripleaf",
+    "emc": 24
+  },
+  {
+    "item": "projecte:klein_star_zwei",
+    "emc": 98304
+  },
+  {
+    "item": "create:cut_tuff_brick_slab",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:tuff",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:slowness"
+      }
+    },
+    "emc": 31
+  },
+  {
+    "item": "aeronautics:brown_envelope",
+    "emc": 17
+  },
+  {
+    "item": "create:black_table_cloth",
+    "emc": 39
+  },
+  {
+    "item": "minecraft:chainmail_chestplate",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:dead_brain_coral_fan",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:soul_soil",
+    "emc": 1
+  },
+  {
+    "item": "create:empty_schematic",
+    "emc": 40
+  },
+  {
+    "item": "minecraft:gray_banner",
+    "emc": 292
+  },
+  {
+    "item": "create:water_wheel",
+    "emc": 69
+  },
+  {
+    "item": "minecraft:light_gray_concrete_powder",
+    "emc": 3
+  },
+  {
+    "item": "create:blaze_cake_base",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:beetroot",
+    "emc": 64
+  },
+  {
+    "item": "createbigcannons:packed_guncotton",
+    "emc": 1464
+  },
+  {
+    "item": "minecraft:goat_horn",
+    "data": {
+      "minecraft:instrument": "minecraft:feel_goat_horn"
+    },
+    "emc": 96
+  },
+  {
+    "item": "create:powered_latch",
+    "emc": 204
+  },
+  {
+    "item": "projecte:condenser_mk2",
+    "emc": 9741339
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:poison"
+      }
+    },
+    "emc": 115
+  },
+  {
+    "item": "minecraft:orange_carpet",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:goat_horn",
+    "data": {
+      "minecraft:instrument": "minecraft:admire_goat_horn"
+    },
+    "emc": 192
+  },
+  {
+    "item": "minecraft:mossy_stone_bricks",
+    "emc": 9
+  },
+  {
+    "item": "minecraft:turtle_helmet",
+    "emc": 480
+  },
+  {
+    "item": "minecraft:dead_fire_coral",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:cherry_leaves",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:diamond_leggings",
+    "emc": 57344
+  },
+  {
+    "item": "minecraft:arrow",
+    "emc": 14
+  },
+  {
+    "item": "create:redstone_contact",
+    "emc": 162
+  },
+  {
+    "item": "create:mechanical_press",
+    "emc": 2371
+  },
+  {
+    "item": "create:gearshift",
+    "emc": 139
+  },
+  {
+    "item": "minecraft:green_bed",
+    "emc": 168
+  },
+  {
+    "item": "minecraft:cracked_stone_bricks",
+    "emc": 1
+  },
+  {
+    "item": "spore:container",
+    "emc": 142
+  },
+  {
+    "item": "simulated:auger_shaft",
+    "emc": 226
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:oozing"
+      }
+    },
+    "emc": 169
+  },
+  {
+    "item": "create:andesite_casing",
+    "emc": 62
+  },
+  {
+    "item": "projecte:rm_boots",
+    "emc": 2424832
+  },
+  {
+    "item": "create:dripstone_pillar",
+    "emc": 64
+  },
+  {
+    "item": "offroad:wheel_mount",
+    "emc": 588
+  },
+  {
+    "item": "minecraft:suspicious_stew",
+    "emc": 86
+  },
+  {
+    "item": "minecraft:cobblestone_wall",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:prismarine_crystals",
+    "emc": 512
+  },
+  {
+    "item": "minecraft:gold_block",
+    "emc": 18432
+  },
+  {
+    "item": "minecraft:glow_ink_sac",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:jack_o_lantern",
+    "emc": 153
+  },
+  {
+    "item": "create:potato_cannon",
+    "emc": 2932
+  },
+  {
+    "item": "minecraft:crimson_stairs",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:lime_candle",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:yellow_wool",
+    "emc": 48
+  },
+  {
+    "item": "create:light_gray_seat",
+    "emc": 52
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_weakness"
+      }
+    },
+    "emc": 144
+  },
+  {
+    "item": "minecraft:enchanted_book",
+    "emc": 160
+  },
+  {
+    "item": "minecraft:pumpkin_seeds",
+    "emc": 36
+  },
+  {
+    "item": "minecraft:dead_tube_coral_block",
+    "emc": 4
+  },
+  {
+    "item": "create:weathered_copper_shingles",
+    "emc": 64
+  },
+  {
+    "item": "projecte:collector_mk3",
+    "emc": 710665
+  },
+  {
+    "item": "projecte:life_stone",
+    "emc": 1871898
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_swiftness"
+      }
+    },
+    "emc": 99
+  },
+  {
+    "item": "minecraft:infested_stone_bricks",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:oak_fence_gate",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:light_gray_glazed_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "minecraft:stone_pickaxe",
+    "emc": 11
+  },
+  {
+    "item": "projecte:red_matter_block",
+    "emc": 1867776
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_poison"
+      }
+    },
+    "emc": 243
+  },
+  {
+    "item": "create:gray_postbox",
+    "emc": 94
+  },
+  {
+    "item": "projecte:rm_hammer",
+    "emc": 1515520
+  },
+  {
+    "item": "create:red_sand_paper",
+    "emc": 33
+  },
+  {
+    "item": "minecraft:end_rod",
+    "emc": 432
+  },
+  {
+    "item": "minecraft:firework_star",
+    "emc": 192
+  },
+  {
+    "item": "minecraft:magenta_terracotta",
+    "emc": 64
+  },
+  {
+    "item": "create:brass_tunnel",
+    "emc": 639
+  },
+  {
+    "item": "minecraft:wooden_pickaxe",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:infested"
+      }
+    },
+    "emc": 9
+  },
+  {
+    "item": "create:lime_seat",
+    "emc": 52
+  },
+  {
+    "item": "minecraft:red_sandstone_stairs",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:spruce_button",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:podzol",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:lead",
+    "emc": 40
+  },
+  {
+    "item": "minecraft:chainmail_leggings",
+    "emc": 1792
+  },
+  {
+    "item": "create:small_scorchia_brick_stairs",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:music_disc_strad",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:turtle_master"
+      }
+    },
+    "emc": 43
+  },
+  {
+    "item": "create:orange_table_cloth",
+    "emc": 39
+  },
+  {
+    "item": "minecraft:music_disc_relic",
+    "emc": 10176
+  },
+  {
+    "item": "minecraft:infested_deepslate",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:cherry_planks",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:red_nether_brick_wall",
+    "emc": 50
+  },
+  {
+    "item": "minecraft:creeper_banner_pattern",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:blue_concrete_powder",
+    "emc": 3
+  },
+  {
+    "item": "create:copper_diving_helmet",
+    "emc": 641
+  },
+  {
+    "item": "minecraft:acacia_stairs",
+    "emc": 8
+  },
+  {
+    "item": "create:andesite_door",
+    "emc": 70
+  },
+  {
+    "item": "createbigcannons:nethersteel_screw_lock",
+    "emc": 5000
+  },
+  {
+    "item": "minecraft:moss_block",
+    "emc": 12
+  },
+  {
+    "item": "minecraft:spire_armor_trim_smithing_template",
+    "emc": 18588
+  },
+  {
+    "item": "minecraft:blackstone_slab",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:bread",
+    "emc": 24
+  },
+  {
+    "item": "minecraft:end_stone",
+    "emc": 1
+  },
+  {
+    "item": "sentrymechanicalarm:fire_control_clipboard",
+    "emc": 70
+  },
+  {
+    "item": "minecraft:acacia_planks",
+    "emc": 8
+  },
+  {
+    "item": "projecte:yellow_alchemical_bag",
+    "emc": 9851
+  },
+  {
+    "item": "minecraft:polished_granite_stairs",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:ward_armor_trim_smithing_template",
+    "emc": 19677
+  },
+  {
+    "item": "createbigcannons:machine_gun_round",
+    "emc": 40
+  },
+  {
+    "item": "projecte:dm_shears",
+    "emc": 147456
+  },
+  {
+    "item": "minecraft:tuff_bricks",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:hay_block",
+    "emc": 216
+  },
+  {
+    "item": "minecraft:brewing_stand",
+    "emc": 1539
+  },
+  {
+    "item": "minecraft:angler_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "createbigcannons:casting_sand",
+    "emc": 19
+  },
+  {
+    "item": "create:cut_scoria_wall",
+    "emc": 48
+  },
+  {
+    "item": "create:sail_frame",
+    "emc": 43
+  },
+  {
+    "item": "create:cut_scorchia_bricks",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_strength"
+      }
+    },
+    "emc": 60
+  },
+  {
+    "item": "createbigcannons:guncotton",
+    "emc": 488
+  },
+  {
+    "item": "minecraft:brown_mushroom",
+    "emc": 32
+  },
+  {
+    "item": "simulated:orange_handle",
+    "emc": 66
+  },
+  {
+    "item": "minecraft:nether_brick_fence",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:weaving"
+      }
+    },
+    "emc": 13
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:awkward"
+      }
+    },
+    "emc": 73
+  },
+  {
+    "item": "minecraft:pink_concrete_powder",
+    "emc": 2
+  },
+  {
+    "item": "create:controls",
+    "emc": 2585
+  },
+  {
+    "item": "create:exposed_copper_shingles",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:pointed_dripstone",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:polished_deepslate_wall",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:white_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "minecraft:lime_glazed_terracotta",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:magenta_carpet",
+    "emc": 32
+  },
+  {
+    "item": "create:track_observer",
+    "emc": 112
+  },
+  {
+    "item": "minecraft:gray_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:fire_resistance"
+      }
+    },
+    "emc": 254
+  },
+  {
+    "item": "minecraft:dark_prismarine_slab",
+    "emc": 1028
+  },
+  {
+    "item": "offroad:monstrous_tire",
+    "emc": 41
+  },
+  {
+    "item": "create:cut_andesite_brick_stairs",
+    "emc": 16
+  },
+  {
+    "item": "create:propeller",
+    "emc": 1054
+  },
+  {
+    "item": "minecraft:decorated_pot",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:bamboo_mosaic",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:nether_brick_stairs",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:lime_terracotta",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:suspicious_gravel",
+    "emc": 4
+  },
+  {
+    "item": "projecte:philosophers_stone",
+    "emc": 9984
+  },
+  {
+    "item": "minecraft:polished_blackstone_brick_slab",
+    "emc": 2
+  },
+  {
+    "item": "create:cut_tuff",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:rooted_dirt",
+    "emc": 5
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_harming"
+      }
+    },
+    "emc": 301
+  },
+  {
+    "item": "minecraft:black_bed",
+    "emc": 168
+  },
+  {
+    "item": "minecraft:stripped_crimson_hyphae",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:cut_red_sandstone",
+    "emc": 4
+  },
+  {
+    "item": "projecte:cyan_alchemical_bag",
+    "emc": 9851
+  },
+  {
+    "item": "create:layered_andesite",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:netherite_sword",
+    "emc": 81229
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:water_breathing"
+      }
+    },
+    "emc": 25
+  },
+  {
+    "item": "minecraft:pink_wool",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:waxed_exposed_copper_bulb",
+    "emc": 1264
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_weakness"
+      }
+    },
+    "emc": 80
+  },
+  {
+    "item": "createbigcannons:cast_iron_ingot",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:purple_dye",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:mangrove_log",
+    "emc": 32
+  },
+  {
+    "item": "create:small_tuff_bricks",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:melon_seeds",
+    "emc": 16
+  },
+  {
+    "item": "create:cut_scorchia",
+    "emc": 48
+  },
+  {
+    "item": "create:waxed_exposed_copper_tile_slab",
+    "emc": 32
+  },
+  {
+    "item": "createbigcannons:bronze_scrap",
+    "emc": 17
+  },
+  {
+    "item": "create:layered_scorchia",
+    "emc": 48
+  },
+  {
+    "item": "create:warped_window",
+    "emc": 12
+  },
+  {
+    "item": "create:cut_diorite_wall",
+    "emc": 16
+  },
+  {
+    "item": "create:stock_ticker",
+    "emc": 3449
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:night_vision"
+      }
+    },
+    "emc": 635
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:weaving"
+      }
+    },
+    "emc": 77
+  },
+  {
+    "item": "minecraft:stripped_warped_stem",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:comparator",
+    "emc": 463
+  },
+  {
+    "item": "minecraft:light_gray_candle",
+    "emc": 36
+  },
+  {
+    "item": "minecraft:waxed_oxidized_cut_copper_stairs",
+    "emc": 288
+  },
+  {
+    "item": "simulated:lime_nameplate",
+    "emc": 20
+  },
+  {
+    "item": "create:netherite_diving_helmet",
+    "emc": 65482
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_regeneration"
+      }
+    },
+    "emc": 1459
+  },
+  {
+    "item": "minecraft:waxed_exposed_chiseled_copper",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:azalea",
+    "emc": 32
+  },
+  {
+    "item": "create:copper_backtank",
+    "emc": 1601
+  },
+  {
+    "item": "minecraft:lodestone",
+    "emc": 57352
+  },
+  {
+    "item": "minecraft:cod",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:cocoa_beans",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:cooked_beef",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:dead_fire_coral_fan",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:moss_carpet",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:water_bucket",
+    "emc": 768
+  },
+  {
+    "item": "minecraft:gold_nugget",
+    "emc": 227
+  },
+  {
+    "item": "minecraft:oak_sign",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_leaping"
+      }
+    },
+    "emc": 136
+  },
+  {
+    "item": "projecte:condenser_mk1",
+    "emc": 42011
+  },
+  {
+    "item": "minecraft:gray_concrete_powder",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:invisibility"
+      }
+    },
+    "emc": 693
+  },
+  {
+    "item": "create:light_gray_postbox",
+    "emc": 94
+  },
+  {
+    "item": "create:transmitter",
+    "emc": 832
+  },
+  {
+    "item": "minecraft:purple_wool",
+    "emc": 48
+  },
+  {
+    "item": "create:waxed_copper_tile_stairs",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_turtle_master"
+      }
+    },
+    "emc": 59
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:night_vision"
+      }
+    },
+    "emc": 699
+  },
+  {
+    "item": "minecraft:cobbled_deepslate_wall",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:brick_stairs",
+    "emc": 64
+  },
+  {
+    "item": "projecte:arcana_ring",
+    "emc": 3460494
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:weakness"
+      }
+    },
+    "emc": 123
+  },
+  {
+    "item": "minecraft:music_disc_creator",
+    "emc": 40960
+  },
+  {
+    "item": "minecraft:orange_tulip",
+    "emc": 16
+  },
+  {
+    "item": "create:weathered_copper_shingle_slab",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:bamboo_button",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:mossy_stone_brick_slab",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:cut_red_sandstone_slab",
+    "emc": 2
+  },
+  {
+    "item": "create:small_andesite_brick_slab",
+    "emc": 8
+  },
+  {
+    "item": "createbigcannons:cannon_mount_extension",
+    "emc": 456
+  },
+  {
+    "item": "minecraft:prismarine_wall",
+    "emc": 1024
+  },
+  {
+    "item": "createbigcannons:ram_rod",
+    "emc": 21
+  },
+  {
+    "item": "minecraft:crimson_fence_gate",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:dark_oak_chest_boat",
+    "emc": 104
+  },
+  {
+    "item": "minecraft:glow_berries",
+    "emc": 16
+  },
+  {
+    "item": "create:lime_postbox",
+    "emc": 90
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_fire_resistance"
+      }
+    },
+    "emc": 275
+  },
+  {
+    "item": "minecraft:firework_rocket",
+    "emc": 224
+  },
+  {
+    "item": "aeronautics:light_blue_envelope",
+    "emc": 17
+  },
+  {
+    "item": "minecraft:large_fern",
+    "emc": 1
+  },
+  {
+    "item": "create:granite_pillar",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:dead_fire_coral_block",
+    "emc": 4
+  },
+  {
+    "item": "create:small_granite_bricks",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:deepslate_tiles",
+    "emc": 2
+  },
+  {
+    "item": "sentrymechanicalarm:sentry_mechanical_arm",
+    "emc": 5282
+  },
+  {
+    "item": "create:polished_cut_tuff",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:yellow_glazed_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_swiftness"
+      }
+    },
+    "emc": 35
+  },
+  {
+    "item": "projecte:interdiction_torch",
+    "emc": 25864
+  },
+  {
+    "item": "minecraft:flower_banner_pattern",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:brown_shulker_box",
+    "emc": 4192
+  },
+  {
+    "item": "minecraft:wooden_sword",
+    "emc": 20
+  },
+  {
+    "item": "create:gray_table_cloth",
+    "emc": 39
+  },
+  {
+    "item": "minecraft:spruce_sapling",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:cobbled_deepslate",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:waxed_copper_block",
+    "emc": 1152
+  },
+  {
+    "item": "create:andesite_alloy",
+    "emc": 30
+  },
+  {
+    "item": "minecraft:diamond",
+    "emc": 8192
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:harming"
+      }
+    },
+    "emc": 173
+  },
+  {
+    "item": "minecraft:brown_stained_glass",
+    "emc": 5
+  },
+  {
+    "item": "minecraft:music_disc_5",
+    "emc": 1728
+  },
+  {
+    "item": "minecraft:iron_boots",
+    "emc": 1024
+  },
+  {
+    "item": "projecte:blue_alchemical_bag",
+    "emc": 9851
+  },
+  {
+    "item": "create:cut_dripstone",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_healing"
+      }
+    },
+    "emc": 115
+  },
+  {
+    "item": "projecte:ignition_ring",
+    "emc": 285732
+  },
+  {
+    "item": "minecraft:respawn_anchor",
+    "emc": 9216
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:invisibility"
+      }
+    },
+    "emc": 757
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_night_vision"
+      }
+    },
+    "emc": 720
+  },
+  {
+    "item": "minecraft:turtle_scute",
+    "emc": 96
+  },
+  {
+    "item": "minecraft:tube_coral",
+    "emc": 16
+  },
+  {
+    "item": "simulated:brown_handle",
+    "emc": 90
+  },
+  {
+    "item": "aeronautics:light_gray_envelope",
+    "emc": 17
+  },
+  {
+    "item": "createbigcannons:autocannon_breech_cast_mould",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_slow_falling"
+      }
+    },
+    "emc": 33
+  },
+  {
+    "item": "minecraft:pink_concrete",
+    "emc": 2
+  },
+  {
+    "item": "projecte:rm_shears",
+    "emc": 614400
+  },
+  {
+    "item": "minecraft:white_concrete",
+    "emc": 3
+  },
+  {
+    "item": "create:green_valve_handle",
+    "emc": 414
+  },
+  {
+    "item": "minecraft:brown_banner",
+    "emc": 292
+  },
+  {
+    "item": "minecraft:heart_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "create:andesite_pillar",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_turtle_master"
+      }
+    },
+    "emc": 254
+  },
+  {
+    "item": "minecraft:sheaf_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "minecraft:birch_stairs",
+    "emc": 8
+  },
+  {
+    "item": "create:jungle_window",
+    "emc": 12
+  },
+  {
+    "item": "create:mangrove_window",
+    "emc": 12
+  },
+  {
+    "item": "minecraft:torch",
+    "emc": 9
+  },
+  {
+    "item": "minecraft:friend_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "minecraft:brown_terracotta",
+    "emc": 68
+  },
+  {
+    "item": "offroad:large_tire",
+    "emc": 29
+  },
+  {
+    "item": "create:polished_cut_scorchia_stairs",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:spyglass",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:acacia_pressure_plate",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_regeneration"
+      }
+    },
+    "emc": 1395
+  },
+  {
+    "item": "minecraft:torchflower_seeds",
+    "emc": 16
+  },
+  {
+    "item": "create:factory_gauge",
+    "emc": 1879
+  },
+  {
+    "item": "minecraft:crimson_roots",
+    "emc": 1
+  },
+  {
+    "item": "simulated:magenta_handle",
+    "emc": 63
+  },
+  {
+    "item": "minecraft:mud_brick_stairs",
+    "emc": 25
+  },
+  {
+    "item": "minecraft:acacia_chest_boat",
+    "emc": 104
+  },
+  {
+    "item": "minecraft:glow_item_frame",
+    "emc": 112
+  },
+  {
+    "item": "minecraft:minecart",
+    "emc": 1280
+  },
+  {
+    "item": "minecraft:sentry_armor_trim_smithing_template",
+    "emc": 57345
+  },
+  {
+    "item": "spore:circuit_board",
+    "emc": 1236
+  },
+  {
+    "item": "minecraft:crafter",
+    "emc": 1511
+  },
+  {
+    "item": "minecraft:weathered_cut_copper_stairs",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:globe_banner_pattern",
+    "emc": 49152
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:rpg_rocket"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "minecraft:light_gray_banner",
+    "emc": 292
+  },
+  {
+    "item": "minecraft:sculk_shrieker",
+    "emc": 32160
+  },
+  {
+    "item": "create:small_calcite_brick_slab",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:polished_basalt",
+    "emc": 4
+  },
+  {
+    "item": "create:cut_andesite_stairs",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:acacia_leaves",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:tnt_minecart",
+    "emc": 2244
+  },
+  {
+    "item": "minecraft:orange_candle",
+    "emc": 36
+  },
+  {
+    "item": "minecraft:bookshelf",
+    "emc": 528
+  },
+  {
+    "item": "simulated:light_gray_nameplate",
+    "emc": 24
+  },
+  {
+    "item": "create:waxed_oxidized_copper_shingles",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:weathered_cut_copper_slab",
+    "emc": 144
+  },
+  {
+    "item": "minecraft:crossbow",
+    "emc": 426
+  },
+  {
+    "item": "minecraft:dark_oak_sapling",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:stripped_bamboo_block",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:polished_blackstone_brick_stairs",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:smooth_basalt",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:waxed_oxidized_copper",
+    "emc": 1152
+  },
+  {
+    "item": "minecraft:light_gray_shulker_box",
+    "emc": 4168
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_turtle_master"
+      }
+    },
+    "emc": 190
+  },
+  {
+    "item": "minecraft:suspicious_stew",
+    "data": {
+      "minecraft:suspicious_stew_effects": [
+        {
+          "id": "minecraft:poison",
+          "duration": 240
+        }
+      ]
+    },
+    "emc": 86
+  },
+  {
+    "item": "minecraft:snout_armor_trim_smithing_template",
+    "emc": 7533
+  },
+  {
+    "item": "minecraft:goat_horn",
+    "data": {
+      "minecraft:instrument": "minecraft:sing_goat_horn"
+    },
+    "emc": 96
+  },
+  {
+    "item": "minecraft:goat_horn",
+    "data": {
+      "minecraft:instrument": "minecraft:dream_goat_horn"
+    },
+    "emc": 192
+  },
+  {
+    "item": "minecraft:copper_grate",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:exposed_cut_copper_stairs",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:acacia_trapdoor",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:basalt",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:chorus_plant",
+    "emc": 64
+  },
+  {
+    "item": "create:weathered_copper_tile_stairs",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:trapped_chest",
+    "emc": 198
+  },
+  {
+    "item": "minecraft:black_banner",
+    "emc": 292
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_leaping"
+      }
+    },
+    "emc": 243
+  },
+  {
+    "item": "create:small_scoria_brick_slab",
+    "emc": 24
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:weakness"
+      }
+    },
+    "emc": 123
+  },
+  {
+    "item": "minecraft:deepslate_tile_wall",
+    "emc": 2
+  },
+  {
+    "item": "projecte:dm_chestplate",
+    "emc": 1114112
+  },
+  {
+    "item": "minecraft:tropical_fish_bucket",
+    "emc": 832
+  },
+  {
+    "item": "minecraft:bricks",
+    "emc": 64
+  },
+  {
+    "item": "create:exposed_copper_tile_slab",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:waxed_oxidized_copper_door",
+    "emc": 256
+  },
+  {
+    "item": "minecraft:tropical_fish",
+    "emc": 64
+  },
+  {
+    "item": "create:oxidized_copper_shingles",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:black_stained_glass",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:green_glazed_terracotta",
+    "emc": 64
+  },
+  {
+    "item": "create:brass_nugget",
+    "emc": 14
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_leaping"
+      }
+    },
+    "emc": 136
+  },
+  {
+    "item": "create:yellow_table_cloth",
+    "emc": 39
+  },
+  {
+    "item": "create:cut_diorite",
+    "emc": 16
+  },
+  {
+    "item": "simulated:red_portable_engine",
+    "emc": 1803
+  },
+  {
+    "item": "minecraft:lingering_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_strength"
+      }
+    },
+    "emc": 264
+  },
+  {
+    "item": "minecraft:cherry_boat",
+    "emc": 40
+  },
+  {
+    "item": "minecraft:fire_coral_block",
+    "emc": 64
+  },
+  {
+    "item": "create:framed_glass",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:mangrove_fence",
+    "emc": 8
+  },
+  {
+    "item": "create:polished_cut_calcite_slab",
+    "emc": 16
+  },
+  {
+    "item": "projecte:divining_rod_1",
+    "emc": 12
+  },
+  {
+    "item": "minecraft:cooked_chicken",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:diorite_slab",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:rib_armor_trim_smithing_template",
+    "emc": 10310
+  },
+  {
+    "item": "minecraft:chiseled_red_sandstone",
+    "emc": 4
+  },
+  {
+    "item": "create:small_dripstone_brick_stairs",
+    "emc": 64
+  },
+  {
+    "item": "projecte:pink_alchemical_bag",
+    "emc": 9851
+  },
+  {
+    "item": "minecraft:beetroot_seeds",
+    "emc": 16
+  },
+  {
+    "item": "create:schematic_and_quill",
+    "emc": 88
+  },
+  {
+    "item": "create:layered_dripstone",
+    "emc": 64
+  },
+  {
+    "item": "create:copper_shingle_stairs",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:yellow_concrete",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:waxed_exposed_copper",
+    "emc": 1152
+  },
+  {
+    "item": "minecraft:prize_pottery_sherd",
+    "emc": 216
+  },
+  {
+    "item": "create:contraption_controls",
+    "emc": 1087
+  },
+  {
+    "item": "projecte:purple_alchemical_bag",
+    "emc": 9851
+  },
+  {
+    "item": "minecraft:spruce_pressure_plate",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:map",
+    "emc": 1344
+  },
+  {
+    "item": "create:cut_dripstone_brick_slab",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:end_stone_brick_stairs",
+    "emc": 1
+  },
+  {
+    "item": "spore:vent_plate",
+    "emc": 35
+  },
+  {
+    "item": "minecraft:dark_oak_boat",
+    "emc": 40
+  },
+  {
+    "item": "create:gearbox",
+    "emc": 114
+  },
+  {
+    "item": "projecte:rm_morning_star",
+    "emc": 7053312
+  },
+  {
+    "item": "minecraft:host_armor_trim_smithing_template",
+    "emc": 10176
+  },
+  {
+    "item": "minecraft:mud_brick_wall",
+    "emc": 25
+  },
+  {
+    "item": "createbigcannons:he_shell",
+    "emc": 4212
+  },
+  {
+    "item": "minecraft:blackstone",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:lime_concrete_powder",
+    "emc": 3
+  },
+  {
+    "item": "create:cut_granite",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:oxidized_copper_bulb",
+    "emc": 1264
+  },
+  {
+    "item": "minecraft:birch_wood",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:jukebox",
+    "emc": 8256
+  },
+  {
+    "item": "minecraft:diorite",
+    "emc": 16
+  },
+  {
+    "item": "create:large_water_wheel",
+    "emc": 133
+  },
+  {
+    "item": "minecraft:light_blue_glazed_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "minecraft:item_frame",
+    "emc": 96
+  },
+  {
+    "item": "create:light_blue_valve_handle",
+    "emc": 422
+  },
+  {
+    "item": "minecraft:candle",
+    "emc": 28
+  },
+  {
+    "item": "projecte:rm_katar",
+    "emc": 7512064
+  },
+  {
+    "item": "minecraft:birch_boat",
+    "emc": 40
+  },
+  {
+    "item": "minecraft:smooth_sandstone_slab",
+    "emc": 2
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:68x51fury"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "minecraft:copper_door",
+    "emc": 256
+  },
+  {
+    "item": "minecraft:oak_leaves",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:light_gray_stained_glass",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:weaving"
+      }
+    },
+    "emc": 77
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_fire_resistance"
+      }
+    },
+    "emc": 211
+  },
+  {
+    "item": "create:cut_dripstone_brick_stairs",
+    "emc": 64
+  },
+  {
+    "item": "aeronautics:lime_envelope",
+    "emc": 17
+  },
+  {
+    "item": "minecraft:dark_oak_leaves",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:birch_hanging_sign",
+    "emc": 84
+  },
+  {
+    "item": "minecraft:oak_slab",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:paper",
+    "emc": 32
+  },
+  {
+    "item": "create:hose_pulley",
+    "emc": 297
+  },
+  {
+    "item": "create:waxed_oxidized_copper_tile_slab",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:warped_trapdoor",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:white_concrete_powder",
+    "emc": 3
+  },
+  {
+    "item": "create:encased_chain_drive",
+    "emc": 104
+  },
+  {
+    "item": "minecraft:pufferfish",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:exposed_chiseled_copper",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:amethyst_block",
+    "emc": 128
+  },
+  {
+    "item": "minecraft:light_gray_terracotta",
+    "emc": 65
+  },
+  {
+    "item": "minecraft:flint_and_steel",
+    "emc": 260
+  },
+  {
+    "item": "minecraft:chiseled_tuff_bricks",
+    "emc": 4
+  },
+  {
+    "item": "create:polished_cut_andesite",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:polished_diorite_stairs",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:bamboo_slab",
+    "emc": 4
+  },
+  {
+    "item": "create:smart_chute",
+    "emc": 1342
+  },
+  {
+    "item": "create:cut_granite_brick_stairs",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:brown_carpet",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:bow",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:mud",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:smooth_sandstone",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:jungle_trapdoor",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:red_candle",
+    "emc": 36
+  },
+  {
+    "item": "minecraft:lapis_block",
+    "emc": 7776
+  },
+  {
+    "item": "minecraft:mangrove_propagule",
+    "emc": 32
+  },
+  {
+    "item": "spore:rusted_vent_plate",
+    "emc": 35
+  },
+  {
+    "item": "create:deepslate_pillar",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:suspicious_stew",
+    "data": {
+      "minecraft:suspicious_stew_effects": [
+        {
+          "id": "minecraft:blindness"
+        }
+      ]
+    },
+    "emc": 86
+  },
+  {
+    "item": "create:cut_deepslate_slab",
+    "emc": 1
+  },
+  {
+    "item": "create:clutch",
+    "emc": 131
+  },
+  {
+    "item": "minecraft:beacon",
+    "emc": 139461
+  },
+  {
+    "item": "minecraft:pink_glazed_terracotta",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:brick",
+    "emc": 16
+  },
+  {
+    "item": "projecte:zero_ring",
+    "emc": 280614
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_slowness"
+      }
+    },
+    "emc": 264
+  },
+  {
+    "item": "minecraft:melon",
+    "emc": 144
+  },
+  {
+    "item": "minecraft:nether_wart_block",
+    "emc": 216
+  },
+  {
+    "item": "projecte:rm_furnace",
+    "emc": 10059784
+  },
+  {
+    "item": "create:oxidized_copper_tiles",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:green_banner",
+    "emc": 292
+  },
+  {
+    "item": "minecraft:light_blue_wool",
+    "emc": 48
+  },
+  {
+    "item": "minecraft:jungle_hanging_sign",
+    "emc": 84
+  },
+  {
+    "item": "minecraft:stone_shovel",
+    "emc": 9
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_poison"
+      }
+    },
+    "emc": 72
+  },
+  {
+    "item": "minecraft:mangrove_sign",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:mangrove_pressure_plate",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:swiftness"
+      }
+    },
+    "emc": 23
+  },
+  {
+    "item": "projecte:swiftwolf_rending_gale",
+    "emc": 559316
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:wind_charged"
+      }
+    },
+    "emc": 119
+  },
+  {
+    "item": "create:cardboard_chestplate",
+    "emc": 3024
+  },
+  {
+    "item": "create:waxed_copper_shingle_stairs",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:polished_tuff",
+    "emc": 4
+  },
+  {
+    "item": "create:cut_deepslate_brick_wall",
+    "emc": 2
+  },
+  {
+    "item": "simulated:modulating_linked_receiver",
+    "emc": 3038
+  },
+  {
+    "item": "minecraft:cracked_nether_bricks",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:diamond_hoe",
+    "emc": 16392
+  },
+  {
+    "item": "create:small_rose_quartz_tiles",
+    "emc": 384
+  },
+  {
+    "item": "create:jungle_window_pane",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:leather_helmet",
+    "emc": 320
+  },
+  {
+    "item": "projecte:dm_sword",
+    "emc": 286720
+  },
+  {
+    "item": "createbigcannons:fixed_cannon_mount",
+    "emc": 702
+  },
+  {
+    "item": "minecraft:iron_nugget",
+    "emc": 28
+  },
+  {
+    "item": "minecraft:gray_dye",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:shulker_box",
+    "emc": 4160
+  },
+  {
+    "item": "create:small_scorchia_brick_slab",
+    "emc": 24
+  },
+  {
+    "item": "minecraft:iron_trapdoor",
+    "emc": 1024
+  },
+  {
+    "item": "minecraft:wet_sponge",
+    "emc": 128
+  },
+  {
+    "item": "minecraft:warped_door",
+    "emc": 8
+  },
+  {
+    "item": "create:dough",
+    "emc": 24
+  },
+  {
+    "item": "minecraft:bamboo_raft",
+    "emc": 40
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_fire_resistance"
+      }
+    },
+    "emc": 275
+  },
+  {
+    "item": "projecte:relay_mk3",
+    "emc": 681281
+  },
+  {
+    "item": "minecraft:mangrove_leaves",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:warped_fence",
+    "emc": 8
+  },
+  {
+    "item": "aeronautics:smart_propeller",
+    "emc": 814
+  },
+  {
+    "item": "create:cut_tuff_brick_wall",
+    "emc": 4
+  },
+  {
+    "item": "sentrymechanicalarm:unfinished_ammo",
+    "data": {
+      "minecraft:custom_data": {
+        "AmmoId": "tacz:40mm"
+      }
+    },
+    "emc": 128
+  },
+  {
+    "item": "minecraft:cracked_deepslate_tiles",
+    "emc": 2
+  },
+  {
+    "item": "createbigcannons:autocannon_cartridge_sheet",
+    "emc": 21
+  },
+  {
+    "item": "createbigcannons:hardened_nitro",
+    "emc": 720
+  },
+  {
+    "item": "tacz:workbench_c",
+    "data": {
+      "minecraft:custom_data": {
+        "BlockId": "tacz:attachment_workbench"
+      }
+    },
+    "emc": 648
+  },
+  {
+    "item": "create:peculiar_bell",
+    "emc": 1260
+  },
+  {
+    "item": "minecraft:furnace",
+    "emc": 8
+  },
+  {
+    "item": "create:weathered_iron_window_pane",
+    "emc": 72
+  },
+  {
+    "item": "createbigcannons:tracer_tip",
+    "emc": 224
+  },
+  {
+    "item": "minecraft:weathered_copper_bulb",
+    "emc": 1264
+  },
+  {
+    "item": "minecraft:dead_brain_coral",
+    "emc": 1
+  },
+  {
+    "item": "create:cut_deepslate_brick_slab",
+    "emc": 1
+  },
+  {
+    "item": "projecte:dm_hammer",
+    "emc": 303104
+  },
+  {
+    "item": "create:basin",
+    "emc": 150
+  },
+  {
+    "item": "minecraft:wolf_armor",
+    "emc": 288
+  },
+  {
+    "item": "minecraft:waxed_cut_copper_stairs",
+    "emc": 288
+  },
+  {
+    "item": "create:white_seat",
+    "emc": 52
+  },
+  {
+    "item": "minecraft:goat_horn",
+    "data": {
+      "minecraft:instrument": "minecraft:ponder_goat_horn"
+    },
+    "emc": 96
+  },
+  {
+    "item": "create:blue_postbox",
+    "emc": 94
+  },
+  {
+    "item": "simulated:white_handle",
+    "emc": 66
+  },
+  {
+    "item": "create:framed_glass_door",
+    "emc": 9
+  },
+  {
+    "item": "minecraft:shaper_armor_trim_smithing_template",
+    "emc": 10176
+  },
+  {
+    "item": "createbigcannons:impact_fuze",
+    "emc": 16
+  },
+  {
+    "item": "create:smart_fluid_pipe",
+    "emc": 1246
+  },
+  {
+    "item": "minecraft:chicken",
+    "emc": 64
+  },
+  {
+    "item": "create:cut_dripstone_brick_wall",
+    "emc": 64
+  },
+  {
+    "item": "minecraft:granite",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:tipped_arrow",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:thick"
+      }
+    },
+    "emc": 38
+  },
+  {
+    "item": "minecraft:granite_wall",
+    "emc": 16
+  },
+  {
+    "item": "aeronautics:end_stone_powder",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:purple_candle",
+    "emc": 36
+  },
+  {
+    "item": "spore:lab_block2",
+    "emc": 46
+  },
+  {
+    "item": "minecraft:carved_pumpkin",
+    "emc": 144
+  },
+  {
+    "item": "create:pulse_repeater",
+    "emc": 261
+  },
+  {
+    "item": "spore:lab_stair",
+    "emc": 69
+  },
+  {
+    "item": "minecraft:flow_banner_pattern",
+    "emc": 20480
+  },
+  {
+    "item": "minecraft:acacia_sign",
+    "emc": 8
+  },
+  {
+    "item": "create:industrial_iron_window_pane",
+    "emc": 72
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_turtle_master"
+      }
+    },
+    "emc": 254
+  },
+  {
+    "item": "create:dark_oak_window",
+    "emc": 12
+  },
+  {
+    "item": "create:cut_diorite_bricks",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:purple_concrete",
+    "emc": 3
+  },
+  {
+    "item": "minecraft:bamboo_mosaic_slab",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:bamboo_chest_raft",
+    "emc": 104
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_poison"
+      }
+    },
+    "emc": 136
+  },
+  {
+    "item": "create:andesite_bars",
+    "emc": 7
+  },
+  {
+    "item": "create:cyan_table_cloth",
+    "emc": 39
+  },
+  {
+    "item": "minecraft:pink_candle",
+    "emc": 30
+  },
+  {
+    "item": "minecraft:splash_potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_leaping"
+      }
+    },
+    "emc": 243
+  },
+  {
+    "item": "minecraft:music_disc_chirp",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:cut_sandstone",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:goat_horn",
+    "data": {
+      "minecraft:instrument": "minecraft:call_goat_horn"
+    },
+    "emc": 192
+  },
+  {
+    "item": "create:netherite_diving_boots",
+    "emc": 65413
+  },
+  {
+    "item": "createbigcannons:bronze_sliding_breechblock",
+    "emc": 506
+  },
+  {
+    "item": "create:electron_tube",
+    "emc": 1024
+  },
+  {
+    "item": "minecraft:cyan_carpet",
+    "emc": 32
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_leaping"
+      }
+    },
+    "emc": 179
+  },
+  {
+    "item": "minecraft:waxed_oxidized_chiseled_copper",
+    "emc": 288
+  },
+  {
+    "item": "projecte:lime_alchemical_bag",
+    "emc": 9851
+  },
+  {
+    "item": "minecraft:honey_block",
+    "emc": 188
+  },
+  {
+    "item": "minecraft:exposed_cut_copper",
+    "emc": 288
+  },
+  {
+    "item": "create:brown_postbox",
+    "emc": 118
+  },
+  {
+    "item": "minecraft:music_disc_blocks",
+    "emc": 2048
+  },
+  {
+    "item": "minecraft:white_stained_glass",
+    "emc": 2
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:long_leaping"
+      }
+    },
+    "emc": 72
+  },
+  {
+    "item": "create:nozzle",
+    "emc": 168
+  },
+  {
+    "item": "minecraft:mangrove_planks",
+    "emc": 8
+  },
+  {
+    "item": "projecte:brown_alchemical_bag",
+    "emc": 9851
+  },
+  {
+    "item": "minecraft:sand",
+    "emc": 1
+  },
+  {
+    "item": "minecraft:white_banner",
+    "emc": 292
+  },
+  {
+    "item": "minecraft:blue_ice",
+    "emc": 9
+  },
+  {
+    "item": "minecraft:peony",
+    "emc": 32
+  },
+  {
+    "item": "simulated:lime_handle",
+    "emc": 62
+  },
+  {
+    "item": "projecte:dm_pick",
+    "emc": 434176
+  },
+  {
+    "item": "spore:lab_slab3",
+    "emc": 23
+  },
+  {
+    "item": "minecraft:grass_block",
+    "emc": 1
+  },
+  {
+    "item": "create:layered_tuff",
+    "emc": 4
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:weakness"
+      }
+    },
+    "emc": 59
+  },
+  {
+    "item": "minecraft:polished_blackstone_wall",
+    "emc": 4
+  },
+  {
+    "item": "create:powered_toggle_latch",
+    "emc": 76
+  },
+  {
+    "item": "minecraft:potion",
+    "data": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_slowness"
+      }
+    },
+    "emc": 200
+  },
+  {
+    "item": "tacz:ammo_box",
+    "data": {
+      "minecraft:custom_data": {
+        "Level": 2
+      }
+    },
+    "emc": 8248
+  },
+  {
+    "item": "create:cut_calcite_slab",
+    "emc": 16
+  },
+  {
+    "item": "minecraft:netherite_helmet",
+    "emc": 105801
+  },
+  {
+    "item": "create:whisk",
+    "emc": 1340
+  },
+  {
+    "item": "minecraft:wooden_hoe",
+    "emc": 24
+  },
+  {
+    "item": "minecraft:spruce_door",
+    "emc": 8
+  },
+  {
+    "item": "minecraft:lime_banner",
+    "emc": 292
+  }
+]

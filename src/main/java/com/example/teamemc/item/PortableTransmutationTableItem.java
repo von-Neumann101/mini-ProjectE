@@ -28,7 +28,10 @@ public class PortableTransmutationTableItem extends Item {
             serverPlayer.openMenu(new SimpleMenuProvider(
                     (containerId, inventory, menuPlayer) -> new TransmutationMenu(containerId, inventory),
                     MENU_TITLE
-            )).ifPresent(containerId -> ModNetworking.sendEmcData(serverPlayer));
+            )).ifPresent(containerId -> {
+                ModNetworking.sendEmcValueSnapshot(serverPlayer);
+                ModNetworking.sendEmcData(serverPlayer);
+            });
         }
 
         return InteractionResultHolder.sidedSuccess(stack, level.isClientSide());

@@ -55,6 +55,9 @@ public final class TeamEmcCommand {
                 .then(Commands.literal("emc")
                         .then(Commands.argument("item", ItemArgument.item(event.getBuildContext()))
                                 .executes(TeamEmcCommand::emc)))
+                .then(Commands.literal("emc_debug")
+                        .then(Commands.argument("item", ItemArgument.item(event.getBuildContext()))
+                                .executes(TeamEmcCommand::emcDebug)))
                 .then(Commands.literal("emc_held")
                         .executes(TeamEmcCommand::emcHeld))
                 .then(Commands.literal("emc_stats")
@@ -230,20 +233,59 @@ public final class TeamEmcCommand {
         return 1;
     }
 
+    private static int emcDebug(CommandContext<CommandSourceStack> context) {
+        CommandSourceStack source = context.getSource();
+        EmcValueManager.ensureDerived(source.getServer());
+
+        Item item = ItemArgument.getItem(context, "item").getItem();
+        ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(item);
+        ItemStack stack = new ItemStack(item, 1);
+        long baseEmc = EmcValueManager.getBaseItemEmc(item);
+        OptionalLong stackEmc = EmcValueManager.getStackEmc(stack);
+        boolean existsInRegistry = itemId != null && BuiltInRegistries.ITEM.containsKey(itemId);
+        boolean blocked = itemId != null && EmcValueManager.isBlockedModItem(itemId);
+        boolean inEmcMap = EmcValueManager.isInEmcMap(item);
+        String sourceName = EmcValueManager.getBaseItemEmcSource(item).orElse("not in EMC map");
+
+        source.sendSuccess(() -> Component.literal(
+                "Team EMC debug: item=" + itemId
+                        + ", serverRegistryExists=" + existsInRegistry
+                        + ", blocked=" + blocked
+                        + ", inEmcMap=" + inEmcMap
+                        + ", source=" + sourceName
+        ), false);
+        source.sendSuccess(() -> Component.literal(
+                "Team EMC debug values: baseEmc=" + baseEmc
+                        + ", stackEmc=" + (stackEmc.isPresent() ? Long.toString(stackEmc.getAsLong()) : "none")
+                        + ", hasEmc(Item)=" + EmcValueManager.hasEmc(item)
+                        + ", hasEmc(ItemStack)=" + EmcValueManager.hasEmc(stack)
+        ), false);
+        return baseEmc > 0L ? 1 : 0;
+    }
+
     private static int emcStats(CommandContext<CommandSourceStack> context) {
         CommandSourceStack source = context.getSource();
         EmcValueManager.ensureDerived(source.getServer());
 
         EmcValueManager.EmcStats stats = EmcValueManager.getStats();
+        String runtimeSide = source.getServer().isDedicatedServer() ? "dedicated server" : "integrated server";
+        String fileNames = stats.emcFileNames().isEmpty() ? "<none>" : String.join(", ", stats.emcFileNames());
 
         source.sendSuccess(() -> Component.literal(
-                "Team EMC stats: manual=" + stats.manualBaseCount()
+                "Team EMC stats: side=" + runtimeSide
+                        + ", manual=" + stats.manualBaseCount()
                         + ", derived=" + stats.derivedCount()
                         + ", total=" + stats.totalCount()
+                        + ", files=" + stats.emcFileCount()
+                        + ", skipped=" + stats.skippedEntryCount()
+                        + ", recipeDerivation=" + stats.recipeDerivationEnabled()
+                        + ", projecteImported=" + stats.importedItemCount()
+                        + ", projecteImportedFile=" + stats.projecteImportedPresent()
                         + ", iterations=" + stats.lastDerivationIterations()
                         + ", addOrUpdate=" + stats.lastDerivationChanges()
                         + ", complete=" + stats.derivationComplete()
         ), false);
+        source.sendSuccess(() -> Component.literal("Team EMC files: " + fileNames), false);
         return stats.totalCount();
     }
 }

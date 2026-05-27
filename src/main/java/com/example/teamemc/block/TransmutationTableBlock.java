@@ -55,7 +55,10 @@ public class TransmutationTableBlock extends Block {
             serverPlayer.openMenu(new SimpleMenuProvider(
                     (containerId, inventory, menuPlayer) -> new TransmutationMenu(containerId, inventory),
                     MENU_TITLE
-            )).ifPresent(containerId -> ModNetworking.sendEmcData(serverPlayer));
+            )).ifPresent(containerId -> {
+                ModNetworking.sendEmcValueSnapshot(serverPlayer);
+                ModNetworking.sendEmcData(serverPlayer);
+            });
         }
     }
 }

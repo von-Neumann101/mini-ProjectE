@@ -15,6 +15,7 @@
   "message.teamemc.convert.success": "Converted %s into %s EMC.",
   "message.teamemc.convert.no_item": "No item to convert.",
   "message.teamemc.convert.no_emc": "This item has no EMC.",
+  "message.teamemc.convert.server_no_emc": "Server has no EMC for this item.",
   "message.teamemc.convert.overflow": "Failed to add EMC due to overflow.",
   "message.teamemc.convert.failed": "Conversion failed.",
   "message.teamemc.convert.invalid_durability": "Item durability is too low to convert.",

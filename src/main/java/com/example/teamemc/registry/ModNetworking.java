@@ -6,6 +6,7 @@ import com.example.teamemc.network.GuiStatusPacket;
 import com.example.teamemc.network.RequestConvertCarriedPacket;
 import com.example.teamemc.network.RequestWithdrawPacket;
 import com.example.teamemc.network.SyncEmcDataPacket;
+import com.example.teamemc.network.SyncEmcValueSnapshotPacket;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -13,6 +14,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
@@ -33,6 +35,7 @@ public final class ModNetworking {
         registrar.playToServer(RequestWithdrawPacket.TYPE, RequestWithdrawPacket.STREAM_CODEC, RequestWithdrawPacket::handle);
         registrar.playToClient(GuiStatusPacket.TYPE, GuiStatusPacket.STREAM_CODEC, GuiStatusPacket::handle);
         registrar.playToClient(SyncEmcDataPacket.TYPE, SyncEmcDataPacket.STREAM_CODEC, SyncEmcDataPacket::handle);
+        registrar.playToClient(SyncEmcValueSnapshotPacket.TYPE, SyncEmcValueSnapshotPacket.STREAM_CODEC, SyncEmcValueSnapshotPacket::handle);
     }
 
     public static void sendEmcData(ServerPlayer player) {
@@ -45,6 +48,17 @@ public final class ModNetworking {
                         .sorted()
                         .toList()
         ));
+    }
+
+    public static void sendEmcValueSnapshot(ServerPlayer player) {
+        EmcValueManager.ensureDerived(player.getServer());
+        PacketDistributor.sendToPlayer(player, new SyncEmcValueSnapshotPacket(EmcValueManager.getServerEmcSnapshot()));
+    }
+
+    public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
+        if (event.getEntity() instanceof ServerPlayer serverPlayer) {
+            sendEmcValueSnapshot(serverPlayer);
+        }
     }
 
     public static void sendGuiStatus(ServerPlayer player, String translationKey, boolean error, String... args) {
