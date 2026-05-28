@@ -2,6 +2,8 @@
   "block.teamemc.transmutation_table": "Transmutation Table",
   "item.teamemc.portable_transmutation_table": "Portable Transmutation Table",
   "itemGroup.teamemc": "Team EMC",
+  "key.categories.teamemc": "Team EMC",
+  "key.teamemc.open_portable_table": "Open Portable Transmutation Table",
   "container.teamemc.transmutation_table": "Transmutation Table",
   "gui.teamemc.convert": "Convert",
   "gui.teamemc.balance": "Team EMC: %s",

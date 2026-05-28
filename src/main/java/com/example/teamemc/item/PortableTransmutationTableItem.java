@@ -25,15 +25,19 @@ public class PortableTransmutationTableItem extends Item {
         ItemStack stack = player.getItemInHand(usedHand);
 
         if (!level.isClientSide() && player instanceof ServerPlayer serverPlayer) {
-            serverPlayer.openMenu(new SimpleMenuProvider(
-                    (containerId, inventory, menuPlayer) -> new TransmutationMenu(containerId, inventory),
-                    MENU_TITLE
-            )).ifPresent(containerId -> {
-                ModNetworking.sendEmcValueSnapshot(serverPlayer);
-                ModNetworking.sendEmcData(serverPlayer);
-            });
+            openTransmutationMenu(serverPlayer);
         }
 
         return InteractionResultHolder.sidedSuccess(stack, level.isClientSide());
+    }
+
+    public static void openTransmutationMenu(ServerPlayer serverPlayer) {
+        serverPlayer.openMenu(new SimpleMenuProvider(
+                (containerId, inventory, menuPlayer) -> new TransmutationMenu(containerId, inventory),
+                MENU_TITLE
+        )).ifPresent(containerId -> {
+            ModNetworking.sendEmcValueSnapshot(serverPlayer);
+            ModNetworking.sendEmcData(serverPlayer);
+        });
     }
 }

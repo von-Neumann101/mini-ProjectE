@@ -2,6 +2,7 @@ package com.example.teamemc.command;
 
 import com.example.teamemc.data.TeamEmcSavedData;
 import com.example.teamemc.emc.EmcValueManager;
+import com.example.teamemc.menu.TransmutationMenu;
 import com.example.teamemc.registry.ModNetworking;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.LongArgumentType;
@@ -20,11 +21,13 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.scores.Team;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 
 public final class TeamEmcCommand {
     private static final int OP_PERMISSION_LEVEL = 2;
     private static final int LEARNED_PREVIEW_LIMIT = 10;
+    private static final int SYNC_DEBUG_PREVIEW_LIMIT = 20;
 
     private TeamEmcCommand() {
     }
@@ -60,6 +63,8 @@ public final class TeamEmcCommand {
                                 .executes(TeamEmcCommand::emcDebug)))
                 .then(Commands.literal("emc_held")
                         .executes(TeamEmcCommand::emcHeld))
+                .then(Commands.literal("sync_debug")
+                        .executes(TeamEmcCommand::syncDebug))
                 .then(Commands.literal("emc_stats")
                         .executes(TeamEmcCommand::emcStats)));
     }
@@ -287,5 +292,43 @@ public final class TeamEmcCommand {
         ), false);
         source.sendSuccess(() -> Component.literal("Team EMC files: " + fileNames), false);
         return stats.totalCount();
+    }
+
+    private static int syncDebug(CommandContext<CommandSourceStack> context) throws CommandSyntaxException {
+        CommandSourceStack source = context.getSource();
+        ServerPlayer player = source.getPlayerOrException();
+        TeamEmcSavedData data = TeamEmcSavedData.get(source.getServer());
+        Team team = player.getTeam();
+        String teamName = team == null ? "<none>" : team.getName();
+        List<ResourceLocation> learnedItems = data.getLearnedItems(player).stream()
+                .sorted()
+                .toList();
+        boolean transmutationMenuOpen = player.containerMenu instanceof TransmutationMenu;
+
+        source.sendSuccess(() -> Component.literal(
+                "Team EMC sync debug: account=" + data.getAccountKey(player)
+                        + ", scoreboardTeam=" + teamName
+                        + ", balance=" + data.getBalance(player)
+                        + ", learnedItems=" + learnedItems.size()
+                        + ", transmutationMenuOpen=" + transmutationMenuOpen
+        ), false);
+        source.sendSuccess(() -> Component.literal("Team EMC learned preview: "
+                + previewItemIds(learnedItems, SYNC_DEBUG_PREVIEW_LIMIT)), false);
+
+        if (transmutationMenuOpen) {
+            ModNetworking.sendEmcData(player);
+            source.sendSuccess(() -> Component.literal("Sent SyncEmcDataPacket to current player."), false);
+        }
+
+        return learnedItems.size();
+    }
+
+    private static String previewItemIds(List<ResourceLocation> itemIds, int limit) {
+        String preview = itemIds.stream()
+                .limit(limit)
+                .map(ResourceLocation::toString)
+                .reduce((left, right) -> left + ", " + right)
+                .orElse("<empty>");
+        return itemIds.size() > limit ? preview + ", ..." : preview;
     }
 }

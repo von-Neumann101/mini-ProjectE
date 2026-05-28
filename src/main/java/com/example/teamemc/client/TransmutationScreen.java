@@ -346,7 +346,7 @@ public class TransmutationScreen extends AbstractContainerScreen<TransmutationMe
         }
 
         Item item = BuiltInRegistries.ITEM.get(itemId);
-        return item != Items.AIR && EmcValueManager.hasEmc(item);
+        return item != Items.AIR;
     }
 
     private static ItemStack createDisplayStack(ResourceLocation itemId) {

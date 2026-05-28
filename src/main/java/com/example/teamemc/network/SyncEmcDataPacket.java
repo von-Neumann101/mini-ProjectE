@@ -2,6 +2,7 @@ package com.example.teamemc.network;
 
 import com.example.teamemc.TeamEmcMod;
 import com.example.teamemc.client.ClientEmcState;
+import com.mojang.logging.LogUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +12,10 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
+import org.slf4j.Logger;
 
 public record SyncEmcDataPacket(long balance, List<ResourceLocation> learnedItems) implements CustomPacketPayload {
+    private static final Logger LOGGER = LogUtils.getLogger();
     public static final Type<SyncEmcDataPacket> TYPE =
             new Type<>(ResourceLocation.fromNamespaceAndPath(TeamEmcMod.MOD_ID, "sync_emc_data"));
     public static final StreamCodec<RegistryFriendlyByteBuf, SyncEmcDataPacket> STREAM_CODEC =
@@ -49,6 +52,21 @@ public record SyncEmcDataPacket(long balance, List<ResourceLocation> learnedItem
     }
 
     public static void handle(SyncEmcDataPacket packet, IPayloadContext context) {
+        LOGGER.info(
+                "Received Team EMC data: balance={}, learnedItems={}, preview={}",
+                packet.balance(),
+                packet.learnedItems().size(),
+                previewItemIds(packet.learnedItems(), 5)
+        );
         ClientEmcState.updateFromPacket(packet.balance(), packet.learnedItems());
+    }
+
+    private static String previewItemIds(List<ResourceLocation> itemIds, int limit) {
+        String preview = itemIds.stream()
+                .limit(limit)
+                .map(ResourceLocation::toString)
+                .reduce((left, right) -> left + ", " + right)
+                .orElse("<empty>");
+        return itemIds.size() > limit ? preview + ", ..." : preview;
     }
 }
